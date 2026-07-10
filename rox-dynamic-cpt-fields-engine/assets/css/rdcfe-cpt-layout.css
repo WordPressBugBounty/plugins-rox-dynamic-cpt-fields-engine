@@ -1,0 +1,689 @@
+/**
+ * DCFE CPT Meta Fields - Layout Styles
+ * 
+ * Styles for CPT Meta Fields: Containers, Tabs, Accordions
+ * Theme Color: #675dd8 (Purple)
+ * 
+ * @package DynamicCPTFieldsEngine
+ */
+
+/* ==========================================================================
+   CPT META BOX WRAPPER (Block Editor Compatible)
+   ========================================================================== */
+
+/* Reset WordPress meta box styles */
+#postcustom .inside,
+.postbox .inside:has(.rdcfe-cpt-meta-fields),
+.components-panel__body:has(.rdcfe-cpt-meta-fields) {
+	margin: 0;
+	padding: 0;
+}
+
+/* Main CPT Meta Fields Wrapper */
+.rdcfe-cpt-meta-fields {
+	margin: 0;
+	padding: 16px;
+	background: #fff;
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 0;
+}
+
+/* Override the base .rdcfe-meta-box styles when used with .rdcfe-cpt-meta-fields */
+.rdcfe-meta-box.rdcfe-cpt-meta-fields {
+	display: block;
+	margin: 0;
+	padding: 16px;
+	overflow: hidden; /* Contains the negative margin children */
+}
+
+/* Ensure proper containing for negative margin technique */
+.rdcfe-cpt-meta-fields > .rdcfe-fields-container,
+.rdcfe-cpt-meta-fields .rdcfe-tabs,
+.rdcfe-cpt-meta-fields .rdcfe-accordions {
+	max-width: 100%;
+}
+
+/* Block Editor specific overrides */
+.block-editor .rdcfe-cpt-meta-fields,
+.editor-styles-wrapper .rdcfe-cpt-meta-fields,
+.is-mode-visual .rdcfe-cpt-meta-fields,
+.edit-post-meta-boxes-area .rdcfe-cpt-meta-fields {
+	padding: 20px;
+	max-width: none;
+}
+
+/* Ensure meta box expands properly */
+.edit-post-meta-boxes-area .postbox .inside {
+	padding: 0;
+}
+
+.edit-post-meta-boxes-area .rdcfe-cpt-meta-fields {
+	margin: 0;
+}
+
+/* ==========================================================================
+   BASE CONTAINER STYLES
+   ========================================================================== */
+
+.rdcfe-fields-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -12px;
+	padding: 8px 0;
+	width: calc(100% + 24px);
+	box-sizing: border-box;
+}
+
+/* Fields inside container */
+.rdcfe-fields-container > .rdcfe-field {
+	padding: 12px;
+	box-sizing: border-box;
+	min-width: 0;
+	flex-shrink: 0;
+}
+
+/* Ensure inputs expand to full width */
+.rdcfe-cpt-meta-fields .rdcfe-field__input {
+	width: 100%;
+}
+
+.rdcfe-cpt-meta-fields .rdcfe-input,
+.rdcfe-cpt-meta-fields .rdcfe-textarea,
+.rdcfe-cpt-meta-fields .rdcfe-select {
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+/* Override WordPress admin default input max-widths */
+.rdcfe-cpt-meta-fields input[type="text"].rdcfe-input,
+.rdcfe-cpt-meta-fields input[type="email"].rdcfe-input,
+.rdcfe-cpt-meta-fields input[type="url"].rdcfe-input,
+.rdcfe-cpt-meta-fields input[type="number"].rdcfe-input,
+.rdcfe-cpt-meta-fields input[type="date"].rdcfe-input,
+.rdcfe-cpt-meta-fields input[type="time"].rdcfe-input,
+.rdcfe-cpt-meta-fields input[type="datetime-local"].rdcfe-input,
+.rdcfe-cpt-meta-fields textarea.rdcfe-textarea,
+.rdcfe-cpt-meta-fields select.rdcfe-select {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* Remove WordPress default .regular-text width constraints */
+.rdcfe-cpt-meta-fields .regular-text {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* Remove WordPress default .large-text constraints */
+.rdcfe-cpt-meta-fields .large-text {
+	width: 100%;
+}
+
+.rdcfe-standalone-fields {
+	margin-bottom: 24px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #e2e4e7;
+}
+
+/* When blocks (tabs strip / accordions list / standalone fields) are stacked
+ * one after another inside a CPT meta box — e.g. an author mixed
+ * `accordion → endpoint → tab` — give each block breathing room. The `+`
+ * selector targets adjacent siblings only, so the first block flows flush
+ * against the metabox top and only later blocks get a top gap. */
+.rdcfe-cpt-meta-fields > .rdcfe-tabs + .rdcfe-tabs,
+.rdcfe-cpt-meta-fields > .rdcfe-tabs + .rdcfe-accordions,
+.rdcfe-cpt-meta-fields > .rdcfe-tabs + .rdcfe-fields-container,
+.rdcfe-cpt-meta-fields > .rdcfe-accordions + .rdcfe-tabs,
+.rdcfe-cpt-meta-fields > .rdcfe-accordions + .rdcfe-accordions,
+.rdcfe-cpt-meta-fields > .rdcfe-accordions + .rdcfe-fields-container,
+.rdcfe-cpt-meta-fields > .rdcfe-fields-container + .rdcfe-tabs,
+.rdcfe-cpt-meta-fields > .rdcfe-fields-container + .rdcfe-accordions {
+	margin-top: 24px;
+}
+
+/* When a standalone-fields container precedes a tab/accordion block, drop the
+ * separator border the standalone block normally draws — the next block
+ * already has its own card chrome, so the rule line would just look like
+ * extra noise. */
+.rdcfe-cpt-meta-fields > .rdcfe-fields-container.rdcfe-standalone-fields:has(+ .rdcfe-tabs),
+.rdcfe-cpt-meta-fields > .rdcfe-fields-container.rdcfe-standalone-fields:has(+ .rdcfe-accordions) {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+/* ==========================================================================
+   TABS STYLES - Horizontal
+   ========================================================================== */
+
+.rdcfe-tabs {
+	border: 1px solid #e2e4e7;
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+	overflow: hidden;
+}
+
+.rdcfe-tabs--horizontal .rdcfe-tabs__nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0;
+	border-bottom: 1px solid #e2e4e7;
+	background: linear-gradient(180deg, #fafafa 0%, #f5f5f5 100%);
+	padding: 0 12px;
+	margin: 0;
+}
+
+.rdcfe-tabs--horizontal .rdcfe-tabs__tab {
+	display: inline-flex;
+	align-items: center;
+	padding: 14px 22px;
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid transparent;
+	margin-bottom: -1px;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 600;
+	color: #646970;
+	transition: all 0.2s ease;
+	position: relative;
+}
+
+.rdcfe-tabs--horizontal .rdcfe-tabs__tab:hover {
+	color: #1d2327;
+	background: rgba(103, 93, 216, 0.04);
+}
+
+.rdcfe-tabs--horizontal .rdcfe-tabs__tab--active {
+	background: #fff;
+	border-bottom-color: #675dd8;
+	color: #675dd8;
+}
+
+.rdcfe-tabs--horizontal .rdcfe-tabs__tab--active::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	background: #fff;
+}
+
+.rdcfe-tabs--horizontal .rdcfe-tabs__panels {
+	padding: 24px;
+	background: #fff;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.rdcfe-tabs--horizontal .rdcfe-tabs__panel {
+	display: none;
+	animation: dcfeCptFadeIn 0.3s ease;
+	width: 100%;
+}
+
+.rdcfe-tabs--horizontal .rdcfe-tabs__panel--active {
+	display: block;
+}
+
+/* Ensure fields container within tabs takes full width */
+.rdcfe-tabs--horizontal .rdcfe-tabs__panel .rdcfe-fields-container {
+	width: calc(100% + 24px);
+}
+
+/* ==========================================================================
+   TABS STYLES - Vertical
+   ========================================================================== */
+
+.rdcfe-tabs--vertical {
+	display: flex;
+	min-height: 320px;
+}
+
+.rdcfe-tabs--vertical .rdcfe-tabs__nav {
+	display: flex;
+	flex-direction: column;
+	width: 220px;
+	min-width: 220px;
+	background: linear-gradient(90deg, #fafafa 0%, #f5f5f5 100%);
+	border-right: 1px solid #e2e4e7;
+	padding: 12px 0;
+}
+
+.rdcfe-tabs--vertical .rdcfe-tabs__tab {
+	display: flex;
+	align-items: center;
+	padding: 14px 20px;
+	margin: 2px 8px 2px 0;
+	background: transparent;
+	border: none;
+	border-left: 3px solid transparent;
+	border-radius: 0 8px 8px 0;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 600;
+	color: #646970;
+	text-align: left;
+	transition: all 0.2s ease;
+}
+
+.rdcfe-tabs--vertical .rdcfe-tabs__tab:hover {
+	background: rgba(103, 93, 216, 0.04);
+	color: #1d2327;
+}
+
+.rdcfe-tabs--vertical .rdcfe-tabs__tab--active {
+	background: #fff;
+	border-left-color: #675dd8;
+	color: #675dd8;
+	box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+}
+
+.rdcfe-tabs--vertical .rdcfe-tabs__panels {
+	flex: 1;
+	padding: 24px;
+	overflow: auto;
+	background: #fff;
+	min-width: 0;
+	box-sizing: border-box;
+}
+
+.rdcfe-tabs--vertical .rdcfe-tabs__panel {
+	display: none;
+	animation: dcfeCptFadeIn 0.3s ease;
+	width: 100%;
+}
+
+.rdcfe-tabs--vertical .rdcfe-tabs__panel--active {
+	display: block;
+}
+
+/* Ensure fields container within vertical tabs takes full width */
+.rdcfe-tabs--vertical .rdcfe-tabs__panel .rdcfe-fields-container {
+	width: calc(100% + 24px);
+}
+
+/* ==========================================================================
+   ACCORDION STYLES
+   ========================================================================== */
+
+.rdcfe-accordions {
+	border: 1px solid #e2e4e7;
+	border-radius: 12px;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.rdcfe-accordion {
+	border-bottom: 1px solid #e2e4e7;
+}
+
+.rdcfe-accordion:last-child {
+	border-bottom: none;
+}
+
+.rdcfe-accordion__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 16px 20px;
+	background: linear-gradient(180deg, #fafafa 0%, #f7f7f7 100%);
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	color: #1d2327;
+	text-align: left;
+	transition: all 0.2s ease;
+}
+
+.rdcfe-accordion__header:hover {
+	background: linear-gradient(180deg, #f5f5f5 0%, #f0f0f0 100%);
+}
+
+.rdcfe-accordion--open .rdcfe-accordion__header {
+	background: #fff;
+	color: #675dd8;
+	border-bottom: 1px solid #e2e4e7;
+}
+
+.rdcfe-accordion__title {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.rdcfe-accordion__title::before {
+	content: '';
+	width: 6px;
+	height: 6px;
+	background: #c4bef0;
+	border-radius: 50%;
+	transition: all 0.2s ease;
+}
+
+.rdcfe-accordion--open .rdcfe-accordion__title::before {
+	background: #675dd8;
+}
+
+.rdcfe-accordion__icon {
+	width: 26px;
+	height: 26px;
+	position: relative;
+	transition: transform 0.3s ease;
+	background: #f0f0f1;
+	border-radius: 6px;
+}
+
+.rdcfe-accordion__icon::before,
+.rdcfe-accordion__icon::after {
+	content: '';
+	position: absolute;
+	background: #646970;
+	transition: all 0.3s ease;
+	border-radius: 1px;
+}
+
+.rdcfe-accordion__icon::before {
+	top: 50%;
+	left: 7px;
+	right: 7px;
+	height: 2px;
+	transform: translateY(-50%);
+}
+
+.rdcfe-accordion__icon::after {
+	left: 50%;
+	top: 7px;
+	bottom: 7px;
+	width: 2px;
+	transform: translateX(-50%);
+}
+
+.rdcfe-accordion--open .rdcfe-accordion__icon {
+	background: rgba(103, 93, 216, 0.1);
+}
+
+.rdcfe-accordion--open .rdcfe-accordion__icon::before,
+.rdcfe-accordion--open .rdcfe-accordion__icon::after {
+	background: #675dd8;
+}
+
+.rdcfe-accordion--open .rdcfe-accordion__icon::after {
+	transform: translateX(-50%) rotate(90deg);
+	opacity: 0;
+}
+
+.rdcfe-accordion__content {
+	padding: 24px;
+	background: #fff;
+	animation: dcfeCptSlideDown 0.3s ease;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.rdcfe-accordion__content[hidden] {
+	display: none;
+}
+
+/* Ensure fields container within accordion takes full width */
+.rdcfe-accordion__content .rdcfe-fields-container {
+	width: calc(100% + 24px);
+}
+
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+
+@keyframes dcfeCptFadeIn {
+	from { opacity: 0; transform: translateY(-4px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dcfeCptSlideDown {
+	from { opacity: 0; transform: translateY(-8px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   VALIDATION NOTICE
+   ========================================================================== */
+
+.rdcfe-validation-notice {
+	margin: 15px 0 !important;
+}
+
+/* ==========================================================================
+   FIELD WIDTH UTILITIES
+   ========================================================================== */
+
+/*
+ * Force field widths to respect their settings.
+ *
+ * Each rule matches BOTH the legacy `width: N%` form and the new
+ * `calc(N% - Xpx)` form emitted by AbstractFieldType::resolve_field_width_style()
+ * / CPTMetaFieldsManager. The shave per width is sized for the maximum
+ * siblings-per-row at that percentage (4 cols at 25% needs the largest shave,
+ * 1 col at 100% needs none) so they actually fit on one flex row inside a
+ * `flex-wrap: wrap` container without being kicked off by wp-admin's reset
+ * padding plus browser sub-pixel rounding.
+ */
+.rdcfe-fields-container > .rdcfe-field[style*="width: 100%"] {
+	width: 100% !important;
+	flex: 0 0 100%;
+}
+
+.rdcfe-fields-container > .rdcfe-field[style*="width: 75%"],
+.rdcfe-fields-container > .rdcfe-field[style*="calc(75%"] {
+	width: calc(75% - 8px) !important;
+	flex: 0 0 calc(75% - 8px);
+}
+
+.rdcfe-fields-container > .rdcfe-field[style*="width: 66.66%"],
+.rdcfe-fields-container > .rdcfe-field[style*="calc(66.66%"] {
+	width: calc(66.66% - 12px) !important;
+	flex: 0 0 calc(66.66% - 12px);
+}
+
+.rdcfe-fields-container > .rdcfe-field[style*="width: 50%"],
+.rdcfe-fields-container > .rdcfe-field[style*="calc(50%"] {
+	width: calc(50% - 12px) !important;
+	flex: 0 0 calc(50% - 12px);
+}
+
+.rdcfe-fields-container > .rdcfe-field[style*="width: 33.33%"],
+.rdcfe-fields-container > .rdcfe-field[style*="calc(33.33%"] {
+	width: calc(33.33% - 16px) !important;
+	flex: 0 0 calc(33.33% - 16px);
+}
+
+.rdcfe-fields-container > .rdcfe-field[style*="width: 25%"],
+.rdcfe-fields-container > .rdcfe-field[style*="calc(25%"] {
+	width: calc(25% - 16px) !important;
+	flex: 0 0 calc(25% - 16px);
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+	/* Promote 25% and 33% fields to 50% on medium screens — match both the
+	   legacy `width: N%` and the new `calc(N% - Xpx)` inline-style forms.
+	   Uses the same 12px shave the 50% rule above uses. */
+	.rdcfe-fields-container > .rdcfe-field[style*="width: 25%"],
+	.rdcfe-fields-container > .rdcfe-field[style*="calc(25%"] {
+		width: calc(50% - 12px) !important;
+		flex: 0 0 calc(50% - 12px);
+	}
+
+	.rdcfe-fields-container > .rdcfe-field[style*="width: 33.33%"],
+	.rdcfe-fields-container > .rdcfe-field[style*="calc(33.33%"] {
+		width: calc(50% - 12px) !important;
+		flex: 0 0 calc(50% - 12px);
+	}
+}
+
+@media (max-width: 782px) {
+	.rdcfe-cpt-meta-fields {
+		padding: 12px;
+	}
+	
+	/* All fields full width on mobile */
+	.rdcfe-fields-container > .rdcfe-field,
+	.rdcfe-fields-container > .rdcfe-field[style*="width:"] {
+		width: 100% !important;
+		flex: 0 0 100% !important;
+	}
+	
+	.rdcfe-fields-container {
+		margin: 0;
+		width: 100%;
+	}
+	
+	.rdcfe-tabs--horizontal .rdcfe-tabs__panel .rdcfe-fields-container,
+	.rdcfe-tabs--vertical .rdcfe-tabs__panel .rdcfe-fields-container,
+	.rdcfe-accordion__content .rdcfe-fields-container {
+		width: 100%;
+	}
+	
+	.rdcfe-tabs--vertical {
+		flex-direction: column;
+	}
+	
+	.rdcfe-tabs--vertical .rdcfe-tabs__nav {
+		width: 100%;
+		min-width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		border-right: none;
+		border-bottom: 1px solid #e2e4e7;
+		padding: 8px;
+	}
+	
+	.rdcfe-tabs--vertical .rdcfe-tabs__tab {
+		border-left: none;
+		border-bottom: 2px solid transparent;
+		margin: 0;
+		border-radius: 6px;
+	}
+	
+	.rdcfe-tabs--vertical .rdcfe-tabs__tab--active {
+		border-bottom-color: #675dd8;
+		border-left-color: transparent;
+	}
+	
+	.rdcfe-tabs--horizontal .rdcfe-tabs__panels,
+	.rdcfe-tabs--vertical .rdcfe-tabs__panels,
+	.rdcfe-accordion__content {
+		padding: 16px;
+	}
+}
+
+/* ==========================================================================
+   BLOCK EDITOR META BOX AREA FIXES
+   ========================================================================== */
+
+/* Target the meta boxes area in Gutenberg */
+.edit-post-meta-boxes-area__container .postbox {
+	min-width: 0;
+}
+
+.edit-post-meta-boxes-area__container .rdcfe-cpt-meta-fields {
+	width: 100%;
+}
+
+/* Fix for advanced meta box area */
+.edit-post-meta-boxes-area.is-normal .rdcfe-cpt-meta-fields,
+.edit-post-meta-boxes-area.is-side .rdcfe-cpt-meta-fields,
+.edit-post-meta-boxes-area.is-advanced .rdcfe-cpt-meta-fields {
+	max-width: 100%;
+}
+
+/* Sidebar meta box adjustments */
+.edit-post-meta-boxes-area.is-side .rdcfe-fields-container > .rdcfe-field {
+	width: 100% !important;
+	flex: 0 0 100% !important;
+}
+
+.edit-post-meta-boxes-area.is-side .rdcfe-tabs--vertical {
+	flex-direction: column;
+}
+
+.edit-post-meta-boxes-area.is-side .rdcfe-tabs--vertical .rdcfe-tabs__nav {
+	width: 100%;
+	min-width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-right: none;
+	border-bottom: 1px solid #e2e4e7;
+}
+
+/* ==========================================================================
+   HIGH SPECIFICITY OVERRIDES FOR GUTENBERG/BLOCK EDITOR
+   ========================================================================== */
+
+/* Ensure the meta box content area allows full width */
+body.block-editor-page .postbox .inside .rdcfe-cpt-meta-fields,
+body.wp-admin .postbox .inside .rdcfe-cpt-meta-fields,
+#poststuff .postbox .inside .rdcfe-cpt-meta-fields {
+	display: block;
+	margin: 0;
+	padding: 16px;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+/* Force fields container to behave correctly */
+body.block-editor-page .rdcfe-cpt-meta-fields .rdcfe-fields-container,
+body.wp-admin .rdcfe-cpt-meta-fields .rdcfe-fields-container,
+#poststuff .rdcfe-cpt-meta-fields .rdcfe-fields-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -12px;
+	width: calc(100% + 24px);
+}
+
+/* Force individual fields to respect their widths */
+body.block-editor-page .rdcfe-cpt-meta-fields .rdcfe-field,
+body.wp-admin .rdcfe-cpt-meta-fields .rdcfe-field,
+#poststuff .rdcfe-cpt-meta-fields .rdcfe-field {
+	padding: 12px;
+	box-sizing: border-box;
+	min-width: 0;
+}
+
+/* Force inputs to be full width within their field containers */
+body.block-editor-page .rdcfe-cpt-meta-fields .rdcfe-field__input,
+body.wp-admin .rdcfe-cpt-meta-fields .rdcfe-field__input,
+#poststuff .rdcfe-cpt-meta-fields .rdcfe-field__input {
+	width: 100%;
+}
+
+body.block-editor-page .rdcfe-cpt-meta-fields .rdcfe-input,
+body.block-editor-page .rdcfe-cpt-meta-fields .rdcfe-textarea,
+body.block-editor-page .rdcfe-cpt-meta-fields .rdcfe-select,
+body.block-editor-page .rdcfe-cpt-meta-fields .regular-text,
+body.wp-admin .rdcfe-cpt-meta-fields .rdcfe-input,
+body.wp-admin .rdcfe-cpt-meta-fields .rdcfe-textarea,
+body.wp-admin .rdcfe-cpt-meta-fields .rdcfe-select,
+body.wp-admin .rdcfe-cpt-meta-fields .regular-text {
+	width: 100% !important;
+	max-width: 100% !important;
+	box-sizing: border-box;
+}
+
+/* Classic Editor compatibility */
+.post-type-form .rdcfe-cpt-meta-fields,
+#post .rdcfe-cpt-meta-fields {
+	display: block;
+	width: 100%;
+}

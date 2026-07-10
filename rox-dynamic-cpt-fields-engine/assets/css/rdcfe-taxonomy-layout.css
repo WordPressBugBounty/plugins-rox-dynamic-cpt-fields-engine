@@ -1,0 +1,404 @@
+/**
+ * DCFE Taxonomy Meta Fields - Layout Styles
+ * 
+ * Styles for Taxonomy Meta Fields: Containers, Tabs, Accordions
+ * Theme Color: #675dd8 (Purple)
+ * 
+ * @package DynamicCPTFieldsEngine
+ */
+
+/* ==========================================================================
+   BASE CONTAINER STYLES
+   ========================================================================== */
+
+.rdcfe-taxonomy-meta-fields {
+	margin: 16px 0 0;
+}
+
+.rdcfe-taxonomy-add-form {
+	margin-top: 16px;
+	border-top: 1px solid #e2e4e7;
+}
+.rdcfe-taxonomy-field--div {
+	padding: 12px 0;
+}
+.rdcfe-taxonomy-edit-form {
+	margin: 0;
+}
+
+/*
+ * Wrapper TR is only used for tab/accordion layouts on edit forms. Simple
+ * layouts now emit native TR/TH/TD rows directly, so they don't need extra
+ * padding here.
+ */
+.rdcfe-taxonomy-meta-row > td {
+	padding: 12px 10px 12px 0;
+}
+
+/*
+ * Row-mode field group heading: separates a field group's title block from
+ * surrounding rows without the heavy 20–40px margins the old wrapper added.
+ */
+.rdcfe-term-field-group__heading-row > td {
+	padding: 18px 10px 6px 0;
+	border-bottom: 1px solid #e2e4e7;
+}
+
+.rdcfe-term-field-group__heading-row .rdcfe-term-field-group__title {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+/*
+ * User profile field groups: each group is its own form-table, so titles get
+ * the same treatment as native profile section headings (Personal Options,
+ * Name, etc.).
+ */
+.rdcfe-user-field-group__title {
+	margin: 24px 0 12px;
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.rdcfe-user-fields {
+	margin-top: 0;
+}
+
+.rdcfe-taxonomy-fields-container {
+	display: flex;
+	flex-direction: column;
+	/* gap: 16px; */
+}
+
+.rdcfe-taxonomy-standalone-fields {
+	margin-bottom: 24px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #e2e4e7;
+}
+
+/* Taxonomy specific input max-width */
+.rdcfe-taxonomy-input,
+.rdcfe-taxonomy-textarea,
+.rdcfe-taxonomy-select {
+	max-width: 500px;
+}
+
+/* ==========================================================================
+   TABS STYLES - Horizontal
+   ========================================================================== */
+
+.rdcfe-taxonomy-tabs {
+	border: 1px solid #e5e7eb;
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+	overflow: hidden;
+}
+
+.rdcfe-taxonomy-tabs--horizontal .rdcfe-taxonomy-tabs__nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0;
+	border-bottom: 1px solid #e5e7eb;
+	background: linear-gradient(180deg, #fafafa 0%, #f5f5f5 100%);
+	padding: 0 12px;
+}
+
+.rdcfe-taxonomy-tabs--horizontal .rdcfe-taxonomy-tabs__tab {
+	display: inline-flex;
+	align-items: center;
+	padding: 14px 22px;
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid transparent;
+	margin-bottom: -1px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	color: #6b7280;
+	transition: all 0.2s ease;
+}
+
+.rdcfe-taxonomy-tabs--horizontal .rdcfe-taxonomy-tabs__tab:hover {
+	color: #374151;
+	background: rgba(103, 93, 216, 0.04);
+}
+
+.rdcfe-taxonomy-tabs--horizontal .rdcfe-taxonomy-tabs__tab--active {
+	background: #fff;
+	border-bottom-color: #675dd8;
+	color: #675dd8;
+}
+
+.rdcfe-taxonomy-tabs--horizontal .rdcfe-taxonomy-tabs__panels {
+	padding: 24px;
+	background: #fff;
+}
+
+.rdcfe-taxonomy-tabs--horizontal .rdcfe-taxonomy-tabs__panel {
+	display: none;
+	animation: dcfeTaxFadeIn 0.3s ease;
+}
+
+.rdcfe-taxonomy-tabs--horizontal .rdcfe-taxonomy-tabs__panel--active {
+	display: block;
+}
+
+/* ==========================================================================
+   TABS STYLES - Vertical
+   ========================================================================== */
+
+.rdcfe-taxonomy-tabs--vertical {
+	display: flex;
+	min-height: 320px;
+}
+
+.rdcfe-taxonomy-tabs--vertical .rdcfe-taxonomy-tabs__nav {
+	display: flex;
+	flex-direction: column;
+	width: 220px;
+	min-width: 220px;
+	background: linear-gradient(90deg, #fafafa 0%, #f5f5f5 100%);
+	border-right: 1px solid #e5e7eb;
+	padding: 12px 0;
+}
+
+.rdcfe-taxonomy-tabs--vertical .rdcfe-taxonomy-tabs__tab {
+	display: flex;
+	align-items: center;
+	padding: 14px 20px;
+	margin: 2px 10px 2px 0;
+	background: transparent;
+	border: none;
+	border-left: 3px solid transparent;
+	border-radius: 0 8px 8px 0;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	color: #6b7280;
+	text-align: left;
+	transition: all 0.2s ease;
+}
+
+.rdcfe-taxonomy-tabs--vertical .rdcfe-taxonomy-tabs__tab:hover {
+	background: rgba(103, 93, 216, 0.04);
+	color: #374151;
+}
+
+.rdcfe-taxonomy-tabs--vertical .rdcfe-taxonomy-tabs__tab--active {
+	background: #fff;
+	border-left-color: #675dd8;
+	color: #675dd8;
+	box-shadow: 3px 0 10px rgba(0,0,0,0.04);
+}
+
+.rdcfe-taxonomy-tabs--vertical .rdcfe-taxonomy-tabs__panels {
+	flex: 1;
+	padding: 24px;
+	overflow: auto;
+	background: #fff;
+}
+
+.rdcfe-taxonomy-tabs--vertical .rdcfe-taxonomy-tabs__panel {
+	display: none;
+	animation: dcfeTaxFadeIn 0.3s ease;
+}
+
+.rdcfe-taxonomy-tabs--vertical .rdcfe-taxonomy-tabs__panel--active {
+	display: block;
+}
+
+/* ==========================================================================
+   ACCORDION STYLES
+   ========================================================================== */
+
+.rdcfe-taxonomy-accordions {
+	border: 1px solid #e5e7eb;
+	border-radius: 12px;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.rdcfe-taxonomy-accordion {
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.rdcfe-taxonomy-accordion:last-child {
+	border-bottom: none;
+}
+
+.rdcfe-taxonomy-accordion__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 18px 22px;
+	background: linear-gradient(180deg, #fafafa 0%, #f7f7f7 100%);
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 600;
+	color: #374151;
+	text-align: left;
+	transition: all 0.2s ease;
+}
+
+.rdcfe-taxonomy-accordion__header:hover {
+	background: linear-gradient(180deg, #f5f5f5 0%, #f0f0f0 100%);
+}
+
+.rdcfe-taxonomy-accordion--open .rdcfe-taxonomy-accordion__header {
+	background: #fff;
+	color: #675dd8;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.rdcfe-taxonomy-accordion__title {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.rdcfe-taxonomy-accordion__title::before {
+	content: '';
+	width: 8px;
+	height: 8px;
+	background: #c4bef0;
+	border-radius: 50%;
+	transition: all 0.2s ease;
+}
+
+.rdcfe-taxonomy-accordion--open .rdcfe-taxonomy-accordion__title::before {
+	background: linear-gradient(135deg, #8b82e0 0%, #675dd8 100%);
+}
+
+.rdcfe-taxonomy-accordion__icon {
+	width: 28px;
+	height: 28px;
+	position: relative;
+	transition: transform 0.3s ease;
+	background: #f3f4f6;
+	border-radius: 6px;
+}
+
+.rdcfe-taxonomy-accordion__icon::before,
+.rdcfe-taxonomy-accordion__icon::after {
+	content: '';
+	position: absolute;
+	background: #6b7280;
+	transition: all 0.3s ease;
+	border-radius: 1px;
+}
+
+.rdcfe-taxonomy-accordion__icon::before {
+	top: 50%;
+	left: 7px;
+	right: 7px;
+	height: 2px;
+	transform: translateY(-50%);
+}
+
+.rdcfe-taxonomy-accordion__icon::after {
+	left: 50%;
+	top: 7px;
+	bottom: 7px;
+	width: 2px;
+	transform: translateX(-50%);
+}
+
+.rdcfe-taxonomy-accordion--open .rdcfe-taxonomy-accordion__icon {
+	background: rgba(103, 93, 216, 0.1);
+}
+
+.rdcfe-taxonomy-accordion--open .rdcfe-taxonomy-accordion__icon::before,
+.rdcfe-taxonomy-accordion--open .rdcfe-taxonomy-accordion__icon::after {
+	background: #675dd8;
+}
+
+.rdcfe-taxonomy-accordion--open .rdcfe-taxonomy-accordion__icon::after {
+	transform: translateX(-50%) rotate(90deg);
+	opacity: 0;
+}
+
+.rdcfe-taxonomy-accordion__content {
+	padding: 24px;
+	background: #fff;
+	animation: dcfeTaxSlideDown 0.3s ease;
+}
+
+.rdcfe-taxonomy-accordion__content[hidden] {
+	display: none;
+}
+
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+
+/* When blocks (tabs strip / accordions list / standalone fields) are stacked
+ * one after another inside the same taxonomy meta-fields wrapper — e.g. an
+ * author mixed `tab → endpoint → accordion` — give each block breathing
+ * room. The `+` selector targets adjacent siblings only, so the first block
+ * flows flush against the wrapper top and only later blocks get a top gap. */
+.rdcfe-taxonomy-meta-fields > .rdcfe-taxonomy-tabs + .rdcfe-taxonomy-tabs,
+.rdcfe-taxonomy-meta-fields > .rdcfe-taxonomy-tabs + .rdcfe-taxonomy-accordions,
+.rdcfe-taxonomy-meta-fields > .rdcfe-taxonomy-tabs + .rdcfe-taxonomy-fields-container,
+.rdcfe-taxonomy-meta-fields > .rdcfe-taxonomy-accordions + .rdcfe-taxonomy-tabs,
+.rdcfe-taxonomy-meta-fields > .rdcfe-taxonomy-accordions + .rdcfe-taxonomy-accordions,
+.rdcfe-taxonomy-meta-fields > .rdcfe-taxonomy-accordions + .rdcfe-taxonomy-fields-container,
+.rdcfe-taxonomy-meta-fields > .rdcfe-taxonomy-fields-container + .rdcfe-taxonomy-tabs,
+.rdcfe-taxonomy-meta-fields > .rdcfe-taxonomy-fields-container + .rdcfe-taxonomy-accordions {
+	margin-top: 20px;
+}
+
+@keyframes dcfeTaxFadeIn {
+	from { opacity: 0; transform: translateY(-4px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dcfeTaxSlideDown {
+	from { opacity: 0; transform: translateY(-8px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 782px) {
+	.rdcfe-taxonomy-tabs--vertical {
+		flex-direction: column;
+	}
+	
+	.rdcfe-taxonomy-tabs--vertical .rdcfe-taxonomy-tabs__nav {
+		width: 100%;
+		min-width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		border-right: none;
+		border-bottom: 1px solid #e5e7eb;
+		padding: 10px;
+	}
+	
+	.rdcfe-taxonomy-tabs--vertical .rdcfe-taxonomy-tabs__tab {
+		border-left: none;
+		border-bottom: 2px solid transparent;
+		margin: 0;
+		border-radius: 6px;
+	}
+	
+	.rdcfe-taxonomy-tabs--vertical .rdcfe-taxonomy-tabs__tab--active {
+		border-bottom-color: #675dd8;
+		border-left-color: transparent;
+	}
+	
+	.rdcfe-taxonomy-input,
+	.rdcfe-taxonomy-textarea,
+	.rdcfe-taxonomy-select {
+		max-width: 100%;
+	}
+}

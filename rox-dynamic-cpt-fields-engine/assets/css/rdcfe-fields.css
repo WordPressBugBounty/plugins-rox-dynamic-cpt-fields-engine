@@ -1,0 +1,2456 @@
+/**
+ * DCFE Fields - Consolidated Common Styles
+ * 
+ * Common styles for Metaboxes, CPT Meta Fields, and Taxonomy Meta Fields
+ * Theme Color: #675dd8 (Purple)
+ * Author: Ataur Rahman
+ * XS
+ * @package DynamicCPTFieldsEngine
+ */
+
+:root {
+	--rdcfe-primary: #675dd8;
+	--rdcfe-primary-light: #8b82e0;
+	--rdcfe-primary-dark: #5249b8;
+	--rdcfe-primary-bg: #f3f1fc;
+	--rdcfe-primary-bg-hover: #ebe8fa;
+	--rdcfe-primary-border: #c4bef0;
+	--rdcfe-danger: #d63638;
+	--rdcfe-danger-bg: #fcf0f1;
+	--rdcfe-text: #1e1e1e;
+	--rdcfe-text-muted: #646970;
+	--rdcfe-border: #dcdcde;
+	--rdcfe-border-hover: #8c8f94;
+	--rdcfe-bg: #fff;
+	--rdcfe-bg-light: #f6f7f7;
+}
+
+/* ==========================================================================
+   BASE STYLES
+   ========================================================================== */
+
+.rdcfe-meta-box,
+.rdcfe-cpt-meta-fields,
+.rdcfe-taxonomy-meta-fields {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.rdcfe-meta-box {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -10px;
+}
+
+/* ==========================================================================
+   FIELD CONTAINER STYLES
+   ========================================================================== */
+
+.rdcfe-field,
+.rdcfe-cpt-meta-fields .rdcfe-field,
+.rdcfe-taxonomy-field--div {
+	padding: 12px;
+	box-sizing: border-box;
+}
+
+/*
+ * Row-mode taxonomy fields are emitted as <tr><th><td> directly into WP's
+ * native `table.form-table` on term edit pages. Let core form-table styles
+ * own padding/alignment so our rows sit flush with Name/Slug/Description.
+ */
+.rdcfe-taxonomy-field--row > th,
+.rdcfe-taxonomy-field--row > td {
+	box-sizing: border-box;
+}
+
+.rdcfe-taxonomy-field--row > th label {
+	font-weight: 600;
+	font-size: 14px;
+	color: var(--rdcfe-text);
+	display: inline-block;
+}
+
+.rdcfe-field__label,
+.rdcfe-cpt-meta-fields .rdcfe-field__label,
+.rdcfe-taxonomy-field--div .rdcfe-taxonomy-field__label {
+	margin-bottom: 8px;
+}
+
+.rdcfe-field__label label,
+.rdcfe-cpt-meta-fields .rdcfe-field__label label,
+.rdcfe-taxonomy-field--div .rdcfe-taxonomy-field__label label {
+	font-weight: 600;
+	font-size: 13px;
+	color: var(--rdcfe-text);
+	display: block;
+}
+
+.rdcfe-required,
+.rdcfe-taxonomy-required {
+	color: var(--rdcfe-danger);
+	margin-left: 2px;
+}
+
+.rdcfe-field__instructions,
+.rdcfe-cpt-meta-fields .rdcfe-field__instructions,
+.rdcfe-taxonomy-field--div .rdcfe-taxonomy-field__description {
+	margin-top: 8px;
+	color: var(--rdcfe-text-muted);
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+/*
+ * Field group "Display Options" — label & instruction placement.
+ *
+ * Driven by modifier classes added to the meta-box wrapper by
+ * MetaBoxRenderer::render_meta_box():
+ *   .rdcfe-meta-box--label-{top|left}
+ *   .rdcfe-meta-box--instructions-{label|field}
+ *
+ * The DOM order inside .rdcfe-field is always: __label, __input, __instructions.
+ * We use flex/grid + `order` to flip the visual layout without changing markup,
+ * which means every field type benefits without per-type changes.
+ *
+ * Default (label=top, instructions=field): unchanged from baseline.
+ */
+
+/* instructions = "label": instructions appear *between* label and input. */
+.rdcfe-meta-box--instructions-label .rdcfe-field {
+	display: flex;
+	flex-direction: column;
+}
+.rdcfe-meta-box--instructions-label .rdcfe-field__label { order: 1; }
+.rdcfe-meta-box--instructions-label .rdcfe-field__instructions {
+	order: 2;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.rdcfe-meta-box--instructions-label .rdcfe-field__input { order: 3; }
+
+/* label = "left": two-column layout — label column + field column. */
+.rdcfe-meta-box--label-left .rdcfe-field {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	column-gap: 16px;
+	align-items: start;
+}
+.rdcfe-meta-box--label-left .rdcfe-field__label {
+	padding-top: 6px;
+}
+.rdcfe-meta-box--label-left .rdcfe-field__input {
+	min-width: 0;
+}
+
+/* label = left + instructions = field: instructions span below the input. */
+.rdcfe-meta-box--label-left.rdcfe-meta-box--instructions-field .rdcfe-field__instructions {
+	grid-column: 2;
+}
+
+/* label = left + instructions = label: instructions sit under the label
+ * in the same column, while the input occupies its own column on the right. */
+.rdcfe-meta-box--label-left.rdcfe-meta-box--instructions-label .rdcfe-field {
+	grid-template-rows: auto auto;
+}
+.rdcfe-meta-box--label-left.rdcfe-meta-box--instructions-label .rdcfe-field__label {
+	grid-column: 1;
+	grid-row: 1;
+}
+.rdcfe-meta-box--label-left.rdcfe-meta-box--instructions-label .rdcfe-field__instructions {
+	grid-column: 1;
+	grid-row: 2;
+	order: initial;
+	margin-top: 4px;
+}
+.rdcfe-meta-box--label-left.rdcfe-meta-box--instructions-label .rdcfe-field__input {
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	order: initial;
+}
+
+/* Tighten label column on narrow screens. */
+@media (max-width: 782px) {
+	.rdcfe-meta-box--label-left .rdcfe-field {
+		grid-template-columns: 1fr;
+	}
+	.rdcfe-meta-box--label-left .rdcfe-field__label {
+		padding-top: 0;
+	}
+	.rdcfe-meta-box--label-left.rdcfe-meta-box--instructions-label .rdcfe-field__label,
+	.rdcfe-meta-box--label-left.rdcfe-meta-box--instructions-label .rdcfe-field__instructions,
+	.rdcfe-meta-box--label-left.rdcfe-meta-box--instructions-label .rdcfe-field__input {
+		grid-column: 1;
+		grid-row: auto;
+	}
+}
+
+/*
+ * Inside a row-mode TD, the description sits below the input. WP's `.description`
+ * class already styles muted helper text, so we just trim the default top margin
+ * to keep things compact.
+ */
+.rdcfe-taxonomy-field--row .rdcfe-taxonomy-field__description {
+	margin: 6px 0 0;
+}
+
+/* ==========================================================================
+   INPUT STYLES
+   ========================================================================== */
+
+.rdcfe-input,
+.rdcfe-textarea,
+.rdcfe-select,
+.rdcfe-cpt-meta-fields .rdcfe-input,
+.rdcfe-cpt-meta-fields .rdcfe-textarea,
+.rdcfe-cpt-meta-fields .rdcfe-select,
+.rdcfe-taxonomy-input,
+.rdcfe-taxonomy-textarea,
+.rdcfe-taxonomy-select {
+	width: 100%;
+	padding: 10px 14px;
+	font-size: 14px;
+	line-height: 1.5;
+	border: 1px solid var(--rdcfe-border);
+	border-radius: 6px;
+	background: var(--rdcfe-bg);
+	color: var(--rdcfe-text);
+	transition: all 0.2s ease;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.rdcfe-input:hover,
+.rdcfe-textarea:hover,
+.rdcfe-select:hover,
+.rdcfe-cpt-meta-fields .rdcfe-input:hover,
+.rdcfe-cpt-meta-fields .rdcfe-textarea:hover,
+.rdcfe-cpt-meta-fields .rdcfe-select:hover,
+.rdcfe-taxonomy-input:hover,
+.rdcfe-taxonomy-textarea:hover,
+.rdcfe-taxonomy-select:hover {
+	border-color: var(--rdcfe-border-hover);
+}
+
+.rdcfe-input:focus,
+.rdcfe-textarea:focus,
+.rdcfe-select:focus,
+.rdcfe-cpt-meta-fields .rdcfe-input:focus,
+.rdcfe-cpt-meta-fields .rdcfe-textarea:focus,
+.rdcfe-cpt-meta-fields .rdcfe-select:focus,
+.rdcfe-taxonomy-input:focus,
+.rdcfe-taxonomy-textarea:focus,
+.rdcfe-taxonomy-select:focus {
+	border-color: var(--rdcfe-primary);
+	box-shadow: 0 0 0 2px rgba(103, 93, 216, 0.15);
+	outline: none;
+}
+
+.rdcfe-textarea,
+.rdcfe-cpt-meta-fields .rdcfe-textarea,
+.rdcfe-taxonomy-textarea {
+	min-height: 100px;
+	resize: vertical;
+}
+
+/* Input Group */
+.rdcfe-input-group {
+	display: flex;
+	align-items: center;
+}
+
+.rdcfe-input-group__prepend,
+.rdcfe-input-group__append {
+	padding: 10px 14px;
+	background: var(--rdcfe-bg-light);
+	border: 1px solid var(--rdcfe-border);
+	color: var(--rdcfe-text-muted);
+	font-size: 14px;
+}
+
+.rdcfe-input-group__prepend {
+	border-right: 0;
+	border-radius: 6px 0 0 6px;
+}
+
+.rdcfe-input-group__append {
+	border-left: 0;
+	border-radius: 0 6px 6px 0;
+}
+
+.rdcfe-input-group .rdcfe-input {
+	border-radius: 0;
+}
+
+/* ==========================================================================
+   SELECT STYLES
+   ========================================================================== */
+
+.rdcfe-select:not(.rdcfe-select--multiple),
+.rdcfe-cpt-meta-fields .rdcfe-select:not(.rdcfe-select--multiple),
+.rdcfe-taxonomy-select:not(.rdcfe-taxonomy-select--multiple) {
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23646970' d='M6 8.825L1.175 4 2.238 2.938 6 6.7l3.763-3.762L10.825 4z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 12px center;
+	padding-right: 36px;
+	height: 44px;
+}
+
+.rdcfe-select--multiple,
+.rdcfe-cpt-meta-fields .rdcfe-select--multiple,
+.rdcfe-taxonomy-select--multiple {
+	width: 100% !important;
+}
+
+/* Select2 Custom Styles */
+.rdcfe-meta-box .select2-container,
+.rdcfe-cpt-meta-fields .select2-container,
+.rdcfe-taxonomy-meta-fields .select2-container {
+	width: 100% !important;
+}
+
+.rdcfe-meta-box .select2-container--default .select2-selection--multiple,
+.rdcfe-cpt-meta-fields .select2-container--default .select2-selection--multiple,
+.rdcfe-taxonomy-meta-fields .select2-container--default .select2-selection--multiple {
+	border: 1px solid var(--rdcfe-border);
+	border-radius: 6px;
+	min-height: 44px;
+	padding: 0;
+	background: var(--rdcfe-bg);
+	transition: all 0.2s ease;
+}
+.rdcfe-meta-box .select2-container--default .select2-selection--multiple li{
+	margin-bottom: 0;
+}
+
+.rdcfe-meta-box .select2-container--default.select2-container--focus .select2-selection--multiple,
+.rdcfe-cpt-meta-fields .select2-container--default.select2-container--focus .select2-selection--multiple,
+.rdcfe-taxonomy-meta-fields .select2-container--default.select2-container--focus .select2-selection--multiple {
+	border-color: var(--rdcfe-primary);
+	box-shadow: 0 0 0 2px rgba(103, 93, 216, 0.15);
+	outline: none;
+}
+
+.rdcfe-meta-box .select2-container--default .select2-selection--multiple .select2-selection__choice,
+.rdcfe-cpt-meta-fields .select2-container--default .select2-selection--multiple .select2-selection__choice,
+.rdcfe-taxonomy-meta-fields .select2-container--default .select2-selection--multiple .select2-selection__choice {
+	background: var(--rdcfe-primary-bg);
+	border: 1px solid var(--rdcfe-primary-border);
+	border-radius: 4px;
+	padding: 4px 8px 4px 8px;
+	margin: 4px 4px 0px 0;
+	font-size: 13px;
+	color: var(--rdcfe-primary-dark);
+	position: relative;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-color: var(--rdcfe-primary) !important;
+}
+
+/* ==========================================================================
+   CHECKBOX & RADIO STYLES
+   ========================================================================== */
+
+.rdcfe-checkbox-group,
+.rdcfe-radio-group,
+.rdcfe-cpt-meta-fields .rdcfe-checkbox-group,
+.rdcfe-cpt-meta-fields .rdcfe-radio-group,
+.rdcfe-taxonomy-checkbox-group,
+.rdcfe-taxonomy-radio-group {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.rdcfe-checkbox-group--horizontal,
+.rdcfe-radio-group--horizontal,
+.rdcfe-cpt-meta-fields .rdcfe-checkbox-group--horizontal,
+.rdcfe-cpt-meta-fields .rdcfe-radio-group--horizontal,
+.rdcfe-taxonomy-checkbox-group--horizontal,
+.rdcfe-taxonomy-radio-group--horizontal {
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
+.rdcfe-checkbox-item,
+.rdcfe-radio-item,
+.rdcfe-cpt-meta-fields .rdcfe-checkbox-item,
+.rdcfe-cpt-meta-fields .rdcfe-radio-item,
+.rdcfe-taxonomy-checkbox-group .rdcfe-taxonomy-checkbox-item,
+.rdcfe-taxonomy-radio-group .rdcfe-taxonomy-radio-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	padding: 10px 14px;
+	border-radius: 6px;
+	border: 1px solid var(--rdcfe-border);
+	background: var(--rdcfe-bg);
+	transition: all 0.2s ease;
+}
+
+.rdcfe-checkbox-item:hover,
+.rdcfe-radio-item:hover,
+.rdcfe-cpt-meta-fields .rdcfe-checkbox-item:hover,
+.rdcfe-cpt-meta-fields .rdcfe-radio-item:hover,
+.rdcfe-taxonomy-checkbox-item:hover,
+.rdcfe-taxonomy-radio-item:hover {
+	background: var(--rdcfe-bg-light);
+	border-color: var(--rdcfe-primary-border);
+}
+
+.rdcfe-checkbox-item:has(input:checked),
+.rdcfe-radio-item:has(input:checked),
+.rdcfe-cpt-meta-fields .rdcfe-checkbox-item:has(input:checked),
+.rdcfe-cpt-meta-fields .rdcfe-radio-item:has(input:checked),
+.rdcfe-taxonomy-checkbox-item:has(input:checked),
+.rdcfe-taxonomy-radio-item:has(input:checked) {
+	background: var(--rdcfe-primary-bg);
+	border-color: var(--rdcfe-primary-border);
+}
+
+.rdcfe-checkbox-item input:checked + span,
+.rdcfe-radio-item input:checked + span,
+.rdcfe-taxonomy-checkbox-item input:checked + .rdcfe-taxonomy-checkbox-label,
+.rdcfe-taxonomy-radio-item input:checked + .rdcfe-taxonomy-radio-label {
+	color: var(--rdcfe-primary);
+	font-weight: 500;
+}
+
+/* ==========================================================================
+   TOGGLE STYLES
+   ========================================================================== */
+
+.rdcfe-toggle,
+.rdcfe-cpt-meta-fields .rdcfe-toggle,
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-toggle {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+}
+
+.rdcfe-toggle input[type="hidden"],
+.rdcfe-cpt-meta-fields .rdcfe-toggle input[type="hidden"],
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-toggle input[type="hidden"] {
+	display: none !important;
+	position: absolute !important;
+	visibility: hidden !important;
+}
+
+.rdcfe-toggle__input,
+.rdcfe-cpt-meta-fields .rdcfe-toggle__input,
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-toggle__input {
+	position: absolute !important;
+	opacity: 0 !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+
+.rdcfe-toggle__slider,
+.rdcfe-cpt-meta-fields .rdcfe-toggle__slider,
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-toggle__slider {
+	width: 48px;
+	height: 26px;
+	background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+	border-radius: 13px;
+	position: relative;
+	transition: all 0.3s ease;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+	flex-shrink: 0;
+	display: inline-block;
+}
+
+.rdcfe-toggle__slider::after,
+.rdcfe-cpt-meta-fields .rdcfe-toggle__slider::after,
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-toggle__slider::after {
+	content: '';
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Toggle Checked States */
+.rdcfe-toggle__input:checked ~ .rdcfe-toggle__slider,
+.rdcfe-cpt-meta-fields .rdcfe-toggle__input:checked ~ .rdcfe-toggle__slider,
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-toggle__input:checked ~ .rdcfe-taxonomy-toggle__slider {
+	background: linear-gradient(135deg, #8b82e0 0%, #675dd8 100%);
+}
+
+.rdcfe-toggle__input:checked ~ .rdcfe-toggle__slider::after,
+.rdcfe-cpt-meta-fields .rdcfe-toggle__input:checked ~ .rdcfe-toggle__slider::after,
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-toggle__input:checked ~ .rdcfe-taxonomy-toggle__slider::after {
+	left: 25px;
+}
+
+/* Toggle Labels */
+.rdcfe-toggle__labels,
+.rdcfe-cpt-meta-fields .rdcfe-toggle__labels,
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-toggle__labels {
+	margin-left: 12px;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.rdcfe-toggle__on,
+.rdcfe-toggle__off,
+.rdcfe-cpt-meta-fields .rdcfe-toggle__on,
+.rdcfe-cpt-meta-fields .rdcfe-toggle__off,
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-toggle__on,
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-toggle__off {
+	display: none;
+}
+
+.rdcfe-toggle__input:checked ~ .rdcfe-toggle__labels .rdcfe-toggle__on,
+.rdcfe-cpt-meta-fields .rdcfe-toggle__input:checked ~ .rdcfe-toggle__labels .rdcfe-toggle__on,
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-toggle__input:checked ~ .rdcfe-taxonomy-toggle__labels .rdcfe-taxonomy-toggle__on {
+	display: inline;
+	color: var(--rdcfe-primary);
+}
+
+.rdcfe-toggle__input:not(:checked) ~ .rdcfe-toggle__labels .rdcfe-toggle__off,
+.rdcfe-cpt-meta-fields .rdcfe-toggle__input:not(:checked) ~ .rdcfe-toggle__labels .rdcfe-toggle__off,
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-toggle__input:not(:checked) ~ .rdcfe-taxonomy-toggle__labels .rdcfe-taxonomy-toggle__off {
+	display: inline;
+	color: var(--rdcfe-text-muted);
+}
+
+/* ==========================================================================
+   DATE/TIME FIELD STYLES
+   ========================================================================== */
+
+.rdcfe-date-wrapper,
+.rdcfe-time-wrapper,
+.rdcfe-datetime-wrapper,
+.rdcfe-taxonomy-date-wrapper,
+.rdcfe-taxonomy-datetime-wrapper {
+	position: relative;
+	display: inline-block;
+	max-width: 220px;
+}
+
+.rdcfe-datetime-wrapper,
+.rdcfe-taxonomy-datetime-wrapper {
+	max-width: 280px;
+}
+
+.rdcfe-input--date,
+.rdcfe-input--time,
+.rdcfe-input--datetime,
+.rdcfe-taxonomy-input--date,
+.rdcfe-taxonomy-input--time,
+.rdcfe-taxonomy-input--datetime {
+	width: 100%;
+	padding: 10px 40px 10px 14px;
+	cursor: pointer;
+}
+
+.rdcfe-date-icon,
+.rdcfe-time-icon,
+.rdcfe-datetime-icon,
+.rdcfe-taxonomy-date-icon {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--rdcfe-text-muted);
+	pointer-events: none;
+	font-size: 18px;
+}
+
+/* ==========================================================================
+   JQUERY UI DATEPICKER STYLES
+   ========================================================================== */
+
+.rdcfe-datepicker-popup,
+.rdcfe-taxonomy-datepicker-popup {
+	font-size: 13px;
+	z-index: 100001 !important;
+}
+
+.rdcfe-datepicker-popup .ui-datepicker-header,
+.rdcfe-taxonomy-datepicker-popup .ui-datepicker-header {
+	background: linear-gradient(135deg, #8b82e0 0%, #675dd8 100%);
+	border-color: var(--rdcfe-primary);
+}
+
+.rdcfe-datepicker-popup .ui-datepicker-title,
+.rdcfe-taxonomy-datepicker-popup .ui-datepicker-title {
+	color: #fff;
+}
+
+.rdcfe-datepicker-popup .ui-datepicker-prev,
+.rdcfe-datepicker-popup .ui-datepicker-next,
+.rdcfe-taxonomy-datepicker-popup .ui-datepicker-prev,
+.rdcfe-taxonomy-datepicker-popup .ui-datepicker-next {
+	top: 6px;
+}
+
+.rdcfe-datepicker-popup .ui-state-highlight,
+.rdcfe-taxonomy-datepicker-popup .ui-state-highlight {
+	background: var(--rdcfe-primary-bg);
+	border-color: var(--rdcfe-primary);
+}
+
+.rdcfe-datepicker-popup .ui-state-active,
+.rdcfe-taxonomy-datepicker-popup .ui-state-active {
+	background: linear-gradient(135deg, #8b82e0 0%, #675dd8 100%);
+	border-color: var(--rdcfe-primary);
+	color: #fff;
+}
+
+/* ==========================================================================
+   COLOR PICKER STYLES
+   ========================================================================== */
+
+.rdcfe-field--color .rdcfe-field__input,
+.rdcfe-cpt-meta-fields .rdcfe-color-wrapper,
+.rdcfe-taxonomy-meta-fields .rdcfe-taxonomy-color-wrapper {
+	overflow: visible;
+}
+
+.rdcfe-field--color .wp-picker-container,
+.rdcfe-cpt-meta-fields .wp-picker-container,
+.rdcfe-taxonomy-meta-fields .wp-picker-container {
+	display: inline-block;
+}
+
+.rdcfe-field--color .wp-picker-container .wp-color-result,
+.rdcfe-cpt-meta-fields .wp-color-result,
+.rdcfe-taxonomy-meta-fields .wp-color-result {
+	margin: 0 6px 0 0;
+}
+
+/* ==========================================================================
+   EMAIL & URL INPUT STYLES
+   ========================================================================== */
+
+.rdcfe-input--email,
+.rdcfe-input--url,
+.rdcfe-taxonomy-input--email,
+.rdcfe-taxonomy-input--url {
+	max-width: 400px;
+}
+
+/* ==========================================================================
+   IMAGE & FILE FIELD STYLES
+   ========================================================================== */
+
+.rdcfe-image-field,
+.rdcfe-file-field,
+.rdcfe-cpt-meta-fields .rdcfe-image-field,
+.rdcfe-cpt-meta-fields .rdcfe-file-field,
+.rdcfe-taxonomy-image-field,
+.rdcfe-taxonomy-file-field {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.rdcfe-image-field__preview-wrapper,
+.rdcfe-cpt-meta-fields .rdcfe-image-field__preview-wrapper,
+.rdcfe-taxonomy-image-field__preview-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+.rdcfe-image-field__preview img,
+.rdcfe-cpt-meta-fields .rdcfe-image-field__preview img,
+.rdcfe-taxonomy-image-field__preview img {
+	max-width: 150px;
+	height: auto;
+	border: 2px solid var(--rdcfe-border);
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	display: block;
+}
+
+/* Scoped to the legacy `__preview-wrapper` overlay markup so the absolute
+   positioning doesn't bleed into the new in-buttons "Remove/Clear All"
+   button used by the modern `ImageField::render()` output. */
+.rdcfe-image-field__preview-wrapper .rdcfe-image-field__remove,
+.rdcfe-cpt-meta-fields .rdcfe-image-field__preview-wrapper .rdcfe-image-field__remove,
+.rdcfe-taxonomy-image-field__preview-wrapper .rdcfe-taxonomy-image-field__remove {
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	width: 26px;
+	height: 26px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+	color: #fff;
+	border-radius: 50%;
+	text-decoration: none;
+	box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
+	transition: all 0.2s ease;
+}
+
+.rdcfe-image-field__preview-wrapper .rdcfe-image-field__remove:hover,
+.rdcfe-cpt-meta-fields .rdcfe-image-field__preview-wrapper .rdcfe-image-field__remove:hover,
+.rdcfe-taxonomy-image-field__preview-wrapper .rdcfe-taxonomy-image-field__remove:hover {
+	transform: scale(1.1);
+	color: #fff;
+}
+
+/* ----- Multi-image (Image field with `multiple: true`) thumbnail grid. */
+.rdcfe-image-field--multiple .rdcfe-image-field__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat( auto-fill, minmax( 110px, 1fr ) );
+	gap: 10px;
+	width: 100%;
+	max-width: 720px;
+}
+
+.rdcfe-image-field--multiple .rdcfe-image-field__item {
+	position: relative;
+	margin: 0;
+	border: 1px solid var(--rdcfe-border);
+	border-radius: 8px;
+	overflow: hidden;
+	aspect-ratio: 1 / 1;
+	background: var(--rdcfe-bg-light, #f3f4f6);
+	box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.rdcfe-image-field--multiple .rdcfe-image-field__item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	max-width: none;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.rdcfe-image-field--multiple .rdcfe-image-field__item-remove {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	width: 22px;
+	height: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(220, 38, 38, 0.95);
+	color: #fff;
+	border: 0;
+	border-radius: 50%;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.15s ease, transform 0.15s ease;
+	padding: 0;
+	line-height: 1;
+}
+
+.rdcfe-image-field--multiple .rdcfe-image-field__item:hover .rdcfe-image-field__item-remove,
+.rdcfe-image-field--multiple .rdcfe-image-field__item-remove:focus {
+	opacity: 1;
+}
+
+.rdcfe-image-field--multiple .rdcfe-image-field__item-remove:hover {
+	transform: scale(1.1);
+}
+
+.rdcfe-image-field--multiple .rdcfe-image-field__item-remove .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+	line-height: 1;
+}
+
+.rdcfe-file-field__info,
+.rdcfe-cpt-meta-fields .rdcfe-file-field__info,
+.rdcfe-taxonomy-file-field__info {
+	margin-bottom: 8px;
+}
+
+.rdcfe-file-field__info a,
+.rdcfe-taxonomy-file-field__info a {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 16px;
+	background: var(--rdcfe-bg-light);
+	border-radius: 6px;
+	color: var(--rdcfe-text);
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.2s ease;
+}
+
+.rdcfe-file-field__info a:hover,
+.rdcfe-taxonomy-file-field__info a:hover {
+	background: var(--rdcfe-primary-bg);
+	color: var(--rdcfe-primary);
+}
+
+.rdcfe-file-field__buttons,
+.rdcfe-cpt-meta-fields .rdcfe-file-field__buttons,
+.rdcfe-taxonomy-file-field__buttons {
+	display: flex;
+	gap: 8px;
+}
+
+/* ==========================================================================
+   BUTTON STYLES
+   ========================================================================== */
+
+.rdcfe-btn,
+.rdcfe-cpt-meta-fields .rdcfe-btn,
+.rdcfe-taxonomy-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 18px;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.4;
+	text-decoration: none;
+	color: var(--rdcfe-primary);
+	background: var(--rdcfe-primary-bg);
+	border: 1px solid var(--rdcfe-primary-border);
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.rdcfe-btn:hover,
+.rdcfe-cpt-meta-fields .rdcfe-btn:hover,
+.rdcfe-taxonomy-btn:hover {
+	background: var(--rdcfe-primary-bg-hover);
+	border-color: var(--rdcfe-primary-light);
+	color: var(--rdcfe-primary-dark);
+	text-decoration: none;
+}
+
+.rdcfe-btn:focus,
+.rdcfe-cpt-meta-fields .rdcfe-btn:focus,
+.rdcfe-taxonomy-btn:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px var(--rdcfe-primary);
+}
+
+.rdcfe-btn--danger,
+.rdcfe-cpt-meta-fields .rdcfe-btn--danger,
+.rdcfe-taxonomy-btn--danger {
+	color: var(--rdcfe-danger);
+	background: var(--rdcfe-danger-bg);
+	border-color: #fca5a5;
+}
+
+.rdcfe-btn--danger:hover,
+.rdcfe-cpt-meta-fields .rdcfe-btn--danger:hover,
+.rdcfe-taxonomy-btn--danger:hover {
+	background: #fee2e2;
+	border-color: #f87171;
+	color: #b91c1c;
+}
+
+/* ==========================================================================
+   WYSIWYG EDITOR STYLES
+   ========================================================================== */
+
+.rdcfe-wysiwyg-wrapper,
+.rdcfe-field--wysiwyg .rdcfe-field__input,
+.rdcfe-taxonomy-field .wp-editor-wrap {
+	max-width: 100%;
+}
+
+.rdcfe-wysiwyg-wrapper .wp-editor-wrap,
+.rdcfe-field .wp-editor-container,
+.rdcfe-taxonomy-field .wp-editor-container {
+	border: 1px solid var(--rdcfe-border);
+	border-radius: 6px;
+}
+
+.rdcfe-field .wp-editor-container:focus-within,
+.rdcfe-taxonomy-field .wp-editor-container:focus-within {
+	border-color: var(--rdcfe-primary);
+	box-shadow: 0 0 0 1px var(--rdcfe-primary);
+}
+
+/* ==========================================================================
+   VALIDATION ERROR STYLES
+   ========================================================================== */
+
+.rdcfe-field--error .rdcfe-input,
+.rdcfe-field--error .rdcfe-textarea,
+.rdcfe-field--error .rdcfe-select,
+.rdcfe-input--error,
+.rdcfe-cpt-meta-fields .rdcfe-field--error .rdcfe-input,
+.rdcfe-cpt-meta-fields .rdcfe-field--error .rdcfe-textarea,
+.rdcfe-cpt-meta-fields .rdcfe-field--error .rdcfe-select,
+.rdcfe-cpt-meta-fields .rdcfe-input--error {
+	border-color: var(--rdcfe-danger) !important;
+	background-color: var(--rdcfe-danger-bg);
+	box-shadow: 0 0 0 2px rgba(214, 54, 56, 0.15) !important;
+}
+
+.rdcfe-field--error .rdcfe-input:focus,
+.rdcfe-field--error .rdcfe-textarea:focus,
+.rdcfe-field--error .rdcfe-select:focus,
+.rdcfe-cpt-meta-fields .rdcfe-field--error .rdcfe-input:focus,
+.rdcfe-cpt-meta-fields .rdcfe-field--error .rdcfe-textarea:focus,
+.rdcfe-cpt-meta-fields .rdcfe-field--error .rdcfe-select:focus {
+	border-color: var(--rdcfe-danger) !important;
+	box-shadow: 0 0 0 3px rgba(214, 54, 56, 0.2) !important;
+}
+
+.rdcfe-field__error,
+.rdcfe-cpt-meta-fields .rdcfe-field__error {
+	margin-top: 6px;
+	padding: 8px 12px;
+	background: linear-gradient(135deg, #fcf0f1 0%, #fff5f5 100%);
+	border: 1px solid #f0b8b8;
+	border-left: 3px solid var(--rdcfe-danger);
+	border-radius: 4px;
+	color: #8a1f1f;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.4;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	animation: rdcfe-shake 0.4s ease;
+}
+
+.rdcfe-field__error::before,
+.rdcfe-cpt-meta-fields .rdcfe-field__error::before {
+	content: '';
+	width: 16px;
+	height: 16px;
+	flex-shrink: 0;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d63638'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z'/%3E%3C/svg%3E");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.rdcfe-field--error .rdcfe-field__error {
+	display: flex;
+}
+
+.rdcfe-field--error .rdcfe-field__label label,
+.rdcfe-cpt-meta-fields .rdcfe-field--error .rdcfe-field__label label {
+	color: #8a1f1f;
+}
+
+@keyframes rdcfe-shake {
+	0%, 100% { transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-3px); }
+	20%, 40%, 60%, 80% { transform: translateX(3px); }
+}
+
+/* ==========================================================================
+   RESPONSIVE STYLES
+   ========================================================================== */
+
+@media screen and (max-width: 782px) {
+	.rdcfe-date-wrapper,
+	.rdcfe-time-wrapper,
+	.rdcfe-datetime-wrapper,
+	.rdcfe-taxonomy-date-wrapper,
+	.rdcfe-taxonomy-datetime-wrapper {
+		max-width: 100%;
+	}
+	
+	.rdcfe-input--email,
+	.rdcfe-input--url,
+	.rdcfe-taxonomy-input--email,
+	.rdcfe-taxonomy-input--url {
+		max-width: 100%;
+	}
+	
+	.rdcfe-taxonomy-input,
+	.rdcfe-taxonomy-textarea,
+	.rdcfe-taxonomy-select {
+		max-width: 100%;
+	}
+}
+
+/* =========================================================================
+ * DateTime Field Styles
+ * ========================================================================= */
+.rdcfe-datetime-wrapper {
+	display: inline-block;
+	max-width: 280px;
+}
+
+.rdcfe-input--datetime {
+	width: 100%;
+	padding: 6px 10px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 1.4;
+	background: #fff;
+	color: #2c3338;
+}
+
+.rdcfe-input--datetime:focus {
+	border-color: #675dd8;
+	box-shadow: 0 0 0 1px #675dd8;
+	outline: none;
+}
+
+/* =========================================================================
+ * Time Field Styles
+ * ========================================================================= */
+.rdcfe-input--time {
+	width: 100%;
+	max-width: 150px;
+	padding: 6px 10px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 1.4;
+	background: #fff;
+	color: #2c3338;
+}
+
+.rdcfe-input--time:focus {
+	border-color: #675dd8;
+	box-shadow: 0 0 0 1px #675dd8;
+	outline: none;
+}
+
+/* =========================================================================
+ * WYSIWYG Field Styles
+ * ========================================================================= */
+.rdcfe-field--wysiwyg .wp-editor-container,
+.rdcfe-field .wp-editor-container,
+.rdcfe-taxonomy-field .wp-editor-container {
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+}
+
+.rdcfe-field--wysiwyg .wp-editor-container:focus-within,
+.rdcfe-field .wp-editor-container:focus-within {
+	border-color: #675dd8;
+	box-shadow: 0 0 0 1px #675dd8;
+}
+
+.rdcfe-field--wysiwyg .mce-tinymce {
+	box-shadow: none;
+}
+
+.rdcfe-field--wysiwyg .wp-editor-tabs {
+	float: left;
+}
+
+/* =========================================================================
+ * Options Page — Modern Dashboard Layout
+ *
+ * Provides a card-based, dashboard-style chrome around the field area while
+ * the fields themselves reuse the same `.rdcfe-meta-box.rdcfe-cpt-meta-fields`
+ * wrapper used by metaboxes and CPT meta fields, so design stays consistent
+ * across all surfaces.
+ * ========================================================================= */
+
+.rdcfe-options-page {
+	max-width: 1200px;
+	margin: 20px 20px 40px 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Hide the default WP admin .wrap > h1 — we render our own header card. */
+.rdcfe-options-page > h1:first-of-type:not(.rdcfe-options-page__title) {
+	display: none;
+}
+
+/*
+ * Redirect flash notices must stay readable regardless of WP admin theme tokens.
+ * Explicit colors avoid inheriting muted / light text on a white surface.
+ */
+.rdcfe-options-page .notice {
+	margin: 0 0 20px 0;
+	border-radius: 8px;
+	box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+	border: 1px solid #dcdcde;
+	background: #fff;
+	color: var(--rdcfe-text);
+	box-sizing: border-box;
+	position: relative;
+	padding: 12px 16px;
+}
+
+/* WP core scopes dismiss padding under .wp-core-ui; align + space the X button reliably. */
+.rdcfe-options-page .notice.is-dismissible {
+	padding-right: 48px;
+}
+
+.rdcfe-options-page .notice p {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.55;
+	color: var(--rdcfe-text);
+	font-weight: 500;
+}
+
+.rdcfe-options-page .notice-dismiss {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin: 0;
+	padding: 6px;
+	border: none;
+	background: transparent;
+	color: #646970;
+	cursor: pointer;
+	border-radius: 4px;
+	transform: translateY(-50%);
+	line-height: 1;
+}
+
+.rdcfe-options-page .notice-dismiss:hover,
+.rdcfe-options-page .notice-dismiss:active,
+.rdcfe-options-page .notice-dismiss:focus {
+	color: #d63638;
+	background: rgba(0, 0, 0, 0.04);
+}
+
+.rdcfe-options-page .notice-dismiss:focus {
+	box-shadow: 0 0 0 2px #2271b1;
+	outline: 2px solid transparent;
+}
+
+body.rtl .rdcfe-options-page .notice.is-dismissible {
+	padding-right: 16px;
+	padding-left: 48px;
+}
+
+body.rtl .rdcfe-options-page .notice-dismiss {
+	right: auto;
+	left: 10px;
+}
+
+.rdcfe-options-page .notice-dismiss:hover:before,
+.rdcfe-options-page .notice-dismiss:active:before,
+.rdcfe-options-page .notice-dismiss:focus:before {
+	color: inherit;
+}
+
+.rdcfe-options-page .notice.notice-success {
+	border-left-width: 4px;
+	border-left-color: #00a32a;
+	background: #edfaef;
+}
+
+.rdcfe-options-page .notice.notice-success p {
+	color: #0e4b1f;
+}
+
+.rdcfe-options-page .notice.notice-error {
+	border-left-width: 4px;
+	border-left-color: var(--rdcfe-danger);
+	background: var(--rdcfe-danger-bg);
+}
+
+.rdcfe-options-page .notice.notice-error p {
+	color: #6f1315;
+}
+
+/* -------------------------------------------------------------------------
+ * Header Card (simple surface — aligns with WP admin gray / card UI)
+ * ------------------------------------------------------------------------- */
+
+.rdcfe-options-page__header {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	padding: 22px 26px;
+	margin: 0 0 24px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 12px;
+	color: var(--rdcfe-text);
+	box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05), 0 1px 3px rgba(15, 23, 42, 0.04);
+	position: relative;
+	overflow: visible;
+}
+
+.rdcfe-options-page__header-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 56px;
+	height: 56px;
+	background: var(--rdcfe-primary-bg);
+	border: 1px solid var(--rdcfe-primary-border);
+	border-radius: 12px;
+	flex-shrink: 0;
+	box-shadow: none;
+}
+
+.rdcfe-options-page__header-icon .dashicons {
+	font-size: 28px;
+	width: 28px;
+	height: 28px;
+	color: var(--rdcfe-primary);
+}
+
+.rdcfe-options-page__header-text {
+	flex: 1;
+	min-width: 0;
+}
+
+.rdcfe-options-page__title {
+	margin: 0 0 4px;
+	padding: 0;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.25;
+	color: var(--rdcfe-text);
+	letter-spacing: -0.01em;
+}
+
+.rdcfe-options-page__subtitle {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	color: var(--rdcfe-text-muted);
+	line-height: 1.5;
+}
+
+/* -------------------------------------------------------------------------
+ * Section Card
+ * ------------------------------------------------------------------------- */
+
+.rdcfe-options-section {
+	background: #fff;
+	border: 1px solid #e2e4e7;
+	border-radius: 12px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+	overflow: hidden;
+	transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.rdcfe-options-section:hover {
+	box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+.rdcfe-options-section__title {
+	margin: 0;
+	padding: 16px 22px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.4;
+	color: var(--rdcfe-text);
+	background: linear-gradient(180deg, #fafafa 0%, #f5f5f7 100%);
+	border-bottom: 1px solid #e2e4e7;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.rdcfe-options-section__title::before {
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 18px;
+	border-radius: 2px;
+	background: linear-gradient(180deg, var(--rdcfe-primary-light) 0%, var(--rdcfe-primary) 100%);
+	flex-shrink: 0;
+}
+
+.rdcfe-options-section__content {
+	padding: 0;
+	background: #fff;
+}
+
+/* The inner field wrapper (.rdcfe-meta-box.rdcfe-cpt-meta-fields) already has
+ * its own padding from rdcfe-cpt-layout.css. We only need a small reset so the
+ * options-page section card hugs the field grid cleanly. */
+.rdcfe-options-section .rdcfe-meta-box.rdcfe-cpt-meta-fields.rdcfe-options-fields {
+	padding: 8px 14px;
+	background: transparent;
+}
+
+.rdcfe-options-section .rdcfe-options-fields .rdcfe-fields-container {
+	padding: 8px 0;
+}
+
+/* Bare variant — used when the section wraps a tabs or accordions layout.
+ * The `.rdcfe-tabs` / `.rdcfe-accordions` components already render their
+ * own bordered card surface; double-stacking the section card chrome on top
+ * would produce a visible double border. We strip the section's frame but
+ * keep the title bar + spacing so authors still get a labelled section. */
+.rdcfe-options-section.rdcfe-options-section--bare {
+	background: transparent;
+	border: 0;
+	box-shadow: none;
+	border-radius: 0;
+	overflow: visible;
+}
+
+.rdcfe-options-section.rdcfe-options-section--bare:hover {
+	box-shadow: none;
+}
+
+.rdcfe-options-section.rdcfe-options-section--bare > .rdcfe-options-section__title {
+	background: transparent;
+	border: 0;
+	padding: 4px 4px 14px;
+	font-size: 15px;
+	color: var(--rdcfe-text);
+}
+
+.rdcfe-options-section.rdcfe-options-section--bare > .rdcfe-options-section__title::before {
+	height: 16px;
+}
+
+.rdcfe-options-section.rdcfe-options-section--bare > .rdcfe-options-section__content {
+	background: transparent;
+}
+
+/* When bare, the meta-box wrapper has no surrounding card, so its own
+ * padding can drop too — the inner `.rdcfe-tabs` / `.rdcfe-accordions`
+ * provide all the visible chrome. */
+.rdcfe-options-section.rdcfe-options-section--bare .rdcfe-meta-box.rdcfe-cpt-meta-fields.rdcfe-options-fields {
+	padding: 0;
+}
+
+.rdcfe-options-section.rdcfe-options-section--bare .rdcfe-options-fields .rdcfe-fields-container {
+	padding: 0;
+}
+
+/* Inside a tabs panel / accordion content, restore the standard tab/accordion
+ * inner padding for the field grid so labels/inputs aren't flush to the edge. */
+.rdcfe-options-section--bare .rdcfe-tabs__panel .rdcfe-fields-container,
+.rdcfe-options-section--bare .rdcfe-accordion__content .rdcfe-fields-container {
+	padding: 0;
+}
+
+/* When multiple blocks (tab strip + accordion list + standalone fields) are
+ * stacked inside the same bare section, give them breathing room. The
+ * `+` selector targets adjacent siblings only, so the first block flows
+ * flush against the section title without a gap. */
+.rdcfe-options-section--bare .rdcfe-options-fields > .rdcfe-tabs + .rdcfe-tabs,
+.rdcfe-options-section--bare .rdcfe-options-fields > .rdcfe-tabs + .rdcfe-accordions,
+.rdcfe-options-section--bare .rdcfe-options-fields > .rdcfe-tabs + .rdcfe-fields-container,
+.rdcfe-options-section--bare .rdcfe-options-fields > .rdcfe-accordions + .rdcfe-tabs,
+.rdcfe-options-section--bare .rdcfe-options-fields > .rdcfe-accordions + .rdcfe-accordions,
+.rdcfe-options-section--bare .rdcfe-options-fields > .rdcfe-accordions + .rdcfe-fields-container,
+.rdcfe-options-section--bare .rdcfe-options-fields > .rdcfe-fields-container + .rdcfe-tabs,
+.rdcfe-options-section--bare .rdcfe-options-fields > .rdcfe-fields-container + .rdcfe-accordions,
+.rdcfe-options-section--bare .rdcfe-options-fields > .rdcfe-fields-container + .rdcfe-fields-container {
+	margin-top: 20px;
+}
+
+/* The standalone-fields wrapper inside a bare section shouldn't draw the
+ * separator border that CPT layout uses to break it from following content
+ * — on options pages each block is already a discrete unit. */
+.rdcfe-options-section--bare .rdcfe-options-fields > .rdcfe-fields-container.rdcfe-standalone-fields {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+/* -------------------------------------------------------------------------
+ * Submit Bar
+ * ------------------------------------------------------------------------- */
+
+.rdcfe-options-page__submit {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 12px;
+	padding: 16px 22px;
+	margin: 0 0 20px;
+	background: #fff;
+	border: 1px solid #e2e4e7;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+	position: sticky;
+	bottom: 12px;
+	z-index: 5;
+}
+
+.rdcfe-options-page__submit .button.rdcfe-options-page__submit-btn,
+.rdcfe-options-page__submit .button-primary.rdcfe-options-page__submit-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	min-height: 40px;
+	padding: 0 22px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #fff;
+	background: linear-gradient(135deg, #675dd8 0%, #8b82e0 100%);
+	border: 1px solid var(--rdcfe-primary-dark);
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(103, 93, 216, 0.28);
+	text-shadow: none;
+	transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.rdcfe-options-page__submit .button.rdcfe-options-page__submit-btn:hover,
+.rdcfe-options-page__submit .button-primary.rdcfe-options-page__submit-btn:hover {
+	background: linear-gradient(135deg, #5249b8 0%, #7e74dd 100%);
+	transform: translateY(-1px);
+	box-shadow: 0 6px 16px rgba(103, 93, 216, 0.36);
+}
+
+.rdcfe-options-page__submit .button.rdcfe-options-page__submit-btn:focus,
+.rdcfe-options-page__submit .button-primary.rdcfe-options-page__submit-btn:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(103, 93, 216, 0.25), 0 4px 12px rgba(103, 93, 216, 0.28);
+}
+
+.rdcfe-options-page__submit .button.rdcfe-options-page__submit-btn:active,
+.rdcfe-options-page__submit .button-primary.rdcfe-options-page__submit-btn:active {
+	transform: translateY(0);
+	box-shadow: 0 2px 6px rgba(103, 93, 216, 0.3);
+}
+
+/* -------------------------------------------------------------------------
+ * Empty State
+ * ------------------------------------------------------------------------- */
+
+.rdcfe-options-page__empty {
+	text-align: center;
+	padding: 64px 24px;
+	background: #fff;
+	border: 1px solid #e2e4e7;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.rdcfe-options-page__empty-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 76px;
+	height: 76px;
+	background: linear-gradient(135deg, var(--rdcfe-primary-bg) 0%, #ebe8fa 100%);
+	border-radius: 50%;
+	margin-bottom: 22px;
+	box-shadow: inset 0 0 0 1px var(--rdcfe-primary-border);
+}
+
+.rdcfe-options-page__empty-icon .dashicons {
+	font-size: 36px;
+	width: 36px;
+	height: 36px;
+	color: var(--rdcfe-primary);
+}
+
+.rdcfe-options-page__empty h2 {
+	margin: 0 0 10px;
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--rdcfe-text);
+	letter-spacing: -0.01em;
+}
+
+.rdcfe-options-page__empty p {
+	margin: 0 auto 22px;
+	max-width: 460px;
+	color: var(--rdcfe-text-muted);
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+.rdcfe-options-page__empty-buttons {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.rdcfe-options-page__empty-buttons .button {
+	margin: 0;
+	min-height: 38px;
+	padding: 0 18px;
+	border-radius: 8px;
+	font-weight: 600;
+}
+
+.rdcfe-options-page__empty-buttons .button-primary {
+	background: linear-gradient(135deg, #675dd8 0%, #8b82e0 100%);
+	border-color: var(--rdcfe-primary-dark);
+	color: #fff;
+	box-shadow: 0 2px 6px rgba(103, 93, 216, 0.25);
+}
+
+.rdcfe-options-page__empty-buttons .button-primary:hover {
+	background: linear-gradient(135deg, #5249b8 0%, #7e74dd 100%);
+	color: #fff;
+}
+
+/* -------------------------------------------------------------------------
+ * Responsive
+ * ------------------------------------------------------------------------- */
+
+@media screen and (max-width: 782px) {
+	.rdcfe-options-page {
+		margin-right: 10px;
+	}
+
+	.rdcfe-options-page__header {
+		padding: 18px 18px;
+		gap: 14px;
+		border-radius: 10px;
+	}
+
+	.rdcfe-options-page__header-icon {
+		width: 44px;
+		height: 44px;
+		border-radius: 10px;
+	}
+
+	.rdcfe-options-page__header-icon .dashicons {
+		font-size: 22px;
+		width: 22px;
+		height: 22px;
+	}
+
+	.rdcfe-options-page__title {
+		font-size: 18px;
+	}
+
+	.rdcfe-options-section__title {
+		padding: 14px 16px;
+	}
+
+	.rdcfe-options-page__submit {
+		padding: 12px 16px;
+		justify-content: stretch;
+		position: static;
+	}
+
+	.rdcfe-options-page__submit .button.rdcfe-options-page__submit-btn,
+	.rdcfe-options-page__submit .button-primary.rdcfe-options-page__submit-btn {
+		width: 100%;
+	}
+}
+
+/* ==========================================================================
+   JQUERY UI DATEPICKER BASE STYLES 
+   ========================================================================== */
+
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+	background: #fff;
+	border: 1px solid var(--rdcfe-border);
+	border-radius: 6px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 13px;
+	z-index: 100001 !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .4em 0;
+	background: linear-gradient(135deg, #8b82e0 0%, #675dd8 100%);
+	border: none;
+	border-radius: 4px 4px 0 0;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 6px;
+	width: 1.8em;
+	height: 1.8em;
+	cursor: pointer;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+	left: 4px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+	right: 4px;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -14px;
+	top: 50%;
+	margin-top: -8px;
+	color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-prev span::after,
+.ui-datepicker .ui-datepicker-next span::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+}
+
+.ui-datepicker .ui-datepicker-prev span::after {
+	border-right-color: #fff;
+	margin-left: -3px;
+}
+
+.ui-datepicker .ui-datepicker-next span::after {
+	border-left-color: #fff;
+	margin-left: 3px;
+}
+
+.ui-datepicker .ui-datepicker-prev:hover,
+.ui-datepicker .ui-datepicker-next:hover {
+	opacity: 0.8;
+}
+
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 13px;
+	margin: 1px 0;
+	padding: 2px;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: auto;
+	padding: 4px 8px;
+	border-radius: 4px;
+	border: none;
+	background: rgba(255, 255, 255, 0.9);
+	color: #7e74dd;
+}
+
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: 600;
+	border: 0;
+	color: var(--rdcfe-text-muted);
+}
+
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .4em;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+	color: var(--rdcfe-text);
+}
+
+.ui-datepicker td a:hover {
+	background: var(--rdcfe-primary-bg);
+	color: var(--rdcfe-primary);
+}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* State styles */
+.ui-datepicker .ui-state-default {
+	border: 1px solid transparent;
+	background: transparent;
+}
+
+.ui-datepicker .ui-state-highlight {
+	border: 1px solid var(--rdcfe-primary-border);
+	background: var(--rdcfe-primary-bg);
+	color: var(--rdcfe-primary);
+}
+
+.ui-datepicker .ui-state-active {
+	background: linear-gradient(135deg, #8b82e0 0%, #675dd8 100%);
+	border: 1px solid var(--rdcfe-primary);
+	color: #fff;
+}
+
+.ui-datepicker .ui-state-disabled,
+.ui-datepicker .ui-state-disabled span {
+	opacity: 0.35;
+	cursor: default !important;
+}
+
+/* Multiple months */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* Icon display - hide original jQuery UI icons */
+.ui-datepicker .ui-icon {
+	display: none;
+}
+
+/* ==========================================================================
+   PRO NOTICE STYLES (For locked Pro fields)
+   ========================================================================== */
+
+.rdcfe-field--pro-locked {
+	opacity: 0.85;
+}
+
+.rdcfe-pro-notice {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 14px 18px;
+	background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+	border: 1px solid #fcd34d;
+	border-left: 4px solid #f59e0b;
+	border-radius: 6px;
+	color: #92400e;
+	font-size: 13px;
+}
+
+.rdcfe-pro-notice__icon {
+	color: #f59e0b;
+	flex-shrink: 0;
+}
+
+.rdcfe-pro-notice__text a {
+	color: #b45309;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.rdcfe-pro-notice__text a:hover {
+	color: #92400e;
+}
+
+/* ==========================================================================
+   GROUP FIELD STYLES (Pro)
+   ========================================================================== */
+
+.rdcfe-group-field {
+	background: var(--rdcfe-bg-light);
+	border: 1px solid var(--rdcfe-border);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.rdcfe-group-field__header {
+	display: flex;
+	align-items: center;
+	background: linear-gradient(135deg, #f8f8fc 0%, #f3f1fc 100%);
+	border-bottom: 1px solid var(--rdcfe-border);
+}
+
+.rdcfe-group-field__toggle {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+	padding: 12px 16px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--rdcfe-text);
+	transition: background 0.2s;
+}
+
+.rdcfe-group-field__toggle:hover {
+	background: rgba(103, 93, 216, 0.05);
+}
+
+.rdcfe-group-field__toggle-icon {
+	color: var(--rdcfe-primary);
+	transition: transform 0.2s;
+}
+
+.rdcfe-group-field__toggle[aria-expanded="true"] .rdcfe-group-field__toggle-icon {
+	transform: rotate(90deg);
+}
+
+.rdcfe-group-field__title {
+	flex: 1;
+}
+
+.rdcfe-group-field__content {
+	padding: 16px;
+}
+
+.rdcfe-group-field__fields {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -6px;
+}
+
+.rdcfe-group-field__fields > .rdcfe-field {
+	padding: 6px;
+}
+
+.rdcfe-group-field--row .rdcfe-group-field__fields {
+	flex-wrap: nowrap;
+}
+
+.rdcfe-group-field--row .rdcfe-group-field__fields > .rdcfe-field {
+	flex: 1;
+}
+
+/*
+ * Sub-fields inside Group/Repeater containers must:
+ *   1. Use a 6px padding that matches the container's `margin: -6px` gutter
+ *      (the wp-admin reset rule below tries to force 12px and would push
+ *      siblings onto a new row).
+ *   2. Allow `flex-shrink: 1` so any leftover sub-pixel rounding lets items
+ *      shrink fractionally instead of wrapping.
+ *   3. Keep `min-width: 0` so the input inside doesn't push the wrapper out.
+ *
+ * These rules deliberately use the same `body.wp-admin / #poststuff` ancestor
+ * combinations as the rdcfe-cpt-layout.css overrides so they win the specificity
+ * tie against `body.wp-admin .rdcfe-cpt-meta-fields .rdcfe-field { padding:12px }`.
+ */
+.rdcfe-group-field__fields > .rdcfe-field,
+.rdcfe-repeater-row__fields > .rdcfe-field,
+body.wp-admin .rdcfe-cpt-meta-fields .rdcfe-group-field__fields > .rdcfe-field,
+body.wp-admin .rdcfe-cpt-meta-fields .rdcfe-repeater-row__fields > .rdcfe-field,
+body.block-editor-page .rdcfe-cpt-meta-fields .rdcfe-group-field__fields > .rdcfe-field,
+body.block-editor-page .rdcfe-cpt-meta-fields .rdcfe-repeater-row__fields > .rdcfe-field,
+#poststuff .rdcfe-cpt-meta-fields .rdcfe-group-field__fields > .rdcfe-field,
+#poststuff .rdcfe-cpt-meta-fields .rdcfe-repeater-row__fields > .rdcfe-field {
+	padding: 6px;
+	box-sizing: border-box;
+	min-width: 0;
+	flex-shrink: 1;
+	flex-grow: 0;
+}
+
+/* ==========================================================================
+   REPEATER FIELD STYLES (Pro)
+   ========================================================================== */
+
+.rdcfe-repeater-field {
+	background: var(--rdcfe-bg);
+	border: 1px solid var(--rdcfe-border);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+/* Repeater Table Layout */
+.rdcfe-repeater-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.rdcfe-repeater-table thead th {
+	background: linear-gradient(135deg, #f8f8fc 0%, #f3f1fc 100%);
+	padding: 10px 12px;
+	text-align: left;
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--rdcfe-text);
+	border-bottom: 1px solid var(--rdcfe-border);
+}
+
+.rdcfe-repeater-table tbody tr {
+	border-bottom: 1px solid var(--rdcfe-border);
+	transition: background 0.15s;
+}
+
+.rdcfe-repeater-table tbody tr:last-child {
+	border-bottom: none;
+}
+
+.rdcfe-repeater-table tbody tr:hover {
+	background: rgba(103, 93, 216, 0.02);
+}
+
+.rdcfe-repeater-table tbody td {
+	padding: 10px 12px;
+	vertical-align: top;
+}
+
+.rdcfe-repeater-col--handle {
+	text-align: center !important;
+	vertical-align: middle !important;
+}
+
+.rdcfe-repeater-col--actions {
+	text-align: right !important;
+	vertical-align: middle !important;
+	white-space: nowrap;
+}
+
+.rdcfe-repeater-handle {
+	cursor: grab;
+	color: var(--rdcfe-text-muted);
+	transition: color 0.2s;
+}
+
+.rdcfe-repeater-handle:hover {
+	color: var(--rdcfe-primary);
+}
+
+.rdcfe-repeater-handle:active {
+	cursor: grabbing;
+}
+
+.rdcfe-repeater-cell-content .rdcfe-field {
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+}
+
+.rdcfe-repeater-cell-content .rdcfe-field__label {
+	display: none;
+}
+
+.rdcfe-repeater-cell-content .rdcfe-field__instructions {
+	display: none;
+}
+
+/* Repeater Block Layout */
+.rdcfe-repeater-field--block .rdcfe-repeater-rows {
+	padding: 0;
+}
+
+.rdcfe-repeater-row {
+	border: 1px solid var(--rdcfe-border);
+	border-radius: 6px;
+	margin: 8px;
+	background: var(--rdcfe-bg);
+	overflow: hidden;
+	transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.rdcfe-repeater-row:hover {
+	box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+	border-color: var(--rdcfe-primary-border);
+}
+
+.rdcfe-repeater-row--collapsed .rdcfe-repeater-row__content {
+	display: none;
+}
+
+.rdcfe-repeater-row__header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 14px;
+	background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+	border-bottom: 1px solid var(--rdcfe-border);
+}
+
+.rdcfe-repeater-row__title {
+	flex: 1;
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--rdcfe-text);
+}
+
+.rdcfe-repeater-toggle {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	flex: 1;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	text-align: left;
+}
+
+.rdcfe-repeater-toggle .dashicons {
+	color: var(--rdcfe-text-muted);
+	transition: transform 0.2s;
+}
+
+.rdcfe-repeater-toggle[aria-expanded="true"] .dashicons {
+	transform: rotate(90deg);
+}
+
+.rdcfe-repeater-row__actions {
+	display: flex;
+	gap: 4px;
+}
+
+.rdcfe-repeater-row__actions button {
+	padding: 6px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	color: var(--rdcfe-text-muted);
+	transition: all 0.2s;
+}
+
+.rdcfe-repeater-row__actions button:hover {
+	background: var(--rdcfe-bg-light);
+	color: var(--rdcfe-primary);
+}
+
+.rdcfe-repeater-remove:hover {
+	background: var(--rdcfe-danger-bg) !important;
+	color: var(--rdcfe-danger) !important;
+}
+
+.rdcfe-repeater-row__content {
+	padding: 14px;
+}
+
+.rdcfe-repeater-row__fields {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -6px;
+}
+
+.rdcfe-repeater-row__fields > .rdcfe-field {
+	padding: 6px;
+}
+
+/* Repeater Footer */
+.rdcfe-repeater-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 14px;
+	background: var(--rdcfe-bg-light);
+	border-top: 1px solid var(--rdcfe-border);
+}
+
+.rdcfe-repeater-add {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.rdcfe-repeater-add .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+.rdcfe-repeater-count {
+	font-size: 12px;
+	color: var(--rdcfe-text-muted);
+}
+
+/* Repeater Duplicate/Remove Buttons (table) */
+.rdcfe-repeater-duplicate,
+.rdcfe-repeater-remove {
+	padding: 6px;
+	background: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	color: var(--rdcfe-text-muted);
+	transition: all 0.2s;
+}
+
+.rdcfe-repeater-duplicate:hover {
+	background: var(--rdcfe-primary-bg);
+	color: var(--rdcfe-primary);
+}
+
+/* Repeater Drag State */
+.rdcfe-repeater-row.rdcfe-sortable-ghost {
+	opacity: 0.5;
+	background: var(--rdcfe-primary-bg);
+}
+
+.rdcfe-repeater-row.rdcfe-sortable-chosen {
+	box-shadow: 0 4px 16px rgba(103, 93, 216, 0.2);
+}
+
+/* ==========================================================================
+   GALLERY FIELD STYLES (Pro)
+   ========================================================================== */
+
+.rdcfe-gallery-field {
+	background: var(--rdcfe-bg);
+}
+
+.rdcfe-gallery-field__preview {
+	padding: 12px;
+	background: var(--rdcfe-bg-light);
+	border: 2px dashed var(--rdcfe-border);
+	border-radius: 8px;
+	min-height: 120px;
+	margin-bottom: 12px;
+	transition: border-color 0.2s, background 0.2s;
+}
+
+.rdcfe-gallery-field__preview:hover {
+	border-color: var(--rdcfe-primary-border);
+}
+
+.rdcfe-gallery-field__preview--empty {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rdcfe-gallery-field__empty {
+	text-align: center;
+	padding: 20px;
+	color: var(--rdcfe-text-muted);
+}
+
+.rdcfe-gallery-field__empty .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+	margin-bottom: 8px;
+	color: var(--rdcfe-border-hover);
+}
+
+.rdcfe-gallery-field__empty p {
+	margin: 0;
+	font-size: 13px;
+}
+
+.rdcfe-gallery-field__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	gap: 10px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.rdcfe-gallery-field__item {
+	position: relative;
+	aspect-ratio: 1;
+	margin: 0;
+}
+
+.rdcfe-gallery-field__item-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border: 2px solid var(--rdcfe-border);
+	border-radius: 6px;
+	overflow: hidden;
+	background: var(--rdcfe-bg);
+	transition: all 0.2s;
+}
+
+.rdcfe-gallery-field__item-inner:hover {
+	border-color: var(--rdcfe-primary);
+	box-shadow: 0 2px 8px rgba(103, 93, 216, 0.15);
+}
+
+.rdcfe-gallery-field__item-inner img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.rdcfe-gallery-field__item-actions {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	display: none;
+}
+
+.rdcfe-gallery-field__item:hover .rdcfe-gallery-field__item-actions {
+	display: block;
+}
+
+.rdcfe-gallery-field__item-remove {
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(220, 38, 38, 0.9);
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	color: #fff;
+	transition: all 0.2s;
+}
+
+.rdcfe-gallery-field__item-remove:hover {
+	background: #dc2626;
+	transform: scale(1.1);
+}
+
+.rdcfe-gallery-field__item-remove .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+}
+
+.rdcfe-gallery-field__item-handle {
+	position: absolute;
+	bottom: 4px;
+	left: 4px;
+	width: 24px;
+	height: 24px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 4px;
+	color: #fff;
+	cursor: grab;
+}
+
+.rdcfe-gallery-field__item:hover .rdcfe-gallery-field__item-handle {
+	display: flex;
+}
+
+.rdcfe-gallery-field__item-handle .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+}
+
+.rdcfe-gallery-field__item.rdcfe-sortable-ghost {
+	opacity: 0.5;
+}
+
+.rdcfe-gallery-field__item.rdcfe-sortable-chosen .rdcfe-gallery-field__item-inner {
+	border-color: var(--rdcfe-primary);
+	box-shadow: 0 4px 12px rgba(103, 93, 216, 0.25);
+}
+
+.rdcfe-gallery-field__buttons {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.rdcfe-gallery-field__add,
+.rdcfe-gallery-field__clear {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.rdcfe-gallery-field__add .dashicons,
+.rdcfe-gallery-field__clear .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+.rdcfe-gallery-field__info {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
+	color: var(--rdcfe-text-muted);
+}
+
+.rdcfe-gallery-field__min {
+	color: var(--rdcfe-primary);
+}
+
+/* ==========================================================================
+   PRO HTML FIELD (display-only block)
+   ========================================================================== */
+
+.rdcfe-field--html {
+	box-sizing: border-box;
+	padding: 8px 0;
+}
+
+.rdcfe-field--html .rdcfe-field__label {
+	margin-bottom: 6px;
+	font-weight: 600;
+	color: var(--rdcfe-text);
+}
+
+.rdcfe-field__html-content {
+	background: var(--rdcfe-primary-bg);
+	border: 1px solid var(--rdcfe-primary-border);
+	border-left: 3px solid var(--rdcfe-primary);
+	border-radius: 6px;
+	padding: 14px 16px;
+	color: var(--rdcfe-text);
+	line-height: 1.55;
+	font-size: 14px;
+}
+
+.rdcfe-field__html-content > *:first-child {
+	margin-top: 0;
+}
+
+.rdcfe-field__html-content > *:last-child {
+	margin-bottom: 0;
+}
+
+.rdcfe-field__html-content h1,
+.rdcfe-field__html-content h2,
+.rdcfe-field__html-content h3,
+.rdcfe-field__html-content h4 {
+	color: var(--rdcfe-primary-dark);
+	margin: 0 0 8px;
+	line-height: 1.3;
+}
+
+.rdcfe-field__html-content a {
+	color: var(--rdcfe-primary);
+	text-decoration: underline;
+}
+
+.rdcfe-field__html-content code {
+	background: rgba(103, 93, 216, 0.12);
+	color: var(--rdcfe-primary-dark);
+	padding: 1px 5px;
+	border-radius: 3px;
+	font-size: 13px;
+}
+
+.rdcfe-field__html-content ul,
+.rdcfe-field__html-content ol {
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+
+/* Layout-marker safety net — only shows if a tab/accordion/endpoint
+   marker leaks past the layout parser (malformed config). Renders a
+   small inline pill so the author can see something is off without
+   breaking the form layout. */
+.rdcfe-layout-marker {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 4px 10px;
+	margin: 4px 0;
+	background: var(--rdcfe-bg-light);
+	border: 1px dashed var(--rdcfe-border);
+	border-radius: 4px;
+	color: var(--rdcfe-text-muted);
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.rdcfe-layout-marker--endpoint {
+	display: none;
+}
+
+.rdcfe-layout-marker__icon {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+}
+
+/* ==========================================================================
+   RESPONSIVE STYLES FOR PRO FIELDS
+   ========================================================================== */
+
+@media screen and (max-width: 782px) {
+	.rdcfe-group-field__fields,
+	.rdcfe-repeater-row__fields {
+		flex-direction: column;
+	}
+
+	.rdcfe-group-field__fields > .rdcfe-field,
+	.rdcfe-repeater-row__fields > .rdcfe-field {
+		width: 100% !important;
+	}
+
+	.rdcfe-gallery-field__list {
+		grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+	}
+
+	.rdcfe-repeater-table {
+		display: block;
+		overflow-x: auto;
+	}
+}

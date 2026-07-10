@@ -1,0 +1,1297 @@
+# Copyright (C) 2026 Ataurr
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Dynamic Fields Engine 1.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rox-dynamic-cpt-fields-engine\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-29T08:55:47+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: rox-dynamic-cpt-fields-engine\n"
+
+#. Plugin Name of the plugin
+#: rox-dynamic-cpt-fields-engine.php
+msgid "Dynamic Fields Engine"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: rox-dynamic-cpt-fields-engine.php
+msgid "https://dynamicfieldsengine.com/"
+msgstr ""
+
+#. Description of the plugin
+#: rox-dynamic-cpt-fields-engine.php
+msgid "Build Custom Post Types, Taxonomies, Custom Fields, Queries, and Listings from one unified interface."
+msgstr ""
+
+#. Author of the plugin
+#: rox-dynamic-cpt-fields-engine.php
+msgid "Ataurr"
+msgstr ""
+
+#. Author URI of the plugin
+#: rox-dynamic-cpt-fields-engine.php
+msgid "https://roxnor.com"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:146
+msgid "RDCFE: Admin assets not found. Please run `npm run build` in the assets/admin directory."
+msgstr ""
+
+#: app/Admin/AdminAssets.php:219
+msgid "Top Level Menu"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:225
+#: app/Admin/AdminMenu.php:153
+msgid "Dashboard"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:226
+msgid "Posts"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:227
+msgid "Media"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:228
+msgid "Pages"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:229
+msgid "Comments"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:230
+msgid "Appearance"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:231
+msgid "Plugins"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:232
+msgid "Users"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:233
+msgid "Tools"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:234
+#: app/Admin/OptionsPageRegistrar.php:652
+#: app/Fields/CPTMetaFieldsManager.php:250
+msgid "Settings"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:313
+msgid "All"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:380
+msgid "Any role"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:127
+msgid "Rox Dynamic CPT Fields Engine"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:128
+msgid "Dynamic Engine"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:229
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:156
+msgid "Options"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:285
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:167
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:261
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:300
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:329
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:376
+msgid "Options page not found."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:286
+msgid "Not Found"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:296
+msgid "You do not have permission to update this options page."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:297
+#: app/Admin/OptionsPageRegistrar.php:305
+msgid "Forbidden"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:304
+msgid "Security check failed. Please reload the page and try again."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:326
+msgid "Settings saved successfully."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:336
+msgid "Failed to save settings. Please try again."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:434
+msgid "Options Page Not Found"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:454
+msgid "Save Settings"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:488
+msgid "Manage settings and configure values for this page."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:618
+msgid "No Fields Configured"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:619
+msgid "Add meta fields to this options page or attach field groups with \"Options Page\" location rules."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:622
+msgid "Edit Options Page"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:625
+msgid "Create Field Group"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:1129
+#: app/Fields/CPTMetaFieldsManager.php:539
+#: app/Fields/FieldGroupManager.php:1124
+#: app/Fields/MetaBoxRenderer.php:339
+#: app/Fields/TaxonomyMetaFieldsManager.php:601
+msgid "Tab"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:1202
+#: app/Fields/CPTMetaFieldsManager.php:601
+#: app/Fields/FieldGroupManager.php:1186
+#: app/Fields/MetaBoxRenderer.php:401
+#: app/Fields/TaxonomyMetaFieldsManager.php:664
+msgid "Section"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:79
+msgctxt "Post type general name"
+msgid "RDCFE Configs"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:80
+msgctxt "Post type singular name"
+msgid "RDCFE Config"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:81
+msgctxt "Admin Menu text"
+msgid "RDCFE Configs"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:82
+#: app/Registration/PostTypeRegistrar.php:116
+msgid "Add New"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:83
+msgid "Add New Config"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:84
+msgid "Edit Config"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:85
+msgid "New Config"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:86
+msgid "View Config"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:87
+msgid "Search Configs"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:88
+msgid "No configs found"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:89
+msgid "No configs found in Trash"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:90
+msgid "All Configs"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:95
+msgid "Stores RDCFE plugin configurations."
+msgstr ""
+
+#: app/Config/ConfigPostType.php:129
+msgid "The type of configuration (post_type, taxonomy, field_group, etc.)"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:145
+msgid "The configuration data as JSON."
+msgstr ""
+
+#: app/Config/ConfigPostType.php:161
+msgid "The schema version of this configuration."
+msgstr ""
+
+#: app/Config/ConfigPostType.php:178
+msgid "The last known valid configuration snapshot."
+msgstr ""
+
+#: app/Config/ConfigRepository.php:33
+msgid "Invalid configuration type."
+msgstr ""
+
+#: app/Config/ConfigRepository.php:45
+#: app/Config/ConfigRepository.php:202
+msgid "A configuration with this slug already exists."
+msgstr ""
+
+#: app/Config/ConfigRepository.php:190
+#: app/Config/ConfigRepository.php:283
+#: app/Config/ConfigRepository.php:328
+#: app/Config/ConfigRepository.php:382
+msgid "Configuration not found."
+msgstr ""
+
+#: app/Config/ConfigRepository.php:296
+msgid "Failed to delete configuration."
+msgstr ""
+
+#: app/Config/ConfigRepository.php:336
+msgid "Invalid status. Must be \"publish\" or \"draft\"."
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:129
+#: app/Fields/FieldGroupManager.php:158
+msgid "Validation Error: Please fix the following issues:"
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:398
+#: app/Fields/TaxonomyMetaFieldsManager.php:424
+msgid "No fields configured."
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:1032
+#: app/Fields/FieldTypes/ToggleField.php:53
+#: app/Fields/TaxonomyMetaFieldsManager.php:1066
+msgid "On"
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:1033
+#: app/Fields/FieldTypes/ToggleField.php:54
+#: app/Fields/TaxonomyMetaFieldsManager.php:1067
+msgid "Off"
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:1064
+#: app/Fields/CPTMetaFieldsManager.php:1105
+#: app/Fields/FieldAssetsManager.php:139
+#: app/Fields/FieldTypes/FileField.php:87
+#: app/Fields/FieldTypes/ImageField.php:137
+#: app/Fields/FieldTypes/ImageField.php:161
+#: app/Fields/TaxonomyMetaFieldsManager.php:1098
+#: app/Fields/TaxonomyMetaFieldsManager.php:1139
+msgid "Remove"
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:1076
+#: app/Fields/FieldAssetsManager.php:136
+#: app/Fields/FieldTypes/ImageField.php:156
+#: app/Fields/TaxonomyMetaFieldsManager.php:1110
+msgid "Select Image"
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:1102
+#: app/Fields/FieldAssetsManager.php:140
+#: app/Fields/FieldTypes/FileField.php:84
+#: app/Fields/TaxonomyMetaFieldsManager.php:1136
+msgid "Select File"
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/CPTMetaFieldsManager.php:1356
+#: app/Fields/FieldGroupManager.php:399
+#: app/Fields/FieldTypes/AbstractFieldType.php:117
+#, php-format
+msgid "%s is required."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/CPTMetaFieldsManager.php:1371
+#: app/Fields/FieldGroupManager.php:414
+#: app/Fields/FieldTypes/UrlField.php:134
+#, php-format
+msgid "%s must be a valid URL."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/CPTMetaFieldsManager.php:1380
+#: app/Fields/FieldGroupManager.php:423
+#: app/Fields/FieldTypes/EmailField.php:116
+#, php-format
+msgid "%s must be a valid email address."
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:137
+msgid "Use this image"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:138
+msgid "Use these images"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:141
+msgid "Use this file"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:142
+msgid "is required."
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:143
+msgid "Please enter a valid URL."
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:144
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:145
+msgid "Validation Error:"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:146
+msgid "Please fill in all required fields and correct any validation errors before saving."
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:147
+msgid "Dismiss this notice."
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:149
+#: app/Fields/FieldTypes/ImageField.php:155
+msgid "Select Images"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:150
+msgid "Add to Gallery"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:151
+msgid "Remove all images from this gallery?"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:152
+msgid "Row"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:153
+msgid "Add Row"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:154
+msgid "Drag to reorder"
+msgstr ""
+
+#: app/Fields/FieldGroupManager.php:215
+msgid "Fields"
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldGroupManager.php:432
+#: app/Fields/FieldTypes/DateField.php:199
+#, php-format
+msgid "%s must be a valid date."
+msgstr ""
+
+#: app/Fields/FieldGroupManager.php:867
+msgid "Custom Fields"
+msgstr ""
+
+#: app/Fields/FieldTypes/AbstractFieldType.php:118
+#: app/Fields/FieldTypes/ColorField.php:140
+#: app/Fields/FieldTypes/DateField.php:187
+#: app/Fields/FieldTypes/DateField.php:200
+#: app/Fields/FieldTypes/DateTimeField.php:202
+#: app/Fields/FieldTypes/DateTimeField.php:218
+#: app/Fields/FieldTypes/DateTimeField.php:234
+#: app/Fields/FieldTypes/EmailField.php:117
+#: app/Fields/FieldTypes/TimeField.php:159
+#: app/Fields/FieldTypes/TimeField.php:175
+#: app/Fields/FieldTypes/UrlField.php:135
+#: app/Fields/FieldTypes/WysiwygField.php:142
+msgid "This field"
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/ColorField.php:139
+#, php-format
+msgid "%s must be a valid color (hex or rgba format)."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/DateField.php:186
+#, php-format
+msgid "%s must be a valid date in YYYY-MM-DD format."
+msgstr ""
+
+#. translators: 1: field label, 2: min date
+#: app/Fields/FieldTypes/DateField.php:213
+#, php-format
+msgid "%1$s must be on or after %2$s."
+msgstr ""
+
+#. translators: 1: field label, 2: max date
+#: app/Fields/FieldTypes/DateField.php:229
+#, php-format
+msgid "%1$s must be on or before %2$s."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/DateTimeField.php:201
+#, php-format
+msgid "%s must be a valid date and time."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/DateTimeField.php:217
+#, php-format
+msgid "%s contains an invalid date."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/DateTimeField.php:233
+#, php-format
+msgid "%s contains an invalid time."
+msgstr ""
+
+#: app/Fields/FieldTypes/ImageField.php:161
+msgid "Clear All"
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/NumberField.php:139
+#, php-format
+msgid "%s must be a number."
+msgstr ""
+
+#. translators: 1: field label, 2: min value
+#: app/Fields/FieldTypes/NumberField.php:153
+#, php-format
+msgid "%1$s must be at least %2$s."
+msgstr ""
+
+#. translators: 1: field label, 2: max value
+#: app/Fields/FieldTypes/NumberField.php:166
+#, php-format
+msgid "%1$s must not exceed %2$s."
+msgstr ""
+
+#. translators: 1: field label, 2: max length
+#: app/Fields/FieldTypes/TextareaField.php:103
+#: app/Fields/FieldTypes/TextField.php:120
+#: app/Fields/FieldTypes/WysiwygField.php:141
+#, php-format
+msgid "%1$s must not exceed %2$d characters."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/TimeField.php:158
+#, php-format
+msgid "%s must be a valid time in HH:MM format."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/TimeField.php:174
+#, php-format
+msgid "%s must be a valid time."
+msgstr ""
+
+#. translators: 1: field label, 2: min time
+#: app/Fields/FieldTypes/TimeField.php:188
+#, php-format
+msgid "%1$s must be at or after %2$s."
+msgstr ""
+
+#. translators: 1: field label, 2: max time
+#: app/Fields/FieldTypes/TimeField.php:204
+#, php-format
+msgid "%1$s must be at or before %2$s."
+msgstr ""
+
+#: app/Fields/MetaBoxRenderer.php:56
+msgid "No fields configured for this group."
+msgstr ""
+
+#: app/ImportExport/ConflictResolver.php:34
+msgid "Import data is missing configs."
+msgstr ""
+
+#: app/ImportExport/ConflictResolver.php:78
+msgid "Rename requires a valid slug (lowercase letters, numbers, hyphens, underscores)."
+msgstr ""
+
+#. translators: %s: slug
+#: app/ImportExport/ConflictResolver.php:88
+#, php-format
+msgid "Cannot rename import: slug \"%s\" is already in use."
+msgstr ""
+
+#: app/ImportExport/ConflictResolver.php:98
+msgid "The new slug conflicts with another row in this import file."
+msgstr ""
+
+#: app/ImportExport/DiffGenerator.php:64
+msgid "Validation failed. Fix errors before reviewing the diff."
+msgstr ""
+
+#: app/ImportExport/DiffGenerator.php:93
+msgid "Diff ready."
+msgstr ""
+
+#: app/ImportExport/Importer.php:79
+msgid "Validation failed. Please check the errors below."
+msgstr ""
+
+#: app/ImportExport/Importer.php:86
+msgid "Validation successful. Data is ready for import."
+msgstr ""
+
+#. translators: %d: number of items
+#: app/ImportExport/Importer.php:113
+#, php-format
+msgid "Successfully imported %d configuration(s)."
+msgstr ""
+
+#: app/ImportExport/Importer.php:117
+msgid "Some items could not be imported. Please check the details below."
+msgstr ""
+
+#: app/ImportExport/Importer.php:229
+msgid "Invalid JSON format. Please check your file and try again."
+msgstr ""
+
+#: app/ImportExport/ImportValidator.php:115
+msgid "This file was not exported from Dynamic CPT Fields Engine."
+msgstr ""
+
+#: app/ImportExport/ImportValidator.php:120
+msgid "Import file is missing configuration data."
+msgstr ""
+
+#: app/ImportExport/ImportValidator.php:125
+msgid "Import file contains no configurations to import."
+msgstr ""
+
+#: app/ImportExport/ImportValidator.php:140
+msgid "Export version not specified. Some features may not import correctly."
+msgstr ""
+
+#. translators: %s: version number
+#: app/ImportExport/ImportValidator.php:151
+#, php-format
+msgid "This export is from an older version (%s). Some data may need manual verification."
+msgstr ""
+
+#. translators: %s: config type
+#: app/ImportExport/ImportValidator.php:173
+#, php-format
+msgid "Unknown configuration type \"%s\" will be skipped."
+msgstr ""
+
+#. translators: %s: item label
+#: app/ImportExport/ImportValidator.php:202
+#, php-format
+msgid "%s is missing both title and slug."
+msgstr ""
+
+#. translators: 1: item label, 2: slug
+#: app/ImportExport/ImportValidator.php:218
+#, php-format
+msgid "%1$s has an invalid slug: \"%2$s\". Slugs must contain only lowercase letters, numbers, hyphens, and underscores."
+msgstr ""
+
+#. translators: 1: item label, 2: slug
+#: app/ImportExport/ImportValidator.php:234
+#, php-format
+msgid "%1$s with slug \"%2$s\" already exists. It will be updated on import."
+msgstr ""
+
+#. translators: 1: item label, 2: error message
+#. translators: 1: item label, 2: warning message
+#: app/ImportExport/ImportValidator.php:253
+#: app/ImportExport/ImportValidator.php:270
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: app/ImportExport/RollbackManager.php:209
+#: app/REST/Endpoints/ImportExportEndpoint.php:525
+msgid "Snapshot not found."
+msgstr ""
+
+#: app/Registration/PostTypeRegistrar.php:31
+#: app/Schema/Validator.php:34
+msgid "Post type slug is required."
+msgstr ""
+
+#. translators: %s: post type slug
+#: app/Registration/PostTypeRegistrar.php:41
+#, php-format
+msgid "Post type \"%s\" is already registered by another plugin or theme."
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:118
+#: app/Registration/TaxonomyRegistrar.php:146
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:120
+#: app/Registration/TaxonomyRegistrar.php:140
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:122
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#. translators: %s: singular label
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:124
+#: app/Registration/PostTypeRegistrar.php:126
+#: app/Registration/TaxonomyRegistrar.php:142
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:128
+#: app/Registration/TaxonomyRegistrar.php:130
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:130
+#: app/Registration/TaxonomyRegistrar.php:156
+#, php-format
+msgid "No %s found."
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:132
+#, php-format
+msgid "No %s found in Trash."
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:134
+#: app/Registration/TaxonomyRegistrar.php:138
+#, php-format
+msgid "Parent %s:"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:136
+#: app/Registration/TaxonomyRegistrar.php:134
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:138
+#, php-format
+msgid "%s Archives"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:140
+#, php-format
+msgid "%s Attributes"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:142
+#, php-format
+msgid "Insert into %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:144
+#, php-format
+msgid "Uploaded to this %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:146
+#, php-format
+msgid "Filter %s list"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:148
+#: app/Registration/TaxonomyRegistrar.php:162
+#, php-format
+msgid "%s list navigation"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:150
+#: app/Registration/TaxonomyRegistrar.php:164
+#, php-format
+msgid "%s list"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:152
+#, php-format
+msgid "%s published."
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:154
+#, php-format
+msgid "%s published privately."
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:156
+#, php-format
+msgid "%s reverted to draft."
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:158
+#, php-format
+msgid "%s scheduled."
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:160
+#, php-format
+msgid "%s updated."
+msgstr ""
+
+#. translators: %s: post type slug
+#: app/Registration/RegistrationManager.php:207
+#, php-format
+msgid "Post type \"%s\" failed validation and could not be registered."
+msgstr ""
+
+#. translators: %s: taxonomy slug
+#: app/Registration/RegistrationManager.php:267
+#, php-format
+msgid "Taxonomy \"%s\" failed validation and could not be registered."
+msgstr ""
+
+#: app/Registration/TaxonomyRegistrar.php:34
+#: app/Schema/Validator.php:168
+msgid "Taxonomy slug is required."
+msgstr ""
+
+#. translators: %s: taxonomy slug
+#: app/Registration/TaxonomyRegistrar.php:44
+#, php-format
+msgid "Taxonomy \"%s\" is already registered by another plugin or theme."
+msgstr ""
+
+#: app/Registration/TaxonomyRegistrar.php:56
+msgid "At least one post type must be specified."
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:132
+#, php-format
+msgid "Popular %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/TaxonomyRegistrar.php:136
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/TaxonomyRegistrar.php:144
+#, php-format
+msgid "Update %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/TaxonomyRegistrar.php:148
+#, php-format
+msgid "New %s Name"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:150
+#, php-format
+msgid "Separate %s with commas"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:152
+#, php-format
+msgid "Add or remove %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:154
+#, php-format
+msgid "Choose from the most used %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:158
+#, php-format
+msgid "No %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:160
+#, php-format
+msgid "Filter by %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:166
+#, php-format
+msgid "&larr; Back to %s"
+msgstr ""
+
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:127
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:127
+#: app/REST/Endpoints/PostTypesEndpoint.php:144
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:128
+msgid "New status (publish or draft)."
+msgstr ""
+
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:180
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:240
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:279
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:355
+msgid "Field group not found."
+msgstr ""
+
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:212
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:251
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:217
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:272
+#: app/REST/Endpoints/PostTypesEndpoint.php:218
+#: app/REST/Endpoints/PostTypesEndpoint.php:279
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:195
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:236
+msgid "Validation failed."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:255
+#: app/REST/Endpoints/ImportExportEndpoint.php:290
+#: app/REST/Endpoints/ImportExportEndpoint.php:342
+#: app/REST/Endpoints/ImportExportEndpoint.php:375
+msgid "Invalid import data structure. Please provide a valid export file."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:314
+msgid "Rewrite rules have been flushed successfully."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:389
+msgid "Before import"
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:451
+msgid "Manual snapshot"
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:469
+msgid "Snapshot created."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:565
+msgid "This action requires an active Pro license."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:581
+msgid "Config types to export."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:590
+msgid "Specific config IDs to export."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:608
+msgid "The import data (from export)."
+msgstr ""
+
+#. translators: %d: free limit number
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:195
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:340
+#, php-format
+msgid "Free version is limited to %d options page. Upgrade to Pro for unlimited options pages."
+msgstr ""
+
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:386
+msgid "Invalid status value. Must be publish or draft."
+msgstr ""
+
+#: app/REST/Endpoints/PostTypesEndpoint.php:185
+#: app/REST/Endpoints/PostTypesEndpoint.php:189
+#: app/REST/Endpoints/PostTypesEndpoint.php:260
+#: app/REST/Endpoints/PostTypesEndpoint.php:321
+#: app/REST/Endpoints/PostTypesEndpoint.php:408
+msgid "Post type not found."
+msgstr ""
+
+#: app/REST/Endpoints/PostTypesEndpoint.php:439
+#: app/REST/Endpoints/PostTypesEndpoint.php:465
+msgid "Post type title/label."
+msgstr ""
+
+#: app/REST/Endpoints/PostTypesEndpoint.php:444
+#: app/REST/Endpoints/PostTypesEndpoint.php:469
+msgid "Post type configuration data."
+msgstr ""
+
+#: app/REST/Endpoints/PostTypesEndpoint.php:449
+#: app/REST/Endpoints/PostTypesEndpoint.php:473
+msgid "Status (publish or draft)."
+msgstr ""
+
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:168
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:225
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:266
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:321
+msgid "Taxonomy not found."
+msgstr ""
+
+#: app/REST/Middleware/CapabilityCheck.php:41
+#: app/REST/Middleware/CapabilityCheck.php:88
+msgid "You must be logged in to perform this action."
+msgstr ""
+
+#: app/REST/Middleware/CapabilityCheck.php:52
+msgid "You do not have sufficient permissions."
+msgstr ""
+
+#: app/REST/Middleware/CapabilityCheck.php:96
+msgid "You do not have permission to edit this post."
+msgstr ""
+
+#: app/REST/Middleware/CapabilityCheck.php:120
+msgid "Invalid or missing security token."
+msgstr ""
+
+#: app/REST/RestController.php:62
+msgid "You must be logged in to access this endpoint."
+msgstr ""
+
+#: app/REST/RestController.php:70
+msgid "You do not have permission to access this endpoint."
+msgstr ""
+
+#: app/REST/RestController.php:114
+msgid "Current page of the collection."
+msgstr ""
+
+#: app/REST/RestController.php:121
+msgid "Maximum number of items per page."
+msgstr ""
+
+#: app/REST/RestController.php:129
+msgid "Search term."
+msgstr ""
+
+#: app/REST/RestController.php:134
+msgid "Sort by field."
+msgstr ""
+
+#: app/REST/RestController.php:141
+msgid "Sort order."
+msgstr ""
+
+#: app/REST/RestController.php:179
+msgid "Invalid ID provided."
+msgstr ""
+
+#: app/REST/RestController.php:206
+msgid "Invalid JSON in request body."
+msgstr ""
+
+#: app/Schema/Rules/MetaKeyRule.php:57
+msgid "Meta key must be a string."
+msgstr ""
+
+#. translators: %d: maximum length
+#: app/Schema/Rules/MetaKeyRule.php:68
+#, php-format
+msgid "Meta key must not exceed %d characters."
+msgstr ""
+
+#: app/Schema/Rules/MetaKeyRule.php:79
+msgid "Meta key cannot be empty."
+msgstr ""
+
+#: app/Schema/Rules/MetaKeyRule.php:89
+msgid "Meta key must start with a letter or underscore and contain only letters, numbers, and underscores."
+msgstr ""
+
+#. translators: 1: meta key, 2: plugin name
+#: app/Schema/Rules/MetaKeyRule.php:101
+#, php-format
+msgid "Meta key \"%1$s\" may conflict with %2$s. Consider using a different prefix."
+msgstr ""
+
+#: app/Schema/Rules/MetaKeyRule.php:115
+msgid "Meta keys starting with underscore are hidden in the default Custom Fields UI. This is usually intentional for internal fields."
+msgstr ""
+
+#. translators: %s: the reserved word
+#: app/Schema/Rules/ReservedWordsRule.php:182
+#, php-format
+msgid "\"%s\" is a reserved word and cannot be used."
+msgstr ""
+
+#. translators: %s: the slug
+#: app/Schema/Rules/ReservedWordsRule.php:195
+#, php-format
+msgid "\"%s\" may conflict with WordPress query variables. Consider using a different slug."
+msgstr ""
+
+#: app/Schema/Rules/ReservedWordsRule.php:206
+msgid "Slugs starting with \"wp_\" are reserved for WordPress core. Consider using a different prefix."
+msgstr ""
+
+#: app/Schema/Rules/SlugRule.php:46
+msgid "Slug must be a string."
+msgstr ""
+
+#: app/Schema/Rules/SlugRule.php:57
+msgid "Slug cannot be empty."
+msgstr ""
+
+#. translators: %d: maximum length
+#: app/Schema/Rules/SlugRule.php:67
+#, php-format
+msgid "Slug must not exceed %d characters."
+msgstr ""
+
+#: app/Schema/Rules/SlugRule.php:78
+msgid "Slug must start with a letter and contain only lowercase letters, numbers, underscores, and hyphens."
+msgstr ""
+
+#: app/Schema/Rules/SlugRule.php:87
+msgid "Avoid consecutive underscores or hyphens in slugs."
+msgstr ""
+
+#: app/Schema/Validator.php:47
+msgid "Post type label is required."
+msgstr ""
+
+#: app/Schema/Validator.php:52
+msgid "Singular label must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:58
+msgid "Supports must be an array."
+msgstr ""
+
+#. translators: %s: support feature
+#: app/Schema/Validator.php:67
+#, php-format
+msgid "Unknown support feature: %s"
+msgstr ""
+
+#. translators: %s: field name
+#: app/Schema/Validator.php:101
+#: app/Schema/Validator.php:201
+#: app/Schema/Validator.php:467
+#, php-format
+msgid "%s must be a boolean value."
+msgstr ""
+
+#: app/Schema/Validator.php:111
+msgid "Menu position must be an integer."
+msgstr ""
+
+#: app/Schema/Validator.php:121
+msgid "Capability type must be a string or an array of two strings (singular, plural)."
+msgstr ""
+
+#: app/Schema/Validator.php:123
+msgid "Capability type must start with a letter and contain only lowercase letters, numbers, and underscores."
+msgstr ""
+
+#: app/Schema/Validator.php:130
+msgid "REST base must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:132
+msgid "REST base may only contain letters, numbers, underscores, and hyphens."
+msgstr ""
+
+#: app/Schema/Validator.php:138
+msgid "Rewrite slug must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:143
+msgid "Rewrite must be a boolean or an array."
+msgstr ""
+
+#: app/Schema/Validator.php:182
+msgid "Taxonomy label is required."
+msgstr ""
+
+#: app/Schema/Validator.php:188
+msgid "At least one post type must be selected."
+msgstr ""
+
+#: app/Schema/Validator.php:190
+msgid "Post types must be an array."
+msgstr ""
+
+#: app/Schema/Validator.php:231
+msgid "Field group title is required."
+msgstr ""
+
+#: app/Schema/Validator.php:236
+msgid "At least one location rule is required."
+msgstr ""
+
+#: app/Schema/Validator.php:238
+msgid "Location must be an array."
+msgstr ""
+
+#: app/Schema/Validator.php:244
+msgid "Fields must be an array."
+msgstr ""
+
+#: app/Schema/Validator.php:257
+msgid "Invalid position value."
+msgstr ""
+
+#: app/Schema/Validator.php:265
+msgid "Invalid style value."
+msgstr ""
+
+#: app/Schema/Validator.php:277
+msgid "Match priority must be a number between 0 and 100."
+msgstr ""
+
+#: app/Schema/Validator.php:309
+msgid "Label is required."
+msgstr ""
+
+#: app/Schema/Validator.php:316
+msgid "Field name is required."
+msgstr ""
+
+#: app/Schema/Validator.php:325
+msgid "Field label is required."
+msgstr ""
+
+#: app/Schema/Validator.php:330
+msgid "Field type is required."
+msgstr ""
+
+#. translators: %s: field type
+#: app/Schema/Validator.php:363
+#, php-format
+msgid "Unknown field type: %s"
+msgstr ""
+
+#: app/Schema/Validator.php:377
+msgid "Width should be 25, 50, 75, or 100."
+msgstr ""
+
+#: app/Schema/Validator.php:393
+msgid "Options are required for this field type."
+msgstr ""
+
+#: app/Schema/Validator.php:438
+msgid "Page title is required."
+msgstr ""
+
+#: app/Schema/Validator.php:443
+msgid "Menu slug is required."
+msgstr ""
+
+#: app/Schema/Validator.php:453
+msgid "Capability must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:455
+msgid "Capability must start with a letter and contain only lowercase letters, numbers, and underscores."
+msgstr ""
+
+#: app/Schema/Validator.php:477
+msgid "Position must be an integer."
+msgstr ""
+
+#: app/Schema/Validator.php:483
+msgid "Storage mode must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:485
+msgid "Storage mode must be either \"options\" or \"custom\"."
+msgstr ""
+
+#: app/Schema/Validator.php:496
+msgid "Custom storage identifier must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:500
+msgid "Custom storage must be a numeric ID or look like \"user_2\", \"term_5\", or \"category_3\"."
+msgstr ""
+
+#: app/Schema/Validator.php:508
+msgid "Parent slug must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:525
+msgid "Configuration must have a slug or name."
+msgstr ""
+
+#. translators: 1: Required PHP version, 2: Current PHP version
+#: rox-dynamic-cpt-fields-engine.php:72
+#, php-format
+msgid "Rox Dynamic CPT Fields Engine requires PHP %1$s or higher. You are running PHP %2$s."
+msgstr ""
+
+#. translators: 1: Required WordPress version, 2: Current WordPress version
+#: rox-dynamic-cpt-fields-engine.php:87
+#, php-format
+msgid "Rox Dynamic CPT Fields Engine requires WordPress %1$s or higher. You are running WordPress %2$s."
+msgstr ""
