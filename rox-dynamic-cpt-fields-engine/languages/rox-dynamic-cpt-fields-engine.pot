@@ -1,0 +1,9390 @@
+# Copyright (C) 2026 Ataurr
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Dynamic Fields Engine 1.0.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rox-dynamic-cpt-fields-engine\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-07-27T08:59:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: rox-dynamic-cpt-fields-engine\n"
+
+#. Plugin Name of the plugin
+#: rox-dynamic-cpt-fields-engine.php
+msgid "Dynamic Fields Engine"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: rox-dynamic-cpt-fields-engine.php
+msgid "https://dynamicfieldsengine.com/"
+msgstr ""
+
+#. Description of the plugin
+#: rox-dynamic-cpt-fields-engine.php
+msgid "Build Custom Post Types, Taxonomies, Custom Fields, Queries, and Listings from one unified interface."
+msgstr ""
+
+#. Author of the plugin
+#: rox-dynamic-cpt-fields-engine.php
+msgid "Ataurr"
+msgstr ""
+
+#. Author URI of the plugin
+#: rox-dynamic-cpt-fields-engine.php
+msgid "https://roxnor.com"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:152
+msgid "RDCFE: Admin assets not found. Please run `npm run build` in the assets/admin directory."
+msgstr ""
+
+#: app/Admin/AdminAssets.php:225
+msgid "Top Level Menu"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:231
+#: app/Admin/AdminMenu.php:153
+msgid "Dashboard"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:232
+msgid "Posts"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:233
+msgid "Media"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:234
+msgid "Pages"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:235
+msgid "Comments"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:236
+msgid "Appearance"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:237
+msgid "Plugins"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:238
+msgid "Users"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:239
+msgid "Tools"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:240
+#: app/Admin/OptionsPageRegistrar.php:652
+#: app/Fields/CPTMetaFieldsManager.php:250
+msgid "Settings"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:319
+msgid "All"
+msgstr ""
+
+#: app/Admin/AdminAssets.php:386
+msgid "Any role"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:127
+msgid "Rox Dynamic CPT Fields Engine"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:128
+msgid "Dynamic Engine"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:229
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:156
+msgid "Options"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:285
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:167
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:261
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:300
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:329
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:376
+msgid "Options page not found."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:286
+msgid "Not Found"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:296
+msgid "You do not have permission to update this options page."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:297
+#: app/Admin/OptionsPageRegistrar.php:305
+msgid "Forbidden"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:304
+msgid "Security check failed. Please reload the page and try again."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:326
+msgid "Settings saved successfully."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:336
+msgid "Failed to save settings. Please try again."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:434
+msgid "Options Page Not Found"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:454
+msgid "Save Settings"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:488
+msgid "Manage settings and configure values for this page."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:618
+msgid "No Fields Configured"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:619
+msgid "Add meta fields to this options page or attach field groups with \"Options Page\" location rules."
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:622
+msgid "Edit Options Page"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:625
+msgid "Create Field Group"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:1129
+#: app/Fields/CPTMetaFieldsManager.php:539
+#: app/Fields/FieldGroupManager.php:1124
+#: app/Fields/MetaBoxRenderer.php:339
+#: app/Fields/TaxonomyMetaFieldsManager.php:601
+msgid "Tab"
+msgstr ""
+
+#: app/Admin/OptionsPageRegistrar.php:1202
+#: app/Fields/CPTMetaFieldsManager.php:601
+#: app/Fields/FieldGroupManager.php:1186
+#: app/Fields/MetaBoxRenderer.php:401
+#: app/Fields/TaxonomyMetaFieldsManager.php:664
+msgid "Section"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:79
+msgctxt "Post type general name"
+msgid "RDCFE Configs"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:80
+msgctxt "Post type singular name"
+msgid "RDCFE Config"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:81
+msgctxt "Admin Menu text"
+msgid "RDCFE Configs"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:82
+#: app/Registration/PostTypeRegistrar.php:116
+msgid "Add New"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:83
+msgid "Add New Config"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:84
+msgid "Edit Config"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:85
+msgid "New Config"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:86
+msgid "View Config"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:87
+msgid "Search Configs"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:88
+msgid "No configs found"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:89
+msgid "No configs found in Trash"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:90
+msgid "All Configs"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:95
+msgid "Stores RDCFE plugin configurations."
+msgstr ""
+
+#: app/Config/ConfigPostType.php:129
+msgid "The type of configuration (post_type, taxonomy, field_group, etc.)"
+msgstr ""
+
+#: app/Config/ConfigPostType.php:145
+msgid "The configuration data as JSON."
+msgstr ""
+
+#: app/Config/ConfigPostType.php:161
+msgid "The schema version of this configuration."
+msgstr ""
+
+#: app/Config/ConfigPostType.php:178
+msgid "The last known valid configuration snapshot."
+msgstr ""
+
+#: app/Config/ConfigRepository.php:33
+msgid "Invalid configuration type."
+msgstr ""
+
+#: app/Config/ConfigRepository.php:45
+#: app/Config/ConfigRepository.php:202
+msgid "A configuration with this slug already exists."
+msgstr ""
+
+#: app/Config/ConfigRepository.php:190
+#: app/Config/ConfigRepository.php:283
+#: app/Config/ConfigRepository.php:328
+#: app/Config/ConfigRepository.php:382
+msgid "Configuration not found."
+msgstr ""
+
+#: app/Config/ConfigRepository.php:296
+msgid "Failed to delete configuration."
+msgstr ""
+
+#: app/Config/ConfigRepository.php:336
+msgid "Invalid status. Must be \"publish\" or \"draft\"."
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:129
+#: app/Fields/FieldGroupManager.php:158
+msgid "Validation Error: Please fix the following issues:"
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:398
+#: app/Fields/TaxonomyMetaFieldsManager.php:424
+msgid "No fields configured."
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:1032
+#: app/Fields/FieldTypes/ToggleField.php:53
+#: app/Fields/TaxonomyMetaFieldsManager.php:1066
+msgid "On"
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:1033
+#: app/Fields/FieldTypes/ToggleField.php:54
+#: app/Fields/TaxonomyMetaFieldsManager.php:1067
+msgid "Off"
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:1064
+#: app/Fields/CPTMetaFieldsManager.php:1105
+#: app/Fields/FieldAssetsManager.php:139
+#: app/Fields/FieldTypes/FileField.php:87
+#: app/Fields/FieldTypes/ImageField.php:137
+#: app/Fields/FieldTypes/ImageField.php:161
+#: app/Fields/TaxonomyMetaFieldsManager.php:1098
+#: app/Fields/TaxonomyMetaFieldsManager.php:1139
+msgid "Remove"
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:1076
+#: app/Fields/FieldAssetsManager.php:136
+#: app/Fields/FieldTypes/ImageField.php:156
+#: app/Fields/TaxonomyMetaFieldsManager.php:1110
+msgid "Select Image"
+msgstr ""
+
+#: app/Fields/CPTMetaFieldsManager.php:1102
+#: app/Fields/FieldAssetsManager.php:140
+#: app/Fields/FieldTypes/FileField.php:84
+#: app/Fields/TaxonomyMetaFieldsManager.php:1136
+msgid "Select File"
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/CPTMetaFieldsManager.php:1356
+#: app/Fields/FieldGroupManager.php:399
+#: app/Fields/FieldTypes/AbstractFieldType.php:117
+#, php-format
+msgid "%s is required."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/CPTMetaFieldsManager.php:1371
+#: app/Fields/FieldGroupManager.php:414
+#: app/Fields/FieldTypes/UrlField.php:134
+#, php-format
+msgid "%s must be a valid URL."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/CPTMetaFieldsManager.php:1380
+#: app/Fields/FieldGroupManager.php:423
+#: app/Fields/FieldTypes/EmailField.php:116
+#, php-format
+msgid "%s must be a valid email address."
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:137
+msgid "Use this image"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:138
+msgid "Use these images"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:141
+msgid "Use this file"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:142
+msgid "is required."
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:143
+msgid "Please enter a valid URL."
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:144
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:145
+msgid "Validation Error:"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:146
+msgid "Please fill in all required fields and correct any validation errors before saving."
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:147
+msgid "Dismiss this notice."
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:149
+#: app/Fields/FieldTypes/ImageField.php:155
+msgid "Select Images"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:150
+msgid "Add to Gallery"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:151
+msgid "Remove all images from this gallery?"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:152
+msgid "Row"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:153
+msgid "Add Row"
+msgstr ""
+
+#: app/Fields/FieldAssetsManager.php:154
+msgid "Drag to reorder"
+msgstr ""
+
+#: app/Fields/FieldGroupManager.php:215
+msgid "Fields"
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldGroupManager.php:432
+#: app/Fields/FieldTypes/DateField.php:199
+#, php-format
+msgid "%s must be a valid date."
+msgstr ""
+
+#: app/Fields/FieldGroupManager.php:867
+msgid "Custom Fields"
+msgstr ""
+
+#: app/Fields/FieldTypes/AbstractFieldType.php:118
+#: app/Fields/FieldTypes/ColorField.php:140
+#: app/Fields/FieldTypes/DateField.php:187
+#: app/Fields/FieldTypes/DateField.php:200
+#: app/Fields/FieldTypes/DateTimeField.php:202
+#: app/Fields/FieldTypes/DateTimeField.php:218
+#: app/Fields/FieldTypes/DateTimeField.php:234
+#: app/Fields/FieldTypes/EmailField.php:117
+#: app/Fields/FieldTypes/TimeField.php:159
+#: app/Fields/FieldTypes/TimeField.php:175
+#: app/Fields/FieldTypes/UrlField.php:135
+#: app/Fields/FieldTypes/WysiwygField.php:142
+msgid "This field"
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/ColorField.php:139
+#, php-format
+msgid "%s must be a valid color (hex or rgba format)."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/DateField.php:186
+#, php-format
+msgid "%s must be a valid date in YYYY-MM-DD format."
+msgstr ""
+
+#. translators: 1: field label, 2: min date
+#: app/Fields/FieldTypes/DateField.php:213
+#, php-format
+msgid "%1$s must be on or after %2$s."
+msgstr ""
+
+#. translators: 1: field label, 2: max date
+#: app/Fields/FieldTypes/DateField.php:229
+#, php-format
+msgid "%1$s must be on or before %2$s."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/DateTimeField.php:201
+#, php-format
+msgid "%s must be a valid date and time."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/DateTimeField.php:217
+#, php-format
+msgid "%s contains an invalid date."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/DateTimeField.php:233
+#, php-format
+msgid "%s contains an invalid time."
+msgstr ""
+
+#: app/Fields/FieldTypes/ImageField.php:161
+msgid "Clear All"
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/NumberField.php:139
+#, php-format
+msgid "%s must be a number."
+msgstr ""
+
+#. translators: 1: field label, 2: min value
+#: app/Fields/FieldTypes/NumberField.php:153
+#, php-format
+msgid "%1$s must be at least %2$s."
+msgstr ""
+
+#. translators: 1: field label, 2: max value
+#: app/Fields/FieldTypes/NumberField.php:166
+#, php-format
+msgid "%1$s must not exceed %2$s."
+msgstr ""
+
+#. translators: 1: field label, 2: max length
+#: app/Fields/FieldTypes/TextareaField.php:103
+#: app/Fields/FieldTypes/TextField.php:120
+#: app/Fields/FieldTypes/WysiwygField.php:141
+#, php-format
+msgid "%1$s must not exceed %2$d characters."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/TimeField.php:158
+#, php-format
+msgid "%s must be a valid time in HH:MM format."
+msgstr ""
+
+#. translators: %s: field label
+#: app/Fields/FieldTypes/TimeField.php:174
+#, php-format
+msgid "%s must be a valid time."
+msgstr ""
+
+#. translators: 1: field label, 2: min time
+#: app/Fields/FieldTypes/TimeField.php:188
+#, php-format
+msgid "%1$s must be at or after %2$s."
+msgstr ""
+
+#. translators: 1: field label, 2: max time
+#: app/Fields/FieldTypes/TimeField.php:204
+#, php-format
+msgid "%1$s must be at or before %2$s."
+msgstr ""
+
+#: app/Fields/MetaBoxRenderer.php:56
+msgid "No fields configured for this group."
+msgstr ""
+
+#: app/ImportExport/ConflictResolver.php:34
+msgid "Import data is missing configs."
+msgstr ""
+
+#: app/ImportExport/ConflictResolver.php:78
+msgid "Rename requires a valid slug (lowercase letters, numbers, hyphens, underscores)."
+msgstr ""
+
+#. translators: %s: slug
+#: app/ImportExport/ConflictResolver.php:88
+#, php-format
+msgid "Cannot rename import: slug \"%s\" is already in use."
+msgstr ""
+
+#: app/ImportExport/ConflictResolver.php:98
+msgid "The new slug conflicts with another row in this import file."
+msgstr ""
+
+#: app/ImportExport/DiffGenerator.php:64
+msgid "Validation failed. Fix errors before reviewing the diff."
+msgstr ""
+
+#: app/ImportExport/DiffGenerator.php:93
+msgid "Diff ready."
+msgstr ""
+
+#: app/ImportExport/Importer.php:79
+msgid "Validation failed. Please check the errors below."
+msgstr ""
+
+#: app/ImportExport/Importer.php:86
+msgid "Validation successful. Data is ready for import."
+msgstr ""
+
+#. translators: %d: number of items
+#: app/ImportExport/Importer.php:113
+#, php-format
+msgid "Successfully imported %d configuration(s)."
+msgstr ""
+
+#: app/ImportExport/Importer.php:117
+msgid "Some items could not be imported. Please check the details below."
+msgstr ""
+
+#: app/ImportExport/Importer.php:229
+msgid "Invalid JSON format. Please check your file and try again."
+msgstr ""
+
+#: app/ImportExport/ImportValidator.php:115
+msgid "This file was not exported from Dynamic CPT Fields Engine."
+msgstr ""
+
+#: app/ImportExport/ImportValidator.php:120
+msgid "Import file is missing configuration data."
+msgstr ""
+
+#: app/ImportExport/ImportValidator.php:125
+msgid "Import file contains no configurations to import."
+msgstr ""
+
+#: app/ImportExport/ImportValidator.php:140
+msgid "Export version not specified. Some features may not import correctly."
+msgstr ""
+
+#. translators: %s: version number
+#: app/ImportExport/ImportValidator.php:151
+#, php-format
+msgid "This export is from an older version (%s). Some data may need manual verification."
+msgstr ""
+
+#. translators: %s: config type
+#: app/ImportExport/ImportValidator.php:173
+#, php-format
+msgid "Unknown configuration type \"%s\" will be skipped."
+msgstr ""
+
+#. translators: %s: item label
+#: app/ImportExport/ImportValidator.php:202
+#, php-format
+msgid "%s is missing both title and slug."
+msgstr ""
+
+#. translators: 1: item label, 2: slug
+#: app/ImportExport/ImportValidator.php:218
+#, php-format
+msgid "%1$s has an invalid slug: \"%2$s\". Slugs must contain only lowercase letters, numbers, hyphens, and underscores."
+msgstr ""
+
+#. translators: 1: item label, 2: slug
+#: app/ImportExport/ImportValidator.php:234
+#, php-format
+msgid "%1$s with slug \"%2$s\" already exists. It will be updated on import."
+msgstr ""
+
+#. translators: 1: item label, 2: error message
+#. translators: 1: item label, 2: warning message
+#: app/ImportExport/ImportValidator.php:253
+#: app/ImportExport/ImportValidator.php:270
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: app/ImportExport/RollbackManager.php:209
+#: app/REST/Endpoints/ImportExportEndpoint.php:525
+msgid "Snapshot not found."
+msgstr ""
+
+#: app/Registration/PostTypeRegistrar.php:31
+#: app/Schema/Validator.php:34
+msgid "Post type slug is required."
+msgstr ""
+
+#. translators: %s: post type slug
+#: app/Registration/PostTypeRegistrar.php:41
+#, php-format
+msgid "Post type \"%s\" is already registered by another plugin or theme."
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:118
+#: app/Registration/TaxonomyRegistrar.php:146
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:120
+#: app/Registration/TaxonomyRegistrar.php:140
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:122
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#. translators: %s: singular label
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:124
+#: app/Registration/PostTypeRegistrar.php:126
+#: app/Registration/TaxonomyRegistrar.php:142
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:128
+#: app/Registration/TaxonomyRegistrar.php:130
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:130
+#: app/Registration/TaxonomyRegistrar.php:156
+#, php-format
+msgid "No %s found."
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:132
+#, php-format
+msgid "No %s found in Trash."
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:134
+#: app/Registration/TaxonomyRegistrar.php:138
+#, php-format
+msgid "Parent %s:"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:136
+#: app/Registration/TaxonomyRegistrar.php:134
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:138
+#, php-format
+msgid "%s Archives"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:140
+#, php-format
+msgid "%s Attributes"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:142
+#, php-format
+msgid "Insert into %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:144
+#, php-format
+msgid "Uploaded to this %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:146
+#, php-format
+msgid "Filter %s list"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:148
+#: app/Registration/TaxonomyRegistrar.php:162
+#, php-format
+msgid "%s list navigation"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/PostTypeRegistrar.php:150
+#: app/Registration/TaxonomyRegistrar.php:164
+#, php-format
+msgid "%s list"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:152
+#, php-format
+msgid "%s published."
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:154
+#, php-format
+msgid "%s published privately."
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:156
+#, php-format
+msgid "%s reverted to draft."
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:158
+#, php-format
+msgid "%s scheduled."
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/PostTypeRegistrar.php:160
+#, php-format
+msgid "%s updated."
+msgstr ""
+
+#. translators: %s: post type slug
+#: app/Registration/RegistrationManager.php:207
+#, php-format
+msgid "Post type \"%s\" failed validation and could not be registered."
+msgstr ""
+
+#. translators: %s: taxonomy slug
+#: app/Registration/RegistrationManager.php:267
+#, php-format
+msgid "Taxonomy \"%s\" failed validation and could not be registered."
+msgstr ""
+
+#: app/Registration/TaxonomyRegistrar.php:34
+#: app/Schema/Validator.php:168
+msgid "Taxonomy slug is required."
+msgstr ""
+
+#. translators: %s: taxonomy slug
+#: app/Registration/TaxonomyRegistrar.php:44
+#, php-format
+msgid "Taxonomy \"%s\" is already registered by another plugin or theme."
+msgstr ""
+
+#: app/Registration/TaxonomyRegistrar.php:56
+msgid "At least one post type must be specified."
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:132
+#, php-format
+msgid "Popular %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/TaxonomyRegistrar.php:136
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/TaxonomyRegistrar.php:144
+#, php-format
+msgid "Update %s"
+msgstr ""
+
+#. translators: %s: singular label
+#: app/Registration/TaxonomyRegistrar.php:148
+#, php-format
+msgid "New %s Name"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:150
+#, php-format
+msgid "Separate %s with commas"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:152
+#, php-format
+msgid "Add or remove %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:154
+#, php-format
+msgid "Choose from the most used %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:158
+#, php-format
+msgid "No %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:160
+#, php-format
+msgid "Filter by %s"
+msgstr ""
+
+#. translators: %s: plural label
+#: app/Registration/TaxonomyRegistrar.php:166
+#, php-format
+msgid "&larr; Back to %s"
+msgstr ""
+
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:127
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:127
+#: app/REST/Endpoints/PostTypesEndpoint.php:144
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:128
+msgid "New status (publish or draft)."
+msgstr ""
+
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:180
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:240
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:279
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:355
+msgid "Field group not found."
+msgstr ""
+
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:212
+#: app/REST/Endpoints/FieldGroupsEndpoint.php:251
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:217
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:272
+#: app/REST/Endpoints/PostTypesEndpoint.php:218
+#: app/REST/Endpoints/PostTypesEndpoint.php:279
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:195
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:236
+msgid "Validation failed."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:255
+#: app/REST/Endpoints/ImportExportEndpoint.php:290
+#: app/REST/Endpoints/ImportExportEndpoint.php:342
+#: app/REST/Endpoints/ImportExportEndpoint.php:375
+msgid "Invalid import data structure. Please provide a valid export file."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:314
+msgid "Rewrite rules have been flushed successfully."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:389
+msgid "Before import"
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:451
+msgid "Manual snapshot"
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:469
+msgid "Snapshot created."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:565
+msgid "This action requires an active Pro license."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:581
+msgid "Config types to export."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:590
+msgid "Specific config IDs to export."
+msgstr ""
+
+#: app/REST/Endpoints/ImportExportEndpoint.php:608
+msgid "The import data (from export)."
+msgstr ""
+
+#. translators: %d: free limit number
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:195
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:340
+#, php-format
+msgid "Free version is limited to %d options page. Upgrade to Pro for unlimited options pages."
+msgstr ""
+
+#: app/REST/Endpoints/OptionsPagesEndpoint.php:386
+msgid "Invalid status value. Must be publish or draft."
+msgstr ""
+
+#: app/REST/Endpoints/PostTypesEndpoint.php:185
+#: app/REST/Endpoints/PostTypesEndpoint.php:189
+#: app/REST/Endpoints/PostTypesEndpoint.php:260
+#: app/REST/Endpoints/PostTypesEndpoint.php:321
+#: app/REST/Endpoints/PostTypesEndpoint.php:408
+msgid "Post type not found."
+msgstr ""
+
+#: app/REST/Endpoints/PostTypesEndpoint.php:439
+#: app/REST/Endpoints/PostTypesEndpoint.php:465
+msgid "Post type title/label."
+msgstr ""
+
+#: app/REST/Endpoints/PostTypesEndpoint.php:444
+#: app/REST/Endpoints/PostTypesEndpoint.php:469
+msgid "Post type configuration data."
+msgstr ""
+
+#: app/REST/Endpoints/PostTypesEndpoint.php:449
+#: app/REST/Endpoints/PostTypesEndpoint.php:473
+msgid "Status (publish or draft)."
+msgstr ""
+
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:168
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:225
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:266
+#: app/REST/Endpoints/TaxonomiesEndpoint.php:321
+msgid "Taxonomy not found."
+msgstr ""
+
+#: app/REST/Middleware/CapabilityCheck.php:41
+#: app/REST/Middleware/CapabilityCheck.php:88
+msgid "You must be logged in to perform this action."
+msgstr ""
+
+#: app/REST/Middleware/CapabilityCheck.php:52
+msgid "You do not have sufficient permissions."
+msgstr ""
+
+#: app/REST/Middleware/CapabilityCheck.php:96
+msgid "You do not have permission to edit this post."
+msgstr ""
+
+#: app/REST/Middleware/CapabilityCheck.php:120
+msgid "Invalid or missing security token."
+msgstr ""
+
+#: app/REST/RestController.php:62
+msgid "You must be logged in to access this endpoint."
+msgstr ""
+
+#: app/REST/RestController.php:70
+msgid "You do not have permission to access this endpoint."
+msgstr ""
+
+#: app/REST/RestController.php:114
+msgid "Current page of the collection."
+msgstr ""
+
+#: app/REST/RestController.php:121
+msgid "Maximum number of items per page."
+msgstr ""
+
+#: app/REST/RestController.php:129
+msgid "Search term."
+msgstr ""
+
+#: app/REST/RestController.php:134
+msgid "Sort by field."
+msgstr ""
+
+#: app/REST/RestController.php:141
+msgid "Sort order."
+msgstr ""
+
+#: app/REST/RestController.php:179
+msgid "Invalid ID provided."
+msgstr ""
+
+#: app/REST/RestController.php:206
+msgid "Invalid JSON in request body."
+msgstr ""
+
+#: app/Schema/Rules/MetaKeyRule.php:57
+msgid "Meta key must be a string."
+msgstr ""
+
+#. translators: %d: maximum length
+#: app/Schema/Rules/MetaKeyRule.php:68
+#, php-format
+msgid "Meta key must not exceed %d characters."
+msgstr ""
+
+#: app/Schema/Rules/MetaKeyRule.php:79
+msgid "Meta key cannot be empty."
+msgstr ""
+
+#: app/Schema/Rules/MetaKeyRule.php:89
+msgid "Meta key must start with a letter or underscore and contain only letters, numbers, and underscores."
+msgstr ""
+
+#. translators: 1: meta key, 2: plugin name
+#: app/Schema/Rules/MetaKeyRule.php:101
+#, php-format
+msgid "Meta key \"%1$s\" may conflict with %2$s. Consider using a different prefix."
+msgstr ""
+
+#: app/Schema/Rules/MetaKeyRule.php:115
+msgid "Meta keys starting with underscore are hidden in the default Custom Fields UI. This is usually intentional for internal fields."
+msgstr ""
+
+#. translators: %s: the reserved word
+#: app/Schema/Rules/ReservedWordsRule.php:182
+#, php-format
+msgid "\"%s\" is a reserved word and cannot be used."
+msgstr ""
+
+#. translators: %s: the slug
+#: app/Schema/Rules/ReservedWordsRule.php:195
+#, php-format
+msgid "\"%s\" may conflict with WordPress query variables. Consider using a different slug."
+msgstr ""
+
+#: app/Schema/Rules/ReservedWordsRule.php:206
+msgid "Slugs starting with \"wp_\" are reserved for WordPress core. Consider using a different prefix."
+msgstr ""
+
+#: app/Schema/Rules/SlugRule.php:46
+msgid "Slug must be a string."
+msgstr ""
+
+#: app/Schema/Rules/SlugRule.php:57
+msgid "Slug cannot be empty."
+msgstr ""
+
+#. translators: %d: maximum length
+#: app/Schema/Rules/SlugRule.php:67
+#, php-format
+msgid "Slug must not exceed %d characters."
+msgstr ""
+
+#: app/Schema/Rules/SlugRule.php:78
+msgid "Slug must start with a letter and contain only lowercase letters, numbers, underscores, and hyphens."
+msgstr ""
+
+#: app/Schema/Rules/SlugRule.php:87
+msgid "Avoid consecutive underscores or hyphens in slugs."
+msgstr ""
+
+#: app/Schema/Validator.php:47
+msgid "Post type label is required."
+msgstr ""
+
+#: app/Schema/Validator.php:52
+msgid "Singular label must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:58
+msgid "Supports must be an array."
+msgstr ""
+
+#. translators: %s: support feature
+#: app/Schema/Validator.php:67
+#, php-format
+msgid "Unknown support feature: %s"
+msgstr ""
+
+#. translators: %s: field name
+#: app/Schema/Validator.php:101
+#: app/Schema/Validator.php:201
+#: app/Schema/Validator.php:467
+#, php-format
+msgid "%s must be a boolean value."
+msgstr ""
+
+#: app/Schema/Validator.php:111
+msgid "Menu position must be an integer."
+msgstr ""
+
+#: app/Schema/Validator.php:121
+msgid "Capability type must be a string or an array of two strings (singular, plural)."
+msgstr ""
+
+#: app/Schema/Validator.php:123
+msgid "Capability type must start with a letter and contain only lowercase letters, numbers, and underscores."
+msgstr ""
+
+#: app/Schema/Validator.php:130
+msgid "REST base must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:132
+msgid "REST base may only contain letters, numbers, underscores, and hyphens."
+msgstr ""
+
+#: app/Schema/Validator.php:138
+msgid "Rewrite slug must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:143
+msgid "Rewrite must be a boolean or an array."
+msgstr ""
+
+#: app/Schema/Validator.php:182
+msgid "Taxonomy label is required."
+msgstr ""
+
+#: app/Schema/Validator.php:188
+msgid "At least one post type must be selected."
+msgstr ""
+
+#: app/Schema/Validator.php:190
+msgid "Post types must be an array."
+msgstr ""
+
+#: app/Schema/Validator.php:231
+msgid "Field group title is required."
+msgstr ""
+
+#: app/Schema/Validator.php:236
+msgid "At least one location rule is required."
+msgstr ""
+
+#: app/Schema/Validator.php:238
+msgid "Location must be an array."
+msgstr ""
+
+#: app/Schema/Validator.php:244
+msgid "Fields must be an array."
+msgstr ""
+
+#: app/Schema/Validator.php:257
+msgid "Invalid position value."
+msgstr ""
+
+#: app/Schema/Validator.php:265
+msgid "Invalid style value."
+msgstr ""
+
+#: app/Schema/Validator.php:277
+msgid "Match priority must be a number between 0 and 100."
+msgstr ""
+
+#: app/Schema/Validator.php:309
+msgid "Label is required."
+msgstr ""
+
+#: app/Schema/Validator.php:316
+msgid "Field name is required."
+msgstr ""
+
+#: app/Schema/Validator.php:325
+msgid "Field label is required."
+msgstr ""
+
+#: app/Schema/Validator.php:330
+msgid "Field type is required."
+msgstr ""
+
+#. translators: %s: field type
+#: app/Schema/Validator.php:363
+#, php-format
+msgid "Unknown field type: %s"
+msgstr ""
+
+#: app/Schema/Validator.php:377
+msgid "Width should be 25, 50, 75, or 100."
+msgstr ""
+
+#: app/Schema/Validator.php:393
+msgid "Options are required for this field type."
+msgstr ""
+
+#: app/Schema/Validator.php:438
+msgid "Page title is required."
+msgstr ""
+
+#: app/Schema/Validator.php:443
+msgid "Menu slug is required."
+msgstr ""
+
+#: app/Schema/Validator.php:453
+msgid "Capability must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:455
+msgid "Capability must start with a letter and contain only lowercase letters, numbers, and underscores."
+msgstr ""
+
+#: app/Schema/Validator.php:477
+msgid "Position must be an integer."
+msgstr ""
+
+#: app/Schema/Validator.php:483
+msgid "Storage mode must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:485
+msgid "Storage mode must be either \"options\" or \"custom\"."
+msgstr ""
+
+#: app/Schema/Validator.php:496
+msgid "Custom storage identifier must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:500
+msgid "Custom storage must be a numeric ID or look like \"user_2\", \"term_5\", or \"category_3\"."
+msgstr ""
+
+#: app/Schema/Validator.php:508
+msgid "Parent slug must be a string."
+msgstr ""
+
+#: app/Schema/Validator.php:525
+msgid "Configuration must have a slug or name."
+msgstr ""
+
+#: React admin UI (rox-dynamic-cpt-fields-engine) — source: assets/admin/src, reference: assets/build/main.js
+
+#: assets/build/main.js
+msgid "Post Types"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Taxonomies"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Listings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query Builder"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI Assistant"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relations"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Metabox"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Options Pages"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Dynamic CPT"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Fields Engine"
+msgstr ""
+
+#: assets/build/main.js
+msgid "More"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pro"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No items found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Invalid JSON"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add an OpenAI API key in Settings → AI Assistant first."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Type a prompt before hitting Generate."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Paste the broken or partial JSON into the Schema editor (right), then Generate."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Schema generated. Review the diff and apply when you\\u2019re ready."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Schema generated with errors \\u2014 fix them in the JSON editor before applying."
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI generation failed."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Schema is valid."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Schema still has errors."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generate or paste a schema first."
+msgstr ""
+
+#: assets/build/main.js
+msgid "%1$d created, %2$d updated, %3$d failed."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Schema applied. %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Apply failed."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Start from the \"%s\" preset and adapt it."
+msgstr ""
+
+#: assets/build/main.js
+msgid "<your changes here — e.g. add a \"rating\" field to Property, drop the Agents CPT>"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Loaded \"%s\" into the prompt. Edit it, then Generate Schema."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Snapshot rolled back. Restored %1$s%2$s."
+msgstr ""
+
+#: assets/build/main.js
+msgid " (%d skipped)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Rollback failed."
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI Assistant is a Pro feature."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Connect OpenAI in Settings before generating."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Paste JSON to fix into the Schema editor first."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Type a prompt to generate."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Fix the JSON syntax error."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Resolve all errors before applying."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Acknowledge gating warnings to enable Apply."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Schema has zero items to apply."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Describe what you want — the assistant generates a schema for post types, taxonomies, fields, queries, listings, and relations."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Quick start templates"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Checking AI Assistant configuration…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "OpenAI is not configured"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI Assistant is disabled — flip the toggle in Settings → AI Assistant to enable it."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add your API key in Settings → AI Assistant to start generating schemas."
+msgstr ""
+
+#: assets/build/main.js
+msgid "You can still open Quick start templates and load them into the Prompt — add a key to Generate Schema."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Open Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Mode"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Context"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Prompt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Draft from “%s”"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Reset"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generating…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generate Schema"
+msgstr ""
+
+#: assets/build/main.js
+msgid "What will be created"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Schema editor"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Re-validate"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Validation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Last apply succeeded"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Snapshot"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Roll back"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Once you apply a schema, a snapshot is created here so you can roll back with one click."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Close templates panel"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Load a preset into the Prompt, edit it, then Generate Schema (OpenAI)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Close"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Active"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Metaboxes"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Quick Actions"
+msgstr ""
+
+#: assets/build/main.js
+msgid "View all"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create Post Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Define custom content structures for your site"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create Taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add categories or tags to organize content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create Metabox"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add custom meta fields to your content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create Options Page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Build custom settings pages for your site"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Getting Started"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create a Post Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Define your custom content structure"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Taxonomies"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Organize content with categories & tags"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create Metaboxes"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add custom fields to your content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Options Page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Build custom settings pages"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Configure Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Customize plugin behavior"
+msgstr ""
+
+#: assets/build/main.js
+msgid "View Documentation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pro Features"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display dynamic content grids"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Build custom WordPress queries"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Link content together"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generate content with AI"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unlock Pro Features"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Get access to Listings, Query Builder, Relations, AI Assistant, Advanced Field Types, and priority support."
+msgstr ""
+
+#: assets/build/main.js
+msgid "None"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show only the first page worth of results."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Numeric"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Render 1 / 2 / 3 … page links below the grid."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Load More"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AJAX-paginated button (V1.1 — falls back to numeric on the front-end for now)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Grid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Static responsive columns — all items visible in rows."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slider"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Swiper carousel — show N columns at a time, swipe through the rest."
+msgstr ""
+
+#: assets/build/main.js
+msgid "— Pick a template —"
+msgstr ""
+
+#: assets/build/main.js
+msgid "— Select a saved query —"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Title is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick a Listing Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Please fix validation errors."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Grid updated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Grid created."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to save grid."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete this grid? This cannot be undone."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Grid deleted."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to delete grid."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Shortcode copied."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Listing Grid Builder"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Combine a saved query with a listing template to render a grid anywhere on your site. Available in Pro."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select a relation..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit Grid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "New Grid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Combine a Listing Template with a saved Query to render a multi-card grid."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Quick Setup"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick the template, then point a query at it."
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. Featured Properties Grid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create new template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "New"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Data Source"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Default Loop"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inherit the host page's query (archives, search, blog feed)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Saved Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Drive this grid from a saved query."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation Children"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Iterate pairs of a relation, with per-pair meta available."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create new query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create new relation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Direction"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Source → children"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Target → parents"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Anchor"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Layout"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slides per view"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Columns"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Example: 2 slides per view with 10 query results — visitors swipe to see the rest."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slider options"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Navigation arrows"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pagination dots"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Autoplay"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Loop"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Autoplay delay (ms)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Gap"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pagination"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pagination is disabled in slider mode — all query results appear in the carousel."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Empty State Message"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Shown when the query returns zero rows."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Grid visibility"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hide the entire listing grid based on the viewer and (for row-bound rules) the host page context — macro overrides from the shortcode/block, or the current queried object on singular archives."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Live Preview"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Auto"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Paused"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Refresh preview"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Refresh"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick a template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Once you select a Listing Template, the preview will render below."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Preview failed:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unknown error"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Empty grid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "The query returned zero rows. Try a different query or check your filters."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Embed"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Drop this grid anywhere on your site."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Shortcode"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Copied"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Copy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Gutenberg Block"
+msgstr ""
+
+#: assets/build/main.js
+msgid "RDCFE Listing Grid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Elementor Widget"
+msgstr ""
+
+#: assets/build/main.js
+msgid "PHP Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update Grid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create Grid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Status"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Draft"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Summary"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Source"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query #%s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Default loop"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete Grid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Quick Tips"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Templates ship one card; grids ship many. Build a template first, then a grid."
+msgstr ""
+
+#: assets/build/main.js
+msgid "for context-aware grids."
+msgstr ""
+
+#: assets/build/main.js
+msgid "The Gutenberg block and Elementor widget share the renderer with the shortcode — preview matches the front-end on every surface."
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d column"
+msgid_plural "%d columns"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "repeat(%s, minmax(0, 1fr))"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Posts (post)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pages (page)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Media (attachment)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Gutenberg Block Editor"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select at least one post type to override"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Please fix the validation errors."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Template settings updated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to save settings."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete this listing? The linked template page will also be removed."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Listing deleted."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to delete listing."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Page Template Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Manage single and archive page overrides. Available in Pro."
+msgstr ""
+
+#: assets/build/main.js
+msgid "External Editor"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Single Page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Archive Page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unsaved changes"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Page Design"
+msgstr ""
+
+#: assets/build/main.js
+msgid "General"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Name this template and choose which post types it overrides."
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. Property Single Layout"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. Property Archive Layout"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select post types"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Single posts of these types will use this template."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Archive pages for these types will use this template."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Editor"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Template visibility"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Control when this page template is active. Rules are evaluated against the queried object."
+msgstr ""
+
+#: assets/build/main.js
+msgid "• unsaved"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete Listing"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Elementor"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Gutenberg"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Terms"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add at least one component to the canvas"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Template updated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Template created."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to save template."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete this listing template? This cannot be undone."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Template deleted."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to delete template."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Listing Template Builder"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Build dynamic card layouts with drag-and-drop components, field bindings, and live preview. Available in Pro."
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI title applied — no components were returned."
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI response did not include usable components."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit %s Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Archive"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit Listing Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "New %s Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "New Listing Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Build a full-page layout for single posts. Add page components like Post Content, Breadcrumbs, and Author Box."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Build an archive page layout. Add components like Archive Title, Listing Grid, and Pagination."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Compose a single card. Drop it inside a Grid to render many of them."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Undo (⌘Z)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Redo (⌘⇧Z)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Name your template and pick the data it renders."
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. Property Card, Author Spotlight"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Restrict to Post Types"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Any post type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Card visibility"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hide the entire card for the current listing row when rules match (same context as components — the iterated post, term, or user)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Empty page template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Page Structure components from the left panel — Post Content, Breadcrumbs, Author Box, etc."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Archive Title, Listing Grid, and Pagination from the Page Structure section on the left."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Start with a quick layout"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick a starter card below or add components one at a time from the panel on the left."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Browse layouts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Click any component on the canvas to edit it. Drag to reorder."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick a sample post in the canvas toolbar to preview real data."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Card"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Single card layout"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Multi-card listing grid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Single post template override"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Archive page template override"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Cards"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Grids"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Single Pages"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Archives"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Empty listing"
+msgstr ""
+
+#: assets/build/main.js
+msgid "single"
+msgstr ""
+
+#: assets/build/main.js
+msgid "archive"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Overrides: %1$s (%2$s)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "RDCFE Builder"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Full Width"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Canvas"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d component"
+msgid_plural "%d components"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "template #%d"
+msgstr ""
+
+#: assets/build/main.js
+msgid "no template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "query #%d"
+msgstr ""
+
+#: assets/build/main.js
+msgid "default loop"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%1$d cols • %2$s • %3$s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete this listing? This cannot be undone."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Listing activated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Listing deactivated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to update status."
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s (Copy)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Listing duplicated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to duplicate listing."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Error loading listings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Build reusable templates and override single/archive pages."
+msgstr ""
+
+#: assets/build/main.js
+msgid "All (%d)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Active (%d)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inactive (%d)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Search listings..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No Results Found"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No Listings Yet"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No listings match \"%s\". Try a different search term."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No listings match the current filters."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Start by building a template — it defines the look of one card. Then drop it inside a grid to display many at once."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Name"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Actions"
+msgstr ""
+
+#: assets/build/main.js
+msgid "(untitled)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Another template (#%1$d) also overrides this post type. Only the most recently updated one will be active."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Click to disable"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Click to enable"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Duplicate"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Showing %1$d of %2$d listings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Property Card"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Property Single"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Overrides: property (single) • RDCFE Builder"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Featured Properties"
+msgstr ""
+
+#: assets/build/main.js
+msgid "3 cols • template #1"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Author Spotlight"
+msgstr ""
+
+#: assets/build/main.js
+msgid "users • 3 components"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Default (after content)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Side"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Top aligned"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Left aligned"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below labels"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below fields"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add at least one field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Label is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Name is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field Group Title is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field #%d"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Label"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Name/ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Fields: %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Please fix: %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Please fix validation errors"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Metabox updated successfully!"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Metabox created successfully!"
+msgstr ""
+
+#: assets/build/main.js
+msgid "An error occurred"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No location rules set"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Page Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Page Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Status"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Format"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Category"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "User Form"
+msgstr ""
+
+#: assets/build/main.js
+msgid "User Role"
+msgstr ""
+
+#: assets/build/main.js
+msgid "User Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "is"
+msgstr ""
+
+#: assets/build/main.js
+msgid "is not"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%1$s %2$s \"%3$s\""
+msgstr ""
+
+#: assets/build/main.js
+msgid " +%s more"
+msgstr ""
+
+#: assets/build/main.js
+msgid " (%s groups)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI suggestions applied to form"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit Metabox"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add New Metabox"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Modify your metabox settings and fields"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create a custom field group with location rules"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Name your field group and we'll auto-generate the rest"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Product Details, Event Information"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d field"
+msgid_plural "%d fields"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "Basic Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Presentation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Details"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Description"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Optional description for the field group"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add a description for this field group..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add custom fields to collect additional data for your content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Match Priority"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Loading priority"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Higher values load first (0-100). Defaults to 10."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Useful when multiple metaboxes match the same screen (e.g. a generic Post metabox plus a more specific Property metabox). The higher-priority group renders first; ties fall back to creation order."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display options unavailable"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display Options"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Position"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Where to display this field group"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Label Placement"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Where to place field labels"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Instruction Placement"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Where to display field instructions"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update Metabox"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tabs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Location Rules"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field Width"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Conditional Logic"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Are you sure you want to delete this metabox? This action cannot be undone."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Metabox activated successfully!"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Metabox deactivated successfully!"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to update status"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Metabox duplicated successfully!"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to duplicate metabox"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Error loading metaboxes"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create and manage custom meta fields with location rules for your content."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Metabox"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Search metaboxes..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No Metaboxes Yet"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No metaboxes match \"%s\". Try a different search term."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No active metaboxes found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No inactive metaboxes found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create metaboxes to add custom fields to your posts, pages, and custom post types with flexible location rules."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Location"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Showing %1$d of %2$d metaboxes"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Administrator (manage_options)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Editor (edit_posts)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Author (publish_posts)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Contributor (edit_published_posts)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom Capability"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below Posts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below Media"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below Links"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below Pages"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below Comments"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below First Separator"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below Plugins"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below Users"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below Tools"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Below Second Separator"
+msgstr ""
+
+#: assets/build/main.js
+msgid "WordPress Options Table (Default)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom Location (Post, User, or Term)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu title is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu slug is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slug must start with a letter and contain only lowercase letters, numbers, and hyphens"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom storage location is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field #%d: Label is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field #%d: Name/ID is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Page Title is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu Title is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu Slug is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta Fields: %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Options page updated successfully! Refreshing menu..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Options page created successfully! Refreshing menu..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "#/options-pages/%s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update your options page settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create a new options page for global settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enter your page title and we'll auto-generate the rest"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Theme Options, Site Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enter a title. Menu title and slug will be auto-generated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu Slug"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Labels"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Advanced"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu Title"
+msgstr ""
+
+#: assets/build/main.js
+msgid "The text displayed in the admin menu"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Theme Options"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Brief description of what this options page is for (optional)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Describe what settings are managed here..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Parent Menu"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Make this a submenu of another menu"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Admin Menu"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu Icon"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Choose an icon for the admin sidebar"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu Position"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Where to place in the admin menu"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Redirect to Child Page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "When child pages exist for this parent page, this page will redirect to the first child page."
+msgstr ""
+
+#: assets/build/main.js
+msgid "UI Labels"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Customize the text shown on buttons and messages for this options page."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update Button"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Text for the save/update button"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Updated Message"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Success message shown after saving"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add custom fields to collect settings for your options page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Data Storage"
+msgstr ""
+
+#: assets/build/main.js
+msgid "wp_options"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Storage Location"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select where this page's field data will be saved and loaded from"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom Storage ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enter the ID or key for the custom storage location"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., 123, user_2, term_5"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Examples:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "user_2"
+msgstr ""
+
+#: assets/build/main.js
+msgid "term_5"
+msgstr ""
+
+#: assets/build/main.js
+msgid "category_3"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Autoload Options"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Not applicable for custom storage locations (post/user/term meta have no autoload concept)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "When enabled, WordPress will load these options into memory on every page load. Enable only if these settings are needed on every page."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Permissions"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Required Capability"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Users need this capability to access the page. Choose Custom to use any role/capability slug."
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., manage_woocommerce, edit_users"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Common capabilities:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "manage_options"
+msgstr ""
+
+#: assets/build/main.js
+msgid "edit_posts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "publish_posts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update Options Page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Preview"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta Fields"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Storage"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu title and slug are auto-generated from the page title"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Set appropriate capabilities for security"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Customize labels in the Labels tab"
+msgstr ""
+
+#: assets/build/main.js
+msgid "JSON Config"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Read-only configuration"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Are you sure you want to delete this options page? This action cannot be undone."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Error loading options pages"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unlimited Options Pages"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create and manage options pages for global site settings."
+msgstr ""
+
+#: assets/build/main.js
+msgid "(%1$d/%2$d used)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Upgrade to Add More"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Options Page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Search options pages..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No Options Pages Yet"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No options pages match \"%s\". Try a different search term."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No active options pages found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No inactive options pages found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create options pages to manage global site settings. Perfect for theme options, API keys, and configurations."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Capability"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Upgrade to duplicate options pages"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Showing %1$d of %2$d options pages"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Title"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Author"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Trackbacks"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Excerpt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Revisions"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Page Attributes"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Featured Image"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Formats"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta Value"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display custom field value"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Terms"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display taxonomy terms"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display post ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom Callback"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use custom function"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta Data"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Filter by meta field values"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta range"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Filter numeric meta by min/max buckets"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Filter by taxonomy terms"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slug"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term group"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Parent"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term Order"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Count"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Ascending"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Descending"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Get from Meta Values"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Manual Input"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Get from Posts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "col_%s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "filter_%s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No %s found"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No %s found in Trash"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Set featured image"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove featured image"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use as featured image"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post type name is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Singular name is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slug is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slug must start with a letter and contain only lowercase letters, numbers, and underscores"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slug must be 20 characters or less"
+msgstr ""
+
+#: assets/build/main.js
+msgid "\"%s\" is a reserved WordPress post type and cannot be used"
+msgstr ""
+
+#: assets/build/main.js
+msgid "\"%s\" conflicts with WordPress reserved query variables"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slugs starting with \"wp_\" are reserved for WordPress core"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Invalid slug format"
+msgstr ""
+
+#: assets/build/main.js
+msgid "\"%s\" is a reserved WordPress post type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slugs starting with \"wp_\" are reserved"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post type updated successfully!"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post type created successfully! Refreshing menu..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "#/post-types/%s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit Post Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update your custom post type settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Set up a new custom post type for your site"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enter your post type name and we'll auto-generate the rest"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Projects, Products, Events"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enter a plural name. Singular name and slug will be auto-generated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Admin Columns & Filters"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Names & Description"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Singular Name"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Used when referring to one item"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Project, Product, Event"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Brief explanation of this post type (optional)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Describe what this post type is used for..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Supports"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable various features in the content editor."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Labels are auto-generated from your post type name. Customize them below if needed."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add New Item"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit Item"
+msgstr ""
+
+#: assets/build/main.js
+msgid "View Item"
+msgstr ""
+
+#: assets/build/main.js
+msgid "All Items"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Search Items"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Not Found in Trash"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add custom fields to collect additional data for your posts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Visibility & Access"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Public"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Visible to all visitors on your site"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show Admin UI"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generate default admin UI for this type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show in Admin Menu"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display in WordPress admin sidebar"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show in Nav Menus"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Available in Appearance → Menus"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable Archive"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create an archive page listing all items"
+msgstr ""
+
+#: assets/build/main.js
+msgid "REST API"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable Gutenberg editor & REST API access"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show in Admin Bar"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display 'Add New' shortcut in the top WP admin bar"
+msgstr ""
+
+#: assets/build/main.js
+msgid "URL Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable Rewrite"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create pretty permalinks for this post type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enabled"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Disabled"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom Slug"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Override the default URL slug (leave empty to use post type slug)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Rewrite With Front"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Prepend the permalink structure front base (e.g., /blog/)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Yes"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query Var"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable URL query variable (e.g., ?post_type=slug)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hierarchical"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable parent/child relationships like Pages"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Yes (like Pages)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No (like Posts)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "REST API Base"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Override REST endpoint base (leave empty to use post type slug)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Capability Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "What built-in type should this use for permissions? Choose Custom to define your own (e.g., 'project')."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post (default)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., project, product"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Map Meta Cap"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use WordPress internal default meta capability handling"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Exclude from Search"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hide from WordPress search results"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Publicly Queryable"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Allow direct URL access to posts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Admin Columns"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Expand All"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Collapse All"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Column %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Collapse"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Expand"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pro Feature"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unlock all column options"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Type:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. Price, Status, Featured"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field Name (Meta Key)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "— Select a meta field or type custom —"
+msgstr ""
+
+#: assets/build/main.js
+msgid "— Select a taxonomy —"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Callback function"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Column Order"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Prefix"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. $"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Suffix"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. USD"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable Sorting"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Allow users to sort by this column"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Sort numerically (use for prices, counts, dates as timestamps)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No admin columns yet. Click \"Add Column\" below to surface meta values, terms or callbacks on the post-list screen."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No admin columns yet. Add one to preview the Pro features."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Column"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Admin Filters"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Filter %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unlock all filter options"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. Category, Status, Author"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use this name as the dropdown placeholder (instead of \"All …\")"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta Field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "— Select a meta field —"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use custom meta key…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom Meta Key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Options Source"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta Field (numeric)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Range presets"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Each row is one dropdown choice in the admin list. Leave min or max empty for an open bound (e.g. “Over $500k” = min only)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. Under $100k"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Min"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Max"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove range"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add range row"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Order By"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Order"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show post counts for taxonomy terms"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No admin filters yet. Click \"Add Filter\" below to add taxonomy or meta-value dropdowns above the post-list table."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No admin filters yet. Add one to preview the Pro features."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Filter"
+msgstr ""
+
+#: assets/build/main.js
+msgid "With Pro, you can use your defined meta fields in Admin Columns and Filters for powerful data display and filtering."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update Post Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Type Name"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use plural names like \"Projects\" or \"Products\""
+msgstr ""
+
+#: assets/build/main.js
+msgid "Labels are auto-generated from the name"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable REST API for Gutenberg support"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Are you sure you want to delete this post type? This action cannot be undone."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Error loading post types"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create and manage custom post types for your WordPress site."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Post Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Search post types..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No Post Types Yet"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No post types match \"%s\". Try a different search term."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No active post types found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No inactive post types found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Get started by creating your first custom post type. Define content like Products, Events, or Properties."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Showing %1$d-%2$d of %3$d post types"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Previous"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Page %1$d of %2$d"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Next"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Empty query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d tax"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d meta"
+msgstr ""
+
+#: assets/build/main.js
+msgid "taxonomies: %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "all users"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete this saved query? This cannot be undone."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query deleted."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to delete query."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query activated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query deactivated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query duplicated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to duplicate query."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Error loading queries"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create reusable, dynamic queries for posts, terms, and users — with macros, preview, and health checks."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Search queries..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No Saved Queries Yet"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No queries match \"%s\". Try a different search term."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No active queries found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No inactive queries found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Build queries once and reuse them across listings, related posts, and dynamic content."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Showing %1$d of %2$d queries"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create reusable, dynamic queries for posts, terms, and users."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Filters"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tax & meta"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Order & paging"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Macros"
+msgstr ""
+
+#: assets/build/main.js
+msgid "JSON"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick at least one taxonomy on the Source tab"
+msgstr ""
+
+#: assets/build/main.js
+msgid "A meta key is required when ordering by meta_value"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query updated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query created."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to save query."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query Builder Editor"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Build dynamic queries with filters, taxonomies, meta values, ordering, macros, and live previews. Available in Pro."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add New Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tune sources, filters, ordering, and macros — preview in real-time."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Build a reusable query you can drop into listings, related-content blocks, or shortcodes."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Name your query — everything else lives in the tabs below."
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. Featured Properties, Recent Events, My Submissions"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tax rules"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta rules"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation rules"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Include IDs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Exclude IDs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Per page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "for context-aware queries."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Categories (category)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tags (post_tag)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Connect post types like posts, pages, or your CPTs."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Connect categories, tags, or any custom taxonomy."
+msgstr ""
+
+#: assets/build/main.js
+msgid "User"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Connect users — optionally scoped to a single role."
+msgstr ""
+
+#: assets/build/main.js
+msgid "One to One"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Each item on either side connects to exactly one item on the other."
+msgstr ""
+
+#: assets/build/main.js
+msgid "One to Many"
+msgstr ""
+
+#: assets/build/main.js
+msgid "One owner on the target side can have many items on the source side."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Many to Many"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Either side can connect to any number of items on the other."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Text"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Textarea"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Number"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Date"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Checkbox"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Single-line input. Stores up to 255 characters."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Multi-line input for longer notes (no HTML)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Numeric input. Use for ordering weights, prices, scores."
+msgstr ""
+
+#: assets/build/main.js
+msgid "YYYY-MM-DD date input. Stored as UTC."
+msgstr ""
+
+#: assets/build/main.js
+msgid "On/off flag — useful for \"primary\", \"featured\", etc."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Drop-down with author-defined options."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No custom fields yet. Add one to capture pair-specific data."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add custom field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field %d"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Move up"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Move down"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Notes"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add another field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove option"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add option"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display name is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slug must be 64 characters or fewer"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Source slug is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Target slug is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Must be 0 (unlimited) or a positive number"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation updated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation created."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to save relation."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Click OK to delete the definition AND all attached pairs."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Click Cancel to delete just the definition."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Are you sure? This will permanently delete the definition and every attached pair."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete this relation definition? This cannot be undone."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation deleted with all pairs."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation deleted."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to delete relation."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation Editor"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Connect post types together with one-to-one, one-to-many, or many-to-many relationships, then attach items straight from the post edit screen. Available in Pro."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Assigned %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Assigned (target label)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Listed %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Listed (source label)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Source post type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Source taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Source role"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Target post type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Target taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Target role"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit Relation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add New Relation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tune the connection — kind, type, labels, and limits."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Define how two objects connect (posts, terms, or users) — meta boxes appear on every matching edit screen."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Name your relation — we'll generate a slug from it."
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. Property to Agent"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Connection"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Limits"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hierarchy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pair Custom Fields"
+msgstr ""
+
+#: assets/build/main.js
+msgid "This tab has errors"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Source kind"
+msgstr ""
+
+#: assets/build/main.js
+msgid "The object type that owns the relation — posts, terms, or users."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Restrict the relation to a single role, or pick \"Any role\" to cover every user."
+msgstr ""
+
+#: assets/build/main.js
+msgid "The 'owner' side. Edit screens for the matching object will show the meta box."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select source taxonomy..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select source post type..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Target kind"
+msgstr ""
+
+#: assets/build/main.js
+msgid "The object type on the other side of the relation."
+msgstr ""
+
+#: assets/build/main.js
+msgid "The 'target' side. Authors will pick from this list when attaching."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select target taxonomy..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select target post type..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Cardinality"
+msgstr ""
+
+#: assets/build/main.js
+msgid "How many items can be attached on each side."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Bidirectional"
+msgstr ""
+
+#: assets/build/main.js
+msgid "When on, the meta box also appears on the target side so authors can attach from either direction."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show on both edit screens"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show only on source side"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pairs stored once, surfaced from either edit screen."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Authors must edit the source CPT to manage this connection."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Source-side label"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Shown on every \"%s\" edit screen as the meta-box title."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Target-side label"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Shown on every \"%s\" edit screen."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Only used when Bidirectional is on."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Optional"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Max from source"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Maximum items each source post can attach. 0 = unlimited."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Max from target"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Maximum items each target post can be attached to. 0 = unlimited."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hierarchy & Inheritance"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Propagate pairs along the post-parent or term-parent chain. Best paired with hierarchical post types or taxonomies — user-to-user relations don&apos;t qualify because users have no hierarchy in WordPress."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inherit from parent"
+msgstr ""
+
+#: assets/build/main.js
+msgid "When on, the picker also surfaces pairs attached to the anchor's ancestors. Inherited rows render as locked chips."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Reads include ancestors"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Reads only show direct pairs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Authors see ancestor pairs too. Walk depth is capped at 5 by default — filter `rdcfe_relation_inheritance_max_depth` to override."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Direct pairs only. Switch on once both sides represent a hierarchical kind."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Cascade to descendants"
+msgstr ""
+
+#: assets/build/main.js
+msgid "When on, attaching a pair on a parent post / term auto-attaches the same pair on every descendant."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Writes propagate downward"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Writes stay on the source row"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Each attach / detach mirrors onto the BFS-walked descendants of the canonical parent."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Descendants do not inherit the write — useful when you want manual control."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Cascade strategy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "How aggressive a cascading detach is. `Merge` only removes descendants currently attached; `Replace` removes them regardless of overrides."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Merge — keep manual overrides"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Replace — descendants always mirror parent"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Heads-up:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Attach extra info to each connection — notes, an effective date, a status flag, or anything else that varies per pair rather than per object. Editors will see one input per field underneath every attached item in the meta box."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update Relation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create Relation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Max from"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Max to"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inherit"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Ancestors"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Cascade"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Replace"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Merge"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Live pairs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete Relation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "orphan"
+msgstr ""
+
+#: assets/build/main.js
+msgid "any"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Are you sure you want to delete this relation definition? This cannot be undone."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation activated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation deactivated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation duplicated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to duplicate relation."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Error loading relations"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Connect post types to each other — agents to properties, courses to modules, products to authors. Manage cardinality (1:1, 1:N, N:N) and pick attachments straight from the post edit screen."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Relation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Search by name, slug, or post type..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No Relations Yet"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No relations match \"%s\". Try a different search term."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No active relations found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No inactive relations found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Define a connection between two post types and a meta box appears on every matching edit screen — no fields, no shortcodes."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pairs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "One-way"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Showing %1$d of %2$d relation"
+msgid_plural "Showing %1$d of %2$d relations"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "Connect post types to each other — agents to properties, courses to modules, products to authors."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Basic plugin settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Import, Export & PHP"
+msgstr ""
+
+#: assets/build/main.js
+msgid "OpenAI integration"
+msgstr ""
+
+#: assets/build/main.js
+msgid "License"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Activation & updates"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field Group"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to load settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Using defaults. Try refreshing the page."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to load license status"
+msgstr ""
+
+#: assets/build/main.js
+msgid "An error occurred."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to load AI settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Your AI Assistant settings were updated."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to save AI settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI Assistant enabled"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI Assistant disabled"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Model updated"
+msgstr ""
+
+#: assets/build/main.js
+msgid "API key saved"
+msgstr ""
+
+#: assets/build/main.js
+msgid "API key cleared"
+msgstr ""
+
+#: assets/build/main.js
+msgid "License key required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Paste your license key before activating."
+msgstr ""
+
+#: assets/build/main.js
+msgid "License activated"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Your license is now active. Updates are enabled."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Activation failed"
+msgstr ""
+
+#: assets/build/main.js
+msgid "License deactivated"
+msgstr ""
+
+#: assets/build/main.js
+msgid "This site is no longer linked to your license."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Deactivation failed"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Error loading data"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to load configurations."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Settings saved"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Your settings have been saved successfully."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to save settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Success"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Rewrite rules have been flushed."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Error"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to flush rewrite rules."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No items selected"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Please select at least one item to export."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Export successful"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Exported %d item(s)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Export failed"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Invalid file"
+msgstr ""
+
+#: assets/build/main.js
+msgid "This file was not exported from Rox Dynamic CPT Fields Engine."
+msgstr ""
+
+#: assets/build/main.js
+msgid "The file contains invalid JSON data."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Please select a JSON file."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Import successful"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Import failed"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to generate PHP code."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Copied!"
+msgstr ""
+
+#: assets/build/main.js
+msgid "PHP code copied to clipboard."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to copy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Please select and copy manually."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Export"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Import"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Snapshots"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generate PHP"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Export Configurations"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select items to export as JSON file"
+msgstr ""
+
+#: assets/build/main.js
+msgid "items"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Drag and drop a JSON file here"
+msgstr ""
+
+#: assets/build/main.js
+msgid "or"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Browse files"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Validating..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Validation passed - Ready to import"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Validation failed"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Items to import:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Errors"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Warnings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Import with changes"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Import Now"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generate PHP Code"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Export configurations as PHP code for theme/plugin"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Requires RDCFE plugin"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Download"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select Item"
+msgstr ""
+
+#: assets/build/main.js
+msgid "PHP Code for: %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Selected Item"
+msgstr ""
+
+#: assets/build/main.js
+msgid "PHP Code Output"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d lines"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No code generated"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select an item from the left panel"
+msgstr ""
+
+#: assets/build/main.js
+msgid "OpenAI Integration"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Power the AI Assistant with your own OpenAI API key."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable AI Assistant"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Allow the plugin to call the OpenAI API to generate schemas, fields, and queries."
+msgstr ""
+
+#: assets/build/main.js
+msgid "API Key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Paste your OpenAI secret key. We store it on your site only — never sent to anyone but OpenAI."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Saved"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Change key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Loading…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Paste new API key…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hide API key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show API key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Save Key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove the saved API key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Get a key at"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Keys typically start with"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Model"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick the OpenAI model the AI Assistant should use. For low cost try"
+msgstr ""
+
+#: assets/build/main.js
+msgid "if your key has access; otherwise"
+msgstr ""
+
+#: assets/build/main.js
+msgid "remains a safe default. See"
+msgstr ""
+
+#: assets/build/main.js
+msgid "OpenAI model list"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Loading models…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Rate limit"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Maximum AI generations per hour, per WordPress user. Prevents runaway API spend."
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d/hour"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI Assistant is ready"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Open the AI Assistant page from the More menu (or the per-module \"Generate with AI\" buttons) to start generating schemas."
+msgstr ""
+
+#: assets/build/main.js
+msgid "API key required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add your OpenAI API key above before the AI Assistant can generate anything."
+msgstr ""
+
+#: assets/build/main.js
+msgid "License not active"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Activate your license below to enable automatic updates. Pro features keep working in the meantime."
+msgstr ""
+
+#: assets/build/main.js
+msgid "License Activation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Activate your license to unlock automatic updates and premium support."
+msgstr ""
+
+#: assets/build/main.js
+msgid "License status"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Whether this site is linked to an active license."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Not active"
+msgstr ""
+
+#: assets/build/main.js
+msgid "License is active"
+msgstr ""
+
+#: assets/build/main.js
+msgid "This site will receive automatic plugin updates and is eligible for premium support."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Active key:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Deactivate"
+msgstr ""
+
+#: assets/build/main.js
+msgid "License key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Paste the license key from your"
+msgstr ""
+
+#: assets/build/main.js
+msgid "We store it on your site only."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Paste your license key…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hide license key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show license key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Activate"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Plugin Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Configure basic plugin behavior"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Auto-flush Rewrite Rules"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Automatically flush rewrite rules when CPTs or Taxonomies change"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove Data on Uninstall"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete all plugin data when the plugin is uninstalled"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Manual Actions"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Perform manual maintenance tasks"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Flush Rewrite Rules"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Manually flush WordPress rewrite rules to update permalinks."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Configure your plugin"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Are you sure you want to delete this taxonomy? This action cannot be undone."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Error loading taxonomies"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create and manage custom taxonomies for organizing content."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Search taxonomies..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No Taxonomies Yet"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No taxonomies match \"%s\". Try a different search term."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No active taxonomies found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No inactive taxonomies found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create custom taxonomies to organize your content. Like categories or tags, but custom."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Showing %1$d of %2$d taxonomies"
+msgstr ""
+
+#: assets/build/main.js
+msgid "← Back to %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Taxonomy name is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slug must be 32 characters or less"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select at least one post type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Please select at least one post type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Please fix the following: %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Taxonomy updated successfully!"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Taxonomy created successfully! Refreshing menu..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "#/taxonomies/%s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit Taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update your custom taxonomy settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Set up a new taxonomy to organize your content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enter your taxonomy name and we'll auto-generate the rest"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Genres, Locations"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select which post types this taxonomy should be attached to"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Genre, Location"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Brief explanation of this taxonomy (optional)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "A brief description of this taxonomy..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Allow parent/child relationships (like categories)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show in Admin"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display in WordPress admin menu"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Taxonomy Labels"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Parent Item"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add custom fields to collect additional data for your taxonomy terms"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create pretty permalinks for this taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Override the default URL slug (leave empty to use taxonomy slug)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Additional Options"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show Admin Column"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display a column in the post admin list table"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show Tag Cloud"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display in the tag cloud widget"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Make available for selection in navigation menus"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show in Quick Edit"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Allow assigning terms from the Quick Edit panel"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable Query Var"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Allow front-end URL queries by this taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update Taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "hierarchical"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Attach to multiple post types if needed"
+msgstr ""
+
+#: assets/build/main.js
+msgid " (+%d more)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Your session has expired. Please reload the page and try again."
+msgstr ""
+
+#: assets/build/main.js
+msgid "An unexpected error occurred"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Real estate properties with price, location, images"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Real Estate Property"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Restaurant Menu"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Event / Workshop"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Team Member"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Online Course"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Property types like apartment, villa, land"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Product Categories"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Locations / Cities"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Skill Levels"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Departments"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Product details with price, color, size and stock fields"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pricing Details"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Contact Information"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Design Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "SEO Meta"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Theme settings with logo, colors, footer text"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Theme Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Social Media Links"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Contact Info"
+msgstr ""
+
+#: assets/build/main.js
+msgid "API Integrations"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Show featured properties in Dhaka under 50 lakh"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Upcoming Events"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Latest Blog Posts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "On-Sale Products"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Listing"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Property card layout showing image, title, price, and location"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Property Card Grid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Event Listing"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Team Member Card"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Blog Post List"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g., Properties are managed by Agents"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Property → Agent"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Author → Books"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Course → Students"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Movie → Actors"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Upgrade to Pro to use AI generation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generate %s with AI"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI Generate"
+msgstr ""
+
+#: assets/build/main.js
+msgid "PRO"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generate %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Describe what you need and AI will suggest settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add an API key in"
+msgstr ""
+
+#: assets/build/main.js
+msgid "to enable AI generation."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Describe your %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s+Enter to generate"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Quick examples"
+msgstr ""
+
+#: assets/build/main.js
+msgid "— click to insert"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generation failed. Please try again."
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI Suggestions"
+msgstr ""
+
+#: assets/build/main.js
+msgid "View raw JSON"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Open AI Assistant"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Regenerate"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Accept & Fill Form"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Cancel"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generate"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Applying…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Apply Schema (%d)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Apply Schema"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Target Post Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "— Any (no specific CPT) —"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Target Field Group"
+msgstr ""
+
+#: assets/build/main.js
+msgid "— Any (no specific field group) —"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%1$s — %2$d field"
+msgid_plural "%1$s — %2$d fields"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "Field Groups"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Queries"
+msgstr ""
+
+#: assets/build/main.js
+msgid "(query)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "(listing)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%1$s: %2$s ↔ %3$s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "relation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "(relation)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No schema yet"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Type a prompt and hit Generate, or pick a Quick Start template below."
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI Summary"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create New"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Start from scratch — describe what you want."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Modify Existing"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Patch an existing CPT, taxonomy, or field group."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Fix Schema"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Repair a broken or partial JSON schema."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Include in generation:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Schema (JSON)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No templates available"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pro plugins can register their own templates via the"
+msgstr ""
+
+#: assets/build/main.js
+msgid "action."
+msgstr ""
+
+#: assets/build/main.js
+msgid "+ %d more"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Copy this preset into the Prompt — edit it, then Generate Schema"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use in prompt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Schema is valid. No warnings."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Errors (%d)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Needs your acknowledgement (%d)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "I acknowledge"
+msgstr ""
+
+#: assets/build/main.js
+msgid "and want to apply anyway."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Notes (%d)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Resolve import: %1$s “%2$s”"
+msgstr ""
+
+#: assets/build/main.js
+msgid "An item with this slug already exists. Choose how to merge the import."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Overwrite existing"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Replace the current configuration with values from the file."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Keep existing"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Skip this row; nothing from the file is applied for this slug."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Import as new slug"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Creates a separate configuration using the slug below."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Apply"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Overwrite"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Rename → %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Import preview"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d new"
+msgid_plural "%d new"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "%d update"
+msgid_plural "%d updates"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "%d unchanged"
+msgid_plural "%d unchanged"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "Create rollback snapshot before import"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Updates & conflicts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Resolve…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unchanged (skipped on import)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Title: “%1$s” → “%2$s”"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d field change"
+msgid_plural "%d field changes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid " (list truncated)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "View diff"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Path"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Before"
+msgstr ""
+
+#: assets/build/main.js
+msgid "After"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Could not load snapshots"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Request failed."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Retention updated"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Older snapshots were removed if needed."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to update retention"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Restore this snapshot? Configurations not in the snapshot will be removed."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Snapshot restored"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Restore incomplete"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Restore failed"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Preview failed"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Snapshot saved"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Current configuration export was stored."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Snapshot failed"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Loading snapshots…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Rollback snapshots"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Automatic backups before Pro imports, plus manual captures."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Save snapshot now"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Keep last N snapshots"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Saving…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Apply limit"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Restore"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Snapshot JSON"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d CPT"
+msgid_plural "%d CPTs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "%d taxonomy"
+msgid_plural "%d taxonomies"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "%d field group"
+msgid_plural "%d field groups"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "%d options page"
+msgid_plural "%d options pages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "Search title..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Clear sample"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove this component from the layout?"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Empty canvas"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add a component from the Components panel on the left, or pick one of the quick-start presets."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Drag this block to reorder"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Duplicate (⌘D)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete (Del)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Nothing to render"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Every component on the canvas resolved to an empty value. Pick a different sample post or check your bindings."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tap Refresh"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Auto-refresh is paused. Click Refresh in the toolbar to render the current configuration."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Close inspector"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Default"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Style"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Copy style"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Visibility"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hide this component for the current listing row when rules match. Evaluated on the server — hidden nodes emit no HTML."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Page Structure"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Dynamic Content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Components"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Click any tile to add it to the canvas. The order on the canvas matches the order rendered on the front-end."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Click any tile to add it to the canvas. Page Structure components are specific to this template type."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post/Term/User/Object Data"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick where the value comes from — object data, meta, query vars, etc."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Choose the specific field within the selected source."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom token"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Optional. Overrides the field selected above."
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. field:my_meta_key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Title"
+msgstr ""
+
+#: assets/build/main.js
+msgid "The post.title column"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Excerpt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hand-written or auto-generated"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Full post content (HTML)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Permalink"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Single post URL"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Publish Date"
+msgstr ""
+
+#: assets/build/main.js
+msgid "post_date column"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Modified Date"
+msgstr ""
+
+#: assets/build/main.js
+msgid "post_modified column"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Author Name"
+msgstr ""
+
+#: assets/build/main.js
+msgid "display_name of post_author"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Comment Count"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Approved comments"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term Name"
+msgstr ""
+
+#: assets/build/main.js
+msgid "term.name column"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term Description"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term Archive URL"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display Name"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Bio / description"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Author Archive URL"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Registered Date"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pair Title"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Title of the related object"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pair Excerpt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Excerpt / description"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pair Content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Full content (HTML)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pair Permalink"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Single URL"
+msgstr ""
+
+#: assets/build/main.js
+msgid "WP post thumbnail attachment"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom field meta key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom fields"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Search fields…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Core WordPress"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Dynamic Text"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Dynamic Image"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Dynamic Link"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Dynamic Meta"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inline Fields"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term Badges"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Repeater Output"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Breadcrumbs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Navigation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Comments Section"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Author Box"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Share Buttons"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Related Posts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Archive Title"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Archive Description"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Posts Count"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Image"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Link"
+msgstr ""
+
+#: assets/build/main.js
+msgid "inline fields"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Component"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Layers"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick a tile from the Components panel above to add it here."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tip — drag a row to reorder, or drag directly on the canvas."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Full Page Override"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Replaces the entire page output (header/footer from your theme still render)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Replace Content Only"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Replaces only the_content area, keeping theme layout intact."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Before Content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inserts this template before the_content."
+msgstr ""
+
+#: assets/build/main.js
+msgid "After Content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inserts this template after the_content."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Stretches edge-to-edge (no sidebar, no container max-width)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Theme Default"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Uses the theme's default page template width."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Blank Canvas"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Renders with no header, footer, or theme styling."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Page Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Placement"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Canvas Mode"
+msgstr ""
+
+#: assets/build/main.js
+msgid "This template will override the single post page for the targeted post types. Pick a sample post in the canvas toolbar to preview real data."
+msgstr ""
+
+#: assets/build/main.js
+msgid "This template will override the archive page for the targeted post types. The listing grid component renders the main query loop."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Core"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Repeater"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Card (listing item)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "A single card layout for grids"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Override single post template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Override archive/listing page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Gutenberg (Block Editor)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Template name is required."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Please select a post type."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Template created successfully."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Failed to create template."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Close panel"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Set up a new template, grid, or page override."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Template name"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Data source"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "— Select post type —"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Template type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Block Editor"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Creating…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit in Gutenberg"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit in Elementor"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Email"
+msgstr ""
+
+#: assets/build/main.js
+msgid "URL"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Radio"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Toggle (Yes/No)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "File"
+msgstr ""
+
+#: assets/build/main.js
+msgid "WYSIWYG Editor"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Time"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Date & Time"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Color Picker"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Group"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Gallery"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relationship"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Taxonomy Picker"
+msgstr ""
+
+#: assets/build/main.js
+msgid "User Picker"
+msgstr ""
+
+#: assets/build/main.js
+msgid "HTML"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Accordion"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Endpoint"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Horizontal"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Vertical"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Is equal to"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Is not equal to"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Is empty"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Is not empty"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Contains"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Does not contain"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Greater than"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Less than"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Category"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tag"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Administrator"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Contributor"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Subscriber"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Is checked"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Is unchecked"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Has selected"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Does not have selected"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Has none selected"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Has any selected"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Is on"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Is not on"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Duplicate field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unlimited"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Choose how each row renders. Block/Inline enables sub-field widths."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Block"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inline"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Sub field label"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field width"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove sub-field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Type(s)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select post types..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select taxonomy..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Filter by Roles"
+msgstr ""
+
+#: assets/build/main.js
+msgid "All Roles (no filter)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Placeholder text..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Optional default..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Help text for this field..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No limit"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. ^[A-Z]{2}\\\\d{4}$"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Shown when the pattern fails"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select value..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enter a number..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enter value..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Parent"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Author"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Taxonomy Term"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Current User Role"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Current User Capability"
+msgstr ""
+
+#: assets/build/main.js
+msgid "is equal to"
+msgstr ""
+
+#: assets/build/main.js
+msgid "is not equal to"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Published"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pending Review"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Scheduled"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Private"
+msgstr ""
+
+#: assets/build/main.js
+msgid "All User Forms"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add New User"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit User"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Profile (Own)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove group"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove rule"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term IDs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "User IDs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post IDs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Include / Exclude"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Include %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Comma-separated. Restricts the result set to exactly these IDs."
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. 12, 34, 56"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Exclude %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Comma-separated. Removes these IDs from the result set."
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. 7, 99"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Author Filter"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Author User ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Limit to posts by a single author. Supports the {{current_user_id}} macro for 'my posts' lists."
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. 5 or {{current_user_id}}"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Date Range"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Posted After"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inclusive lower bound. ISO date (YYYY-MM-DD) or strtotime-friendly string (e.g. '-7 days')."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Posted Before"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inclusive upper bound."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Author / Date filters skipped"
+msgstr ""
+
+#: assets/build/main.js
+msgid "These filters only apply to"
+msgstr ""
+
+#: assets/build/main.js
+msgid "queries. Switch the query type back to Posts on the"
+msgstr ""
+
+#: assets/build/main.js
+msgid "tab to use them."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Current Post ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Resolves to the post being viewed (front-end singular, in-loop archives, admin post-edit screens)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use as filters.author or in meta_query.value to build \"related posts\" listings."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Current Term ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Resolves on taxonomy archives (category/tag/custom). Useful for \"more from this category\" lists."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pair with a tax_query rule like field=term_id, terms={{current_term_id}}."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Current User ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Logged-in user ID (0 for anonymous visitors)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Build \"my posts\" or \"my favourites\" listings — set filters.author to this macro."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Related Permalink"
+msgstr ""
+
+#: assets/build/main.js
+msgid "First related item's permalink for the named relation. Anchor defaults to the current post; use inside Listing Grid components or DynamicText `before` / `after` decorators."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Related Title"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Display title (or term name / user display name) of the first related item. Pair with `:id`, `:permalink`, or `:field:<meta_key>` for other facets."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Related by Index"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Zero-based index variant. `.0` is the first pair (same as omitting the suffix), `.1` is the second, and so on."
+msgstr ""
+
+#: assets/build/main.js
+msgid "{{related:property_to_agent.1:title}} → the second agent's name."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Related Meta Field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Fetch a meta value from the first related item (or the indexed one when combined with `.N`). Routes through `get_*_meta()` per object kind."
+msgstr ""
+
+#: assets/build/main.js
+msgid "{{related:property_to_agent:field:phone}} → the lead agent's phone meta."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Related Count"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Number of pairs the current anchor has under the relation. Default direction is `from` (children); pass `:to` to count parent pairs."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Copy to clipboard"
+msgstr ""
+
+#: assets/build/main.js
+msgid "URL Parameter Builder"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. city, min_price, tag"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation Macros"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation Macro Builder"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Permalink (default)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta field…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pair count (children)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pair count (parents)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. phone, listing_price"
+msgstr ""
+
+#: assets/build/main.js
+msgid "= (equals)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "!= (not equals)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "> (greater than)"
+msgstr ""
+
+#: assets/build/main.js
+msgid ">= (greater or equal)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "< (less than)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "<= (less or equal)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "LIKE (contains)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "NOT LIKE"
+msgstr ""
+
+#: assets/build/main.js
+msgid "IN (any of)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "NOT IN"
+msgstr ""
+
+#: assets/build/main.js
+msgid "BETWEEN (range)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "NOT BETWEEN"
+msgstr ""
+
+#: assets/build/main.js
+msgid "EXISTS (key set)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "NOT EXISTS"
+msgstr ""
+
+#: assets/build/main.js
+msgid "REGEXP"
+msgstr ""
+
+#: assets/build/main.js
+msgid "NOT REGEXP"
+msgstr ""
+
+#: assets/build/main.js
+msgid "CHAR (string)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "DATETIME"
+msgstr ""
+
+#: assets/build/main.js
+msgid "TIME"
+msgstr ""
+
+#: assets/build/main.js
+msgid "DECIMAL"
+msgstr ""
+
+#: assets/build/main.js
+msgid "SIGNED"
+msgstr ""
+
+#: assets/build/main.js
+msgid "UNSIGNED"
+msgstr ""
+
+#: assets/build/main.js
+msgid "BINARY"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AND (match all rows)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "OR (match any row)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select a meta key..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field-aware:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. _custom_meta_key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Last Modified"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu Order"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Random"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta Value (string)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta Value (numeric)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Match include order"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No ordering"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term Group"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Login"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Nicename"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Descending (DESC)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Ascending (ASC)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Ordering"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Which column drives the result order."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta Key for Ordering"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Required when ordering by meta_value / meta_value_num."
+msgstr ""
+
+#: assets/build/main.js
+msgid "ASC = oldest/lowest first, DESC = newest/highest first."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Note"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Random ordering bypasses object cache; use sparingly on busy sites."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Items Per Page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use -1 to fetch all results (warning: unbounded queries can be slow on large datasets)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Offset"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Skip the first N results before returning anything."
+msgstr ""
+
+#: assets/build/main.js
+msgid "View post"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Count"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Roles"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Preview Context"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Override for {{current_post_id}}"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. 42"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Override for {{current_term_id}}"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. 12"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Override for {{current_user_id}} (defaults to logged-in user)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. 5"
+msgstr ""
+
+#: assets/build/main.js
+msgid "URL Parameters"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Format: \"key=value&key2=value2\" — drives every {{url_param:...}} macro."
+msgstr ""
+
+#: assets/build/main.js
+msgid "city=dhaka&min_price=50000"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Run Preview"
+msgstr ""
+
+#: assets/build/main.js
+msgid "JSON Configuration"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Copy JSON"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Source side (forward)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Target side (reverse)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "IN (related to anchor)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "NOT IN (excluded from anchor)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "INHERITED IN (anchor + ancestors)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "INHERITED NOT IN (anchor + ancestors)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "EXISTS (has any pair)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "NOT EXISTS (orphans)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation-aware:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "123 or {{current_post_id}}"
+msgstr ""
+
+#: assets/build/main.js
+msgid "status = active"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. status"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove pair-meta filter"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Posts (WP_Query)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Terms (WP_Term_Query)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Users (WP_User_Query)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pending"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Trash"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "What this query returns. Each type maps to a WordPress query primitive."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Limit results to these post types. Empty = all WordPress defaults to 'post'."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post statuses to include in the query."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Sticky posts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "WordPress “sticky” posts normally jump to the top of blog listings. Turn this on for strict date/order behavior (WP_Query ignore_sticky_posts)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Ignore sticky posts (recommended for latest / archive-style lists)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "At least one taxonomy is required for term queries."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select taxonomies..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hide Empty Terms"
+msgstr ""
+
+#: assets/build/main.js
+msgid "When on, only terms attached to at least one post are returned."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Skip terms with zero posts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Limit results to users with at least one of these roles. Empty = all roles."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select roles..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "NOT IN (none of)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AND (all of)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "EXISTS (has any term)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "NOT EXISTS (no term)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term Taxonomy ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Taxonomy Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Search..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No results found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Showing %1$d to %2$d of %3$d results"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d per page"
+msgid_plural "%d per page"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "Customizer"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generic"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Home"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Links"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Multisite"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Network"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Site"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Site Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Site Alt 2"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Site Alt 3"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Portfolio"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Products"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Calendar"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Calendar Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Location Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Store"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Cart"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Person"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Person Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Business Person"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Team"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Building"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Book"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Book Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Learn"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Testimonial"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tickets"
+msgstr ""
+
+#: assets/build/main.js
+msgid "ID Card"
+msgstr ""
+
+#: assets/build/main.js
+msgid "ID Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Clipboard"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Name Tag"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Press This"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hammer"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Video"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Audio"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Images"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Images 2"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Camera"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Camera Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Code"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Document"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Interactive"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Spreadsheet"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Playlist Audio"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Playlist Video"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Play"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Microphone"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Video Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Video Alt 2"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Video Alt 3"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Share"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Share Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Share Alt 2"
+msgstr ""
+
+#: assets/build/main.js
+msgid "RSS"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Email Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Email Alt 2"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Networking"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Facebook"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Facebook Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Twitter"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Twitter Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Instagram"
+msgstr ""
+
+#: assets/build/main.js
+msgid "LinkedIn"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pinterest"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Podio"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Reddit"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Spotify"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Twitch"
+msgstr ""
+
+#: assets/build/main.js
+msgid "WhatsApp"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Xing"
+msgstr ""
+
+#: assets/build/main.js
+msgid "YouTube"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Google"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Amazon"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Star"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Star Half"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Star Empty"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Heart"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Award"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Flag"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Thumbs Up"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Thumbs Down"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Lightbulb"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Info"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Info Outline"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Warning"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Yes Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Plus"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Plus Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Plus Alt 2"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Minus"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Dismiss"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Marker"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Quote"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Chat"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Aside"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Smiley"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Move"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hidden"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Lock"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unlock"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Search"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Filter"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Sort"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Update Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Upload"
+msgstr ""
+
+#: assets/build/main.js
+msgid "External"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Backup"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Cloud"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Cloud Saved"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Cloud Upload"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Screen Options"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu Alt 2"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Menu Alt 3"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Phone"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Smartphone"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tablet"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Desktop"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Laptop"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Clock"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Schedule"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Money"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Money Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Vault"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Shield"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Shield Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Megaphone"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Airplane"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Car"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Food"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Beer"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Coffee"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Palm Tree"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pets"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Universal Access"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Universal Access Alt"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Games"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hourglass"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Database"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Database Add"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Database Export"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Database Import"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Database Remove"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Database View"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Admin"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Social"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Symbols"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Objects"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Search icons..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No icons found matching \"%s\""
+msgstr ""
+
+#: assets/build/main.js
+msgid "Selected:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post (Default)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s is a Pro Feature"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Upgrade to Pro to unlock %s and other advanced features."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select options..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "All selected"
+msgstr ""
+
+#: assets/build/main.js
+msgid "14+ Advanced Field Types"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query Builder & Saved Queries"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Listings & Dynamic Output"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relations & Connections"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Import Diff + Rollback"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Group fields let you nest multiple fields as a single object, perfect for structured data."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Repeater fields allow unlimited rows of fields - ideal for galleries, team members, features lists."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Rich text editor with full formatting options for content that needs styling."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Upload and manage multiple images with drag-drop reordering."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Date and time picker for events, schedules, and time-sensitive content."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Time-only picker for schedules and operating hours."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Color picker with transparency support for design-focused content."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Connect posts to other posts - perfect for related content, authors, and more."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select taxonomy terms with tree view for hierarchical data."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select users for author attribution, team assignments, and permissions."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Build and save complex queries with filters, ordering, and macros."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Create dynamic listing templates to display your content beautifully."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Define relationships between content types for connected data."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show or hide content based on user roles, login status, and more."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Customize admin list columns to see important data at a glance."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Filter admin lists by custom fields and taxonomies."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use AI to generate content, post types, and field configurations automatically."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show or hide fields based on other field values."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Advanced pattern validation for precise data control."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unlock this feature and many more with Rox Dynamic CPT Fields Engine Pro."
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s is a Pro Field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s is a Pro Module"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s is a Pro Location Rule"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s requires Pro"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unlock with Pro:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Maybe Later"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Elevated"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Full card chrome with shadow, border, and hover lift"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Flat"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Border and padding, no shadow or hover effects"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Outlined"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Border only — no padding, content goes edge-to-edge"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Shadow"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Floating card — shadow without border"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Minimal"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No card chrome at all — raw content only"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Padding"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Border"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hover Lift"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Radius"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Img Zoom"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Plain Text"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Allow HTML (kses)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Number (1,234.56)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Currency ($1,234.56)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Separator"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Shown between fields — e.g. \" · \" or \" | \". Leave empty for no separator."
+msgstr ""
+
+#: assets/build/main.js
+msgid " · "
+msgstr ""
+
+#: assets/build/main.js
+msgid "Format"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Decimals"
+msgstr ""
+
+#: assets/build/main.js
+msgid "(none)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Fallback"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Shown when the field value is empty."
+msgstr ""
+
+#: assets/build/main.js
+msgid "CSS Class"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Thumbnail (150×150)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Medium (300×300)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Medium Large (768×–)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Large (1024×1024)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Full (original)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Attachment Page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom URL Field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No Link"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Featured image or any meta-key holding an attachment ID / URL."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Image Size"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Link To"
+msgstr ""
+
+#: assets/build/main.js
+msgid "URL Source"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick a meta field that stores the URL to link to."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Alt Text Source"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Optional — fall back to the attachment alt by default."
+msgstr ""
+
+#: assets/build/main.js
+msgid "(use attachment alt)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Fallback Image ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Attachment ID rendered when the source resolves empty. 0 = none."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Same tab (_self)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "New tab (_blank)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick the field that resolves to a URL — permalink, custom URL meta, etc."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Label Source"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Optional — pick a field for the link text. Leave empty to use the static text below."
+msgstr ""
+
+#: assets/build/main.js
+msgid "(use static text)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Label Text"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Used when no label source is set."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Read More"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Target"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Rel"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Extra rel value — noopener noreferrer is auto-added for new-tab links."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Reading Time"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Date Format"
+msgstr ""
+
+#: assets/build/main.js
+msgid "PHP date format. Leave empty to use the WP site default."
+msgstr ""
+
+#: assets/build/main.js
+msgid "F j, Y"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Link Author Name"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Wrap the author name in a link to their archive."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Paragraph (p)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inline (span)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Block (div)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Heading 1"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Heading 2"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Heading 3"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Heading 4"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Heading 5"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Heading 6"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Strong"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Emphasis"
+msgstr ""
+
+#: assets/build/main.js
+msgid "HTML Tag"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use h2/h3 for titles, p for paragraphs, span for inline."
+msgstr ""
+
+#: assets/build/main.js
+msgid "0–6 — applies to number/currency formats only."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Prefix shown before the value, e.g. '$'."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Suffix shown after the value, e.g. ' /mo'."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Wrap the text in a link. Great for making titles clickable."
+msgstr ""
+
+#: assets/build/main.js
+msgid "URL Field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta key holding the URL to link to."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Additional class applied to the wrapper tag."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select icon image"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Icon / Image"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Optional icon or small image shown before the field value."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove image"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unordered list (ul)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Ordered list (ol)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "List item (li)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field Name"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta key of the Repeater field (without the `field:` prefix)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "List Tag"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Item Tag"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Row Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use {sub_field} tokens that match your repeater's columns. e.g. {title} — {price}"
+msgstr ""
+
+#: assets/build/main.js
+msgid "{title} — {price}"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Limit"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Max rows shown. 0 = all rows."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Joiner inserted between rows when item_tag = span. Ignored otherwise."
+msgstr ""
+
+#: assets/build/main.js
+msgid ", "
+msgstr ""
+
+#: assets/build/main.js
+msgid "300 — Light"
+msgstr ""
+
+#: assets/build/main.js
+msgid "400 — Regular"
+msgstr ""
+
+#: assets/build/main.js
+msgid "500 — Medium"
+msgstr ""
+
+#: assets/build/main.js
+msgid "600 — Semibold"
+msgstr ""
+
+#: assets/build/main.js
+msgid "700 — Bold"
+msgstr ""
+
+#: assets/build/main.js
+msgid "800 — Extra Bold"
+msgstr ""
+
+#: assets/build/main.js
+msgid "900 — Black"
+msgstr ""
+
+#: assets/build/main.js
+msgid "PX"
+msgstr ""
+
+#: assets/build/main.js
+msgid "EM"
+msgstr ""
+
+#: assets/build/main.js
+msgid "REM"
+msgstr ""
+
+#: assets/build/main.js
+msgid "VW"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Stack (default)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inline row"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Dynamic Meta flow"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use \"Inline row\" on each meta you want on the same line (e.g. date + author). They must be next to each other in the canvas."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Colors"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Text Color"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick a swatch or type any CSS color value."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Background"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Fills the component box."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Color when the visitor hovers the listing card area (or this component)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Background on hover only. Leave empty to keep the default background."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Typography"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Size"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Weight"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Alignment"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Left"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Center"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Right"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Justify"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Transform"
+msgstr ""
+
+#: assets/build/main.js
+msgid "UPPERCASE"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Capitalize"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Style & Decoration"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Bold"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Italic"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Underline"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Strikethrough"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Line Height"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Unitless multiplier of the font size."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Letter Spacing"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pixels — negative tightens, positive loosens."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Font Family"
+msgstr ""
+
+#: assets/build/main.js
+msgid "System or Google fonts (theme must register the family)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Box"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pixels per side. Lock to keep all sides in sync."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Margin"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pixels per side. Negative values allowed."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Border Radius"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pixels per corner. Lock for a uniform pill / circle."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Width"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Fullwidth"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Clear"
+msgstr ""
+
+#: assets/build/main.js
+msgid "#000000 / rgb(...) / inherit"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Chips / Badges"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inline (joined)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Render As"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Link Terms"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Wrap each term in its taxonomy archive link."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Maximum terms shown. 0 = unlimited."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Joiner used between terms."
+msgstr ""
+
+#: assets/build/main.js
+msgid "User logged in"
+msgstr ""
+
+#: assets/build/main.js
+msgid "User logged out"
+msgstr ""
+
+#: assets/build/main.js
+msgid "User role"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field value"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relation exists"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Taxonomy / term"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Is"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Is not"
+msgstr ""
+
+#: assets/build/main.js
+msgid "="
+msgstr ""
+
+#: assets/build/main.js
+msgid "Empty"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Does not exist"
+msgstr ""
+
+#: assets/build/main.js
+msgid "From (children)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "To (parents)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Has term"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Does not have term"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Rule type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Expected"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Operator"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Role slug"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom key…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Value"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Compare to…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick relation…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Custom slug…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term slug or ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Leave empty to require any term in taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "All rules match (AND)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Any rule matches (OR)"
+msgstr ""
+

@@ -128,9 +128,15 @@ class AdminAssets {
 			wp_enqueue_script(
 				'rdcfe-admin-app',
 				$build_url . $js_file,
-				array(),
+				array( 'wp-i18n' ),
 				RDCFE_VERSION,
 				true
+			);
+
+			wp_set_script_translations(
+				'rdcfe-admin-app',
+				'rox-dynamic-cpt-fields-engine',
+				RDCFE_PLUGIN_DIR . 'languages'
 			);
 
 			// Add type="module" to script.

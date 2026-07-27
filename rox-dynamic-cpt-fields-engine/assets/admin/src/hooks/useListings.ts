@@ -23,6 +23,7 @@ import {
   type ListingType,
   type QueryPreviewContext,
 } from '../services/api';
+import { __, TEXT_DOMAIN } from '../lib/i18n';
 
 export const LISTINGS_QUERY_KEY = ['listings'] as const;
 export const LISTING_COMPONENTS_KEY = ['listings', 'components'] as const;
@@ -64,9 +65,15 @@ export function createEmptyGridConfig(): ListingConfigData {
     template_id: 0,
     query_id: 0,
     columns: 3,
+    layout: 'grid',
+    slider_nav: true,
+    slider_dots: true,
+    slider_autoplay: false,
+    slider_loop: false,
+    slider_autoplay_delay: 5000,
     gap: '20px',
     pagination: 'none',
-    empty_message: 'No items found.',
+    empty_message: __('No items found.', TEXT_DOMAIN),
   };
 }
 

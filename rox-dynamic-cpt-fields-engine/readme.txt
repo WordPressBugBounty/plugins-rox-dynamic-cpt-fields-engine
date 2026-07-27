@@ -3,7 +3,7 @@ Contributors: ataurr
 Tags: custom post types, custom fields, meta fields, taxonomies, dynamic content,
 Requires at least: 6.5
 Tested up to: 7.0
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -413,6 +413,16 @@ Yes. **Settings → Tools → PHP Generation** converts selected configurations 
 10. Settings and Tools — import, export, snapshots, and PHP generation
 
 == Changelog ==
+
+= 1.0.4 =
+* Improved localisation and pot file
+
+
+
+= 1.0.4 =
+* Added localisation 
+* Added Gallery block
+* Fixed bugs
 
 = 1.0.3 =
 * Expanded WordPress.org readme with full free and Pro feature documentation

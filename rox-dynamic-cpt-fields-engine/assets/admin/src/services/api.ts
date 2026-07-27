@@ -2,6 +2,8 @@
  * API Service for RDCFE REST endpoints.
  */
 
+import { __, sprintf, TEXT_DOMAIN } from '../lib/i18n';
+
 // Get settings from WordPress localized script
 const getSettings = () => {
   return window.rdcfeSettings || {
@@ -203,7 +205,7 @@ async function apiRequest<T>(
       // line with no per-field detail is genuinely useless to the
       // user (and forces a network-tab dive every time).
       const validationDetails = error?.data?.errors;
-      let detailedMessage = error?.message || 'An error occurred';
+      let detailedMessage = error?.message || __('An error occurred', TEXT_DOMAIN);
       if (Array.isArray(validationDetails) && validationDetails.length) {
         const lines = validationDetails
           .slice(0, 5)
@@ -213,13 +215,15 @@ async function apiRequest<T>(
           })
           .join('; ');
         const overflow =
-          validationDetails.length > 5 ? ` (+${validationDetails.length - 5} more)` : '';
+          validationDetails.length > 5
+            ? sprintf(__(' (+%d more)', TEXT_DOMAIN), validationDetails.length - 5)
+            : '';
         detailedMessage = `${detailedMessage} — ${lines}${overflow}`;
       }
 
       const message =
         error?.code && STALE_NONCE_CODES.has(error.code)
-          ? 'Your session has expired. Please reload the page and try again.'
+          ? __('Your session has expired. Please reload the page and try again.', TEXT_DOMAIN)
           : detailedMessage;
 
       if (error.code === 'ai_warnings_unacknowledged') {
@@ -249,7 +253,7 @@ async function apiRequest<T>(
     if (error instanceof Error) {
       throw error;
     }
-    throw new Error( 'An unexpected error occurred', { cause: error } );
+    throw new Error(__('An unexpected error occurred', TEXT_DOMAIN), { cause: error });
   }
 }
 
@@ -1069,6 +1073,18 @@ export interface ListingConfigData {
   posts_per_page?: number;
   /** For grid — number of CSS columns (1–6). */
   columns?: number;
+  /** For grid — display mode. */
+  layout?: 'grid' | 'slider';
+  /** For grid + slider — show prev/next arrows. */
+  slider_nav?: boolean;
+  /** For grid + slider — show pagination dots. */
+  slider_dots?: boolean;
+  /** For grid + slider — autoplay slides. */
+  slider_autoplay?: boolean;
+  /** For grid + slider — loop slides. */
+  slider_loop?: boolean;
+  /** For grid + slider — autoplay delay in ms. */
+  slider_autoplay_delay?: number;
   /** For grid — CSS gap. */
   gap?: string;
   /** For grid — pagination strategy. */

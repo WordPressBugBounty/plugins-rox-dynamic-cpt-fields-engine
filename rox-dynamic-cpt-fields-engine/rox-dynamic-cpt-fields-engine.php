@@ -3,7 +3,7 @@
  * Plugin Name: Dynamic Fields Engine
  * Plugin URI: https://dynamicfieldsengine.com/
  * Description: Build Custom Post Types, Taxonomies, Custom Fields, Queries, and Listings from one unified interface.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Ataurr
  * Author URI: https://roxnor.com
  * License: GPL v2 or later
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Plugin constants.
-define( 'RDCFE_VERSION', '1.0.4' );
+define( 'RDCFE_VERSION', '1.0.5' );
 define( 'RDCFE_PLUGIN_FILE', __FILE__ );
 define( 'RDCFE_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'RDCFE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -119,5 +119,19 @@ function rdcfe_deactivate(): void {
 register_activation_hook( __FILE__, 'rdcfe_activate' );
 register_deactivation_hook( __FILE__, 'rdcfe_deactivate' );
 
+/**
+ * Load plugin text domain for PHP translations.
+ *
+ * @return void
+ */
+function rdcfe_load_textdomain(): void {
+	load_plugin_textdomain(
+		'rox-dynamic-cpt-fields-engine',
+		false,
+		dirname( RDCFE_PLUGIN_BASENAME ) . '/languages'
+	);
+}
+
 // Initialize plugin after plugins are loaded.
 add_action( 'plugins_loaded', 'rdcfe_init' );
+add_action( 'init', 'rdcfe_load_textdomain' );

@@ -71,6 +71,7 @@ export function useAISettings(enabled = true) {
       return response.data;
     },
     enabled,
+    staleTime: 0,
   });
 }
 
