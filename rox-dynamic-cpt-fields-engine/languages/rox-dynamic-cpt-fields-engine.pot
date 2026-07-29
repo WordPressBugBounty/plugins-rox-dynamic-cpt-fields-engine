@@ -2,14 +2,14 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dynamic Fields Engine 1.0.6\n"
+"Project-Id-Version: Dynamic Fields Engine 1.0.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rox-dynamic-cpt-fields-engine\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-29T06:41:16+00:00\n"
+"POT-Creation-Date: 2026-07-29T11:49:16+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: rox-dynamic-cpt-fields-engine\n"
@@ -43,58 +43,58 @@ msgstr ""
 msgid "RDCFE: Admin assets not found. Please run `npm run build` in the assets/admin directory."
 msgstr ""
 
-#: app/Admin/AdminAssets.php:225
+#: app/Admin/AdminAssets.php:253
 msgid "Top Level Menu"
 msgstr ""
 
-#: app/Admin/AdminAssets.php:231
+#: app/Admin/AdminAssets.php:259
 #: app/Admin/AdminMenu.php:153
 msgid "Dashboard"
 msgstr ""
 
-#: app/Admin/AdminAssets.php:232
+#: app/Admin/AdminAssets.php:260
 msgid "Posts"
 msgstr ""
 
-#: app/Admin/AdminAssets.php:233
+#: app/Admin/AdminAssets.php:261
 msgid "Media"
 msgstr ""
 
-#: app/Admin/AdminAssets.php:234
+#: app/Admin/AdminAssets.php:262
 msgid "Pages"
 msgstr ""
 
-#: app/Admin/AdminAssets.php:235
+#: app/Admin/AdminAssets.php:263
 msgid "Comments"
 msgstr ""
 
-#: app/Admin/AdminAssets.php:236
+#: app/Admin/AdminAssets.php:264
 msgid "Appearance"
 msgstr ""
 
-#: app/Admin/AdminAssets.php:237
+#: app/Admin/AdminAssets.php:265
 msgid "Plugins"
 msgstr ""
 
-#: app/Admin/AdminAssets.php:238
+#: app/Admin/AdminAssets.php:266
 msgid "Users"
 msgstr ""
 
-#: app/Admin/AdminAssets.php:239
+#: app/Admin/AdminAssets.php:267
 msgid "Tools"
 msgstr ""
 
-#: app/Admin/AdminAssets.php:240
+#: app/Admin/AdminAssets.php:268
 #: app/Admin/OptionsPageRegistrar.php:652
 #: app/Fields/CPTMetaFieldsManager.php:250
 msgid "Settings"
 msgstr ""
 
-#: app/Admin/AdminAssets.php:319
+#: app/Admin/AdminAssets.php:347
 msgid "All"
 msgstr ""
 
-#: app/Admin/AdminAssets.php:386
+#: app/Admin/AdminAssets.php:414
 msgid "Any role"
 msgstr ""
 

@@ -103,10 +103,10 @@ class AdminAssets {
 			$files = scandir( $build_dir );
 			if ( is_array( $files ) ) {
 				foreach ( $files as $file ) {
-					if ( str_starts_with( $file, 'main-' ) && str_ends_with( $file, '.js' ) && ! str_ends_with( $file, '.js.map' ) ) {
+					if ( ! $js_file && $this->is_main_js_build_file( $file ) ) {
 						$js_file = $file;
 					}
-					if ( str_starts_with( $file, 'main-' ) && str_ends_with( $file, '.css' ) ) {
+					if ( ! $css_file && $this->is_main_css_build_file( $file ) ) {
 						$css_file = $file;
 					}
 				}
@@ -156,6 +156,34 @@ class AdminAssets {
 				}
 			);
 		}
+	}
+
+	/**
+	 * Whether a build filename is the main JS entry (stable or hashed legacy).
+	 *
+	 * @param string $file Basename from assets/build/.
+	 * @return bool
+	 */
+	private function is_main_js_build_file( string $file ): bool {
+		if ( ! str_ends_with( $file, '.js' ) || str_ends_with( $file, '.js.map' ) ) {
+			return false;
+		}
+
+		return 'main.js' === $file || str_starts_with( $file, 'main-' );
+	}
+
+	/**
+	 * Whether a build filename is the main CSS bundle (stable or hashed legacy).
+	 *
+	 * @param string $file Basename from assets/build/.
+	 * @return bool
+	 */
+	private function is_main_css_build_file( string $file ): bool {
+		if ( ! str_ends_with( $file, '.css' ) ) {
+			return false;
+		}
+
+		return 'main.css' === $file || str_starts_with( $file, 'main-' );
 	}
 
 	/**
