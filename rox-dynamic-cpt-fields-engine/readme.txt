@@ -3,7 +3,7 @@ Contributors: ataurr
 Tags: custom post types, custom fields, meta fields, taxonomies, dynamic content,
 Requires at least: 6.5
 Tested up to: 7.0
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -414,10 +414,13 @@ Yes. **Settings → Tools → PHP Generation** converts selected configurations 
 
 == Changelog ==
 
-= 1.0.4 =
+
+= 1.0.6 =
+* Fixed localisation and pot file issue
+
+
+= 1.0.5 =
 * Improved localisation and pot file
-
-
 
 = 1.0.4 =
 * Added localisation 

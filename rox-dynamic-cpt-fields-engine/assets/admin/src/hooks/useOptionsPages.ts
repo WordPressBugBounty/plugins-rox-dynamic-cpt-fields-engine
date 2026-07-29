@@ -2,7 +2,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { optionsPagesApi, OptionsPageConfig } from '../services/api';
 import type { MetaField } from './usePostTypes';
 import { normalizeMetaFields } from './usePostTypes';
-import { __, TEXT_DOMAIN } from '../lib/i18n';
+import { __ } from '../lib/i18n';
 
 export const OPTIONS_PAGES_QUERY_KEY = ['options-pages'];
 
@@ -43,8 +43,8 @@ function formDataToApiData(data: OptionsPageFormData): Record<string, unknown> {
     meta_fields: data.meta_fields || [],
     description: data.description || '',
     labels: data.labels || {
-      update_button: __('Save Settings', TEXT_DOMAIN),
-      updated_message: __('Settings saved successfully.', TEXT_DOMAIN),
+      update_button: __('Save Settings', 'rox-dynamic-cpt-fields-engine'),
+      updated_message: __('Settings saved successfully.', 'rox-dynamic-cpt-fields-engine'),
     },
     storage: data.storage || 'options',
     custom_storage: data.custom_storage || '',
@@ -69,8 +69,8 @@ function apiDataToFormData(config: OptionsPageConfig): OptionsPageFormData {
     meta_fields: normalizeMetaFields(configData.meta_fields as unknown[] || []),
     description: (configData.description as string) || '',
     labels: (configData.labels as OptionsPageLabels) || {
-      update_button: __('Save Settings', TEXT_DOMAIN),
-      updated_message: __('Settings saved successfully.', TEXT_DOMAIN),
+      update_button: __('Save Settings', 'rox-dynamic-cpt-fields-engine'),
+      updated_message: __('Settings saved successfully.', 'rox-dynamic-cpt-fields-engine'),
     },
     storage: (configData.storage as 'options' | 'custom') || 'options',
     custom_storage: (configData.custom_storage as string) || '',

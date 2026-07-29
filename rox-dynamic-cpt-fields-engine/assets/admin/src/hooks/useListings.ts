@@ -23,7 +23,7 @@ import {
   type ListingType,
   type QueryPreviewContext,
 } from '../services/api';
-import { __, TEXT_DOMAIN } from '../lib/i18n';
+import { __ } from '../lib/i18n';
 
 export const LISTINGS_QUERY_KEY = ['listings'] as const;
 export const LISTING_COMPONENTS_KEY = ['listings', 'components'] as const;
@@ -73,7 +73,7 @@ export function createEmptyGridConfig(): ListingConfigData {
     slider_autoplay_delay: 5000,
     gap: '20px',
     pagination: 'none',
-    empty_message: __('No items found.', TEXT_DOMAIN),
+    empty_message: __('No items found.', 'rox-dynamic-cpt-fields-engine'),
   };
 }
 

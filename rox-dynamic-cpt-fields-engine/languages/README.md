@@ -36,7 +36,11 @@ This creates:
 
 | File | Purpose |
 |------|---------|
+<<<<<<< Updated upstream
 | `rox-dynamic-cpt-fields-engine.pot` | Template with all source strings (PHP + React admin) |
+=======
+| `rox-dynamic-cpt-fields-engine.pot` | Template with all source strings |
+>>>>>>> Stashed changes
 | `rox-dynamic-cpt-fields-engine-{locale}.po` | Your translation (editable) |
 | `rox-dynamic-cpt-fields-engine-{locale}.mo` | Compiled PHP translations |
 | `rox-dynamic-cpt-fields-engine-{locale}-*.json` | React admin translations |

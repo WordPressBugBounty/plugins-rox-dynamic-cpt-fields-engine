@@ -3,9 +3,9 @@
  * Plugin Name: Dynamic Fields Engine
  * Plugin URI: https://dynamicfieldsengine.com/
  * Description: Build Custom Post Types, Taxonomies, Custom Fields, Queries, and Listings from one unified interface.
- * Version: 1.0.5
- * Author: Ataurr
- * Author URI: https://roxnor.com
+ * Version: 1.0.6
+ * Author: Roxnor,  Wpmet
+ * Author URI: https://wpmet.com
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: rox-dynamic-cpt-fields-engine

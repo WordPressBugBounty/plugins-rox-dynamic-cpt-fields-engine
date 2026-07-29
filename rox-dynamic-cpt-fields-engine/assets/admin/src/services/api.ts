@@ -2,7 +2,7 @@
  * API Service for RDCFE REST endpoints.
  */
 
-import { __, sprintf, TEXT_DOMAIN } from '../lib/i18n';
+import { __, sprintf } from '../lib/i18n';
 
 // Get settings from WordPress localized script
 const getSettings = () => {
@@ -205,7 +205,7 @@ async function apiRequest<T>(
       // line with no per-field detail is genuinely useless to the
       // user (and forces a network-tab dive every time).
       const validationDetails = error?.data?.errors;
-      let detailedMessage = error?.message || __('An error occurred', TEXT_DOMAIN);
+      let detailedMessage = error?.message || __('An error occurred', 'rox-dynamic-cpt-fields-engine');
       if (Array.isArray(validationDetails) && validationDetails.length) {
         const lines = validationDetails
           .slice(0, 5)
@@ -216,14 +216,14 @@ async function apiRequest<T>(
           .join('; ');
         const overflow =
           validationDetails.length > 5
-            ? sprintf(__(' (+%d more)', TEXT_DOMAIN), validationDetails.length - 5)
+            ? sprintf(__(' (+%d more)', 'rox-dynamic-cpt-fields-engine'), validationDetails.length - 5)
             : '';
         detailedMessage = `${detailedMessage} — ${lines}${overflow}`;
       }
 
       const message =
         error?.code && STALE_NONCE_CODES.has(error.code)
-          ? __('Your session has expired. Please reload the page and try again.', TEXT_DOMAIN)
+          ? __('Your session has expired. Please reload the page and try again.', 'rox-dynamic-cpt-fields-engine')
           : detailedMessage;
 
       if (error.code === 'ai_warnings_unacknowledged') {
@@ -253,7 +253,7 @@ async function apiRequest<T>(
     if (error instanceof Error) {
       throw error;
     }
-    throw new Error(__('An unexpected error occurred', TEXT_DOMAIN), { cause: error });
+    throw new Error(__('An unexpected error occurred', 'rox-dynamic-cpt-fields-engine'), { cause: error });
   }
 }
 
