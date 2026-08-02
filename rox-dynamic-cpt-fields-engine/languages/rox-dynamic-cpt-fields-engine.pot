@@ -2,14 +2,14 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dynamic Fields Engine 1.0.7\n"
+"Project-Id-Version: Dynamic Fields Engine 1.0.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rox-dynamic-cpt-fields-engine\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-29T11:49:16+00:00\n"
+"POT-Creation-Date: 2026-08-02T09:09:54+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: rox-dynamic-cpt-fields-engine\n"
@@ -48,7 +48,8 @@ msgid "Top Level Menu"
 msgstr ""
 
 #: app/Admin/AdminAssets.php:259
-#: app/Admin/AdminMenu.php:153
+#: app/Admin/AdminMenu.php:44
+#: app/Admin/AdminMenu.php:154
 msgid "Dashboard"
 msgstr ""
 
@@ -85,6 +86,7 @@ msgid "Tools"
 msgstr ""
 
 #: app/Admin/AdminAssets.php:268
+#: app/Admin/AdminMenu.php:99
 #: app/Admin/OptionsPageRegistrar.php:652
 #: app/Fields/CPTMetaFieldsManager.php:250
 msgid "Settings"
@@ -98,16 +100,58 @@ msgstr ""
 msgid "Any role"
 msgstr ""
 
-#: app/Admin/AdminMenu.php:127
+#: app/Admin/AdminMenu.php:49
+msgid "Post Types"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:54
+msgid "Taxonomies"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:59
+msgid "Metabox"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:64
+msgid "Options Pages"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:70
+msgid "Query Builder"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:75
+msgid "Listings"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:84
+msgid "Relations"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:94
+msgid "AI Assistant"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:124
 msgid "Rox Dynamic CPT Fields Engine"
 msgstr ""
 
-#: app/Admin/AdminMenu.php:128
+#: app/Admin/AdminMenu.php:125
 msgid "Dynamic Engine"
 msgstr ""
 
-#: app/Admin/AdminMenu.php:229
+#. translators: %s: Admin submenu title.
+#: app/Admin/AdminMenu.php:141
+#, php-format
+msgid "%s - RDCFE"
+msgstr ""
+
+#: app/Admin/AdminMenu.php:230
 msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: app/Admin/AdminMenu.php:282
+msgid "Loading..."
 msgstr ""
 
 #: app/Admin/OptionsPageRegistrar.php:156
@@ -1287,38 +1331,6 @@ msgstr ""
 #: React admin UI (rox-dynamic-cpt-fields-engine) — source: assets/admin/src, reference: assets/build/main.js
 
 #: assets/build/main.js
-msgid "Post Types"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Taxonomies"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Listings"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Query Builder"
-msgstr ""
-
-#: assets/build/main.js
-msgid "AI Assistant"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Relations"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Metabox"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Options Pages"
-msgstr ""
-
-#: assets/build/main.js
 msgid "Dynamic CPT"
 msgstr ""
 
@@ -1340,6 +1352,78 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "No items found."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Status"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Taxonomy"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term"
+msgstr ""
+
+#: assets/build/main.js
+msgid "User Form"
+msgstr ""
+
+#: assets/build/main.js
+msgid "User"
+msgstr ""
+
+#: assets/build/main.js
+msgid "User Role"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Options Page"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Page Template"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Parent"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Author"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Format"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Taxonomy Term"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Current User Role"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Current User Capability"
+msgstr ""
+
+#: assets/build/main.js
+msgid "is equal to"
+msgstr ""
+
+#: assets/build/main.js
+msgid "is not equal to"
 msgstr ""
 
 #: assets/build/main.js
@@ -1631,10 +1715,6 @@ msgid "Add custom fields to your content"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Options Page"
-msgstr ""
-
-#: assets/build/main.js
 msgid "Build custom settings pages"
 msgstr ""
 
@@ -1799,7 +1879,15 @@ msgid "Pick the template, then point a query at it."
 msgstr ""
 
 #: assets/build/main.js
+msgid "Title"
+msgstr ""
+
+#: assets/build/main.js
 msgid "e.g. Featured Properties Grid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Listing Template"
 msgstr ""
 
 #: assets/build/main.js
@@ -1867,6 +1955,18 @@ msgid "Anchor"
 msgstr ""
 
 #: assets/build/main.js
+msgid "{{current_post_id}} or 123"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Components inside the template can read per-pair meta with the source token"
+msgstr ""
+
+#: assets/build/main.js
+msgid "An empty anchor falls back to the current post on single templates."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Layout"
 msgstr ""
 
@@ -1908,6 +2008,14 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Gap"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Any CSS length:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "etc."
 msgstr ""
 
 #: assets/build/main.js
@@ -2003,11 +2111,31 @@ msgid "Gutenberg Block"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Search the block inserter for"
+msgstr ""
+
+#: assets/build/main.js
 msgid "RDCFE Listing Grid"
 msgstr ""
 
 #: assets/build/main.js
+msgid "and pick this listing from the dropdown. The editor preview matches the front-end output (server-side rendered through the same pipeline)."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Elementor Widget"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Open the Elementor panel, find the"
+msgstr ""
+
+#: assets/build/main.js
+msgid "category, and drag in"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick this listing in the widget settings — the editor preview is rendered by the same pipeline as the front-end."
 msgstr ""
 
 #: assets/build/main.js
@@ -2063,11 +2191,23 @@ msgid "Templates ship one card; grids ship many. Build a template first, then a 
 msgstr ""
 
 #: assets/build/main.js
+msgid "Saved queries inherit macros — use"
+msgstr ""
+
+#: assets/build/main.js
 msgid "for context-aware grids."
 msgstr ""
 
 #: assets/build/main.js
 msgid "The Gutenberg block and Elementor widget share the renderer with the shortcode — preview matches the front-end on every surface."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edits autosave to the form — hit"
+msgstr ""
+
+#: assets/build/main.js
+msgid "to persist."
 msgstr ""
 
 #: assets/build/main.js
@@ -2683,23 +2823,7 @@ msgid "No location rules set"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Post Type"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Page Template"
-msgstr ""
-
-#: assets/build/main.js
 msgid "Page Type"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Post Status"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Post Format"
 msgstr ""
 
 #: assets/build/main.js
@@ -2708,14 +2832,6 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Post Taxonomy"
-msgstr ""
-
-#: assets/build/main.js
-msgid "User Form"
-msgstr ""
-
-#: assets/build/main.js
-msgid "User Role"
 msgstr ""
 
 #: assets/build/main.js
@@ -2764,6 +2880,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Name your field group and we'll auto-generate the rest"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field Group Title"
 msgstr ""
 
 #: assets/build/main.js
@@ -2825,6 +2945,14 @@ msgid "Display options unavailable"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Position, Label Placement, and Instruction Placement only apply on post edit screens. Add a post-related Location Rule (Post Type, Post, Page Template, etc.) under"
+msgstr ""
+
+#: assets/build/main.js
+msgid "to enable these options."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Display Options"
 msgstr ""
 
@@ -2865,11 +2993,31 @@ msgid "Location Rules"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Use"
+msgstr ""
+
+#: assets/build/main.js
+msgid "to control where the group appears"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Set"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Field Width"
 msgstr ""
 
 #: assets/build/main.js
+msgid "for side-by-side layouts"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Conditional Logic"
+msgstr ""
+
+#: assets/build/main.js
+msgid "shows/hides fields based on values"
 msgstr ""
 
 #: assets/build/main.js
@@ -3077,6 +3225,10 @@ msgid "Enter your page title and we'll auto-generate the rest"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Page Title"
+msgstr ""
+
+#: assets/build/main.js
 msgid "e.g., Theme Options, Site Settings"
 msgstr ""
 
@@ -3086,6 +3238,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Menu Slug"
+msgstr ""
+
+#: assets/build/main.js
+msgid "auto-generated"
 msgstr ""
 
 #: assets/build/main.js
@@ -3186,6 +3342,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Data Storage"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Choose where to save the options page data. By default, data is stored in the WordPress options table"
 msgstr ""
 
 #: assets/build/main.js
@@ -3313,6 +3473,10 @@ msgid "Read-only configuration"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Copied!"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Are you sure you want to delete this options page? This action cannot be undone."
 msgstr ""
 
@@ -3374,10 +3538,6 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Showing %1$d of %2$d options pages"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Title"
 msgstr ""
 
 #: assets/build/main.js
@@ -3454,10 +3614,6 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Filter numeric meta by min/max buckets"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Taxonomy"
 msgstr ""
 
 #: assets/build/main.js
@@ -3609,6 +3765,10 @@ msgid "Enter your post type name and we'll auto-generate the rest"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Post Type Name"
+msgstr ""
+
+#: assets/build/main.js
 msgid "e.g., Projects, Products, Events"
 msgstr ""
 
@@ -3661,6 +3821,10 @@ msgid "Add New Item"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Item"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Edit Item"
 msgstr ""
 
@@ -3673,7 +3837,15 @@ msgid "All Items"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Items"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Search Items"
+msgstr ""
+
+#: assets/build/main.js
+msgid "items"
 msgstr ""
 
 #: assets/build/main.js
@@ -3897,6 +4069,10 @@ msgid "Unlock all column options"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Upgrade"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Type:"
 msgstr ""
 
@@ -3913,11 +4089,27 @@ msgid "— Select a meta field or type custom —"
 msgstr ""
 
 #: assets/build/main.js
+msgid "meta_key_name"
+msgstr ""
+
+#: assets/build/main.js
 msgid "— Select a taxonomy —"
 msgstr ""
 
 #: assets/build/main.js
+msgid "taxonomy_slug"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Callback function"
+msgstr ""
+
+#: assets/build/main.js
+msgid "my_callback_function"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Built-ins:"
 msgstr ""
 
 #: assets/build/main.js
@@ -4005,11 +4197,23 @@ msgid "Custom Meta Key"
 msgstr ""
 
 #: assets/build/main.js
+msgid "my_custom_meta_key"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Options Source"
 msgstr ""
 
 #: assets/build/main.js
 msgid "Meta Field (numeric)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "price_meta_key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "price"
 msgstr ""
 
 #: assets/build/main.js
@@ -4070,10 +4274,6 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Update Post Type"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Post Type Name"
 msgstr ""
 
 #: assets/build/main.js
@@ -4309,6 +4509,10 @@ msgid "Name your query — everything else lives in the tabs below."
 msgstr ""
 
 #: assets/build/main.js
+msgid "Query Title"
+msgstr ""
+
+#: assets/build/main.js
 msgid "e.g. Featured Properties, Recent Events, My Submissions"
 msgstr ""
 
@@ -4345,11 +4549,31 @@ msgid "Delete Query"
 msgstr ""
 
 #: assets/build/main.js
+msgid "like"
+msgstr ""
+
+#: assets/build/main.js
 msgid "for context-aware queries."
 msgstr ""
 
 #: assets/build/main.js
+msgid "The"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Meta Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "dropdown is field-aware — pick from your Field Group keys."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Run the"
+msgstr ""
+
+#: assets/build/main.js
+msgid "tab before saving — health warnings appear there."
 msgstr ""
 
 #: assets/build/main.js
@@ -4361,23 +4585,11 @@ msgid "Tags (post_tag)"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Post"
-msgstr ""
-
-#: assets/build/main.js
 msgid "Connect post types like posts, pages, or your CPTs."
 msgstr ""
 
 #: assets/build/main.js
-msgid "Term"
-msgstr ""
-
-#: assets/build/main.js
 msgid "Connect categories, tags, or any custom taxonomy."
-msgstr ""
-
-#: assets/build/main.js
-msgid "User"
 msgstr ""
 
 #: assets/build/main.js
@@ -4489,11 +4701,19 @@ msgid "Key"
 msgstr ""
 
 #: assets/build/main.js
+msgid "notes"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Required"
 msgstr ""
 
 #: assets/build/main.js
 msgid "Add another field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "value"
 msgstr ""
 
 #: assets/build/main.js
@@ -4535,6 +4755,12 @@ msgstr ""
 #: assets/build/main.js
 msgid "Failed to save relation."
 msgstr ""
+
+#: assets/build/main.js
+msgid "This relation has %s attached pair."
+msgid_plural "This relation has %s attached pairs."
+msgstr[0] ""
+msgstr[1] ""
 
 #: assets/build/main.js
 msgid "Click OK to delete the definition AND all attached pairs."
@@ -4633,7 +4859,15 @@ msgid "Name your relation — we'll generate a slug from it."
 msgstr ""
 
 #: assets/build/main.js
+msgid "Display Name"
+msgstr ""
+
+#: assets/build/main.js
 msgid "e.g. Property to Agent"
+msgstr ""
+
+#: assets/build/main.js
+msgid "property_to_agent"
 msgstr ""
 
 #: assets/build/main.js
@@ -4765,11 +4999,23 @@ msgid "Maximum items each source post can attach. 0 = unlimited."
 msgstr ""
 
 #: assets/build/main.js
+msgid "Locked to"
+msgstr ""
+
+#: assets/build/main.js
+msgid "by the %s cardinality."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Max from target"
 msgstr ""
 
 #: assets/build/main.js
 msgid "Maximum items each target post can be attached to. 0 = unlimited."
+msgstr ""
+
+#: assets/build/main.js
+msgid "by the one-to-one cardinality."
 msgstr ""
 
 #: assets/build/main.js
@@ -4849,6 +5095,10 @@ msgid "Heads-up:"
 msgstr ""
 
 #: assets/build/main.js
+msgid "the server validates these against the underlying post-type and taxonomy registration — neither flag has any effect when both sides are non-hierarchical, and both hard-reject for user-to-user relations."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Attach extra info to each connection — notes, an effective date, a status flag, or anything else that varies per pair rather than per object. Editors will see one input per field underneath every attached item in the meta box."
 msgstr ""
 
@@ -4858,6 +5108,18 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Create Relation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "post"
+msgstr ""
+
+#: assets/build/main.js
+msgid "(any)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "any"
 msgstr ""
 
 #: assets/build/main.js
@@ -4897,11 +5159,31 @@ msgid "Delete Relation"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Once active, a meta box appears on every"
+msgstr ""
+
+#: assets/build/main.js
+msgid "edit screen."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use the"
+msgstr ""
+
+#: assets/build/main.js
+msgid "to filter posts by relation — pick the slug under \"Related to…\"."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Changing the slug after pairs exist will"
+msgstr ""
+
+#: assets/build/main.js
 msgid "orphan"
 msgstr ""
 
 #: assets/build/main.js
-msgid "any"
+msgid "them — duplicate instead."
 msgstr ""
 
 #: assets/build/main.js
@@ -5167,10 +5449,6 @@ msgid "Failed to generate PHP code."
 msgstr ""
 
 #: assets/build/main.js
-msgid "Copied!"
-msgstr ""
-
-#: assets/build/main.js
 msgid "PHP code copied to clipboard."
 msgstr ""
 
@@ -5204,10 +5482,6 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Select items to export as JSON file"
-msgstr ""
-
-#: assets/build/main.js
-msgid "items"
 msgstr ""
 
 #: assets/build/main.js
@@ -5627,7 +5901,15 @@ msgid "Enter your taxonomy name and we'll auto-generate the rest"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Taxonomy Name"
+msgstr ""
+
+#: assets/build/main.js
 msgid "e.g., Genres, Locations"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Attach to Post Types"
 msgstr ""
 
 #: assets/build/main.js
@@ -5724,6 +6006,18 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "hierarchical"
+msgstr ""
+
+#: assets/build/main.js
+msgid "for nested categories, disable for flat tags"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Keep"
+msgstr ""
+
+#: assets/build/main.js
+msgid "enabled for Gutenberg support"
 msgstr ""
 
 #: assets/build/main.js
@@ -6157,6 +6451,10 @@ msgid "Creates a separate configuration using the slug below."
 msgstr ""
 
 #: assets/build/main.js
+msgid "new-slug"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Apply"
 msgstr ""
 
@@ -6363,7 +6661,31 @@ msgid "Clear sample"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Searching…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No results"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Remove this component from the layout?"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s preview"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Sample"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Auto-refresh on (click to pause)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Auto-refresh paused (click to resume)"
 msgstr ""
 
 #: assets/build/main.js
@@ -6403,6 +6725,74 @@ msgid "Auto-refresh is paused. Click Refresh in the toolbar to render the curren
 msgstr ""
 
 #: assets/build/main.js
+msgid "Dynamic Text"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Dynamic Image"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Dynamic Link"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Dynamic Meta"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inline Fields"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term Badges"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Repeater Output"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Breadcrumbs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Navigation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Comments Section"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Author Box"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Share Buttons"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Related Posts"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Archive Title"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Archive Description"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Posts Count"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Close inspector"
 msgstr ""
 
@@ -6419,11 +6809,23 @@ msgid "Copy style"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Paste style from clipboard"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Clipboard is empty or holds a different component type"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Visibility"
 msgstr ""
 
 #: assets/build/main.js
 msgid "Hide this component for the current listing row when rules match. Evaluated on the server — hidden nodes emit no HTML."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Remove component"
 msgstr ""
 
 #: assets/build/main.js
@@ -6444,6 +6846,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Click any tile to add it to the canvas. Page Structure components are specific to this template type."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add %s — click to append, or drag onto the canvas to insert."
 msgstr ""
 
 #: assets/build/main.js
@@ -6484,10 +6890,6 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Hand-written or auto-generated"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Post Content"
 msgstr ""
 
 #: assets/build/main.js
@@ -6551,10 +6953,6 @@ msgid "Term Archive URL"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Display Name"
-msgstr ""
-
-#: assets/build/main.js
 msgid "Bio / description"
 msgstr ""
 
@@ -6603,6 +7001,18 @@ msgid "WP post thumbnail attachment"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Pick a field…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field: %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Custom field meta key"
 msgstr ""
 
@@ -6619,67 +7029,23 @@ msgid "Core WordPress"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Dynamic Text"
+msgid "Loading meta keys…"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Dynamic Image"
+msgid "No meta keys harvested yet — add meta fields to a post type or metabox, or use the custom token below."
 msgstr ""
 
 #: assets/build/main.js
-msgid "Dynamic Link"
+msgid "No fields match \"%s\"."
 msgstr ""
 
 #: assets/build/main.js
-msgid "Dynamic Meta"
+msgid "Custom token (advanced)"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Inline Fields"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Term Badges"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Repeater Output"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Breadcrumbs"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Post Navigation"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Comments Section"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Author Box"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Share Buttons"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Related Posts"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Archive Title"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Archive Description"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Posts Count"
+msgid "e.g. pair_meta:status or field:price"
 msgstr ""
 
 #: assets/build/main.js
@@ -6712,6 +7078,18 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Tip — drag a row to reorder, or drag directly on the canvas."
+msgstr ""
+
+#: assets/build/main.js
+msgid "yoursite.com/post-type/"
+msgstr ""
+
+#: assets/build/main.js
+msgid "yoursite.com/post-type/sample-post/"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Simulated page shell"
 msgstr ""
 
 #: assets/build/main.js
@@ -6935,10 +7313,6 @@ msgid "HTML"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Field"
-msgstr ""
-
-#: assets/build/main.js
 msgid "Accordion"
 msgstr ""
 
@@ -6984,6 +7358,34 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Less than"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field Type"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Basic"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Choice"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Available in Pro — click to upgrade"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relational"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Layout Elements"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select..."
 msgstr ""
 
 #: assets/build/main.js
@@ -7039,7 +7441,59 @@ msgid "Is not on"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Show this field when %s."
+msgstr ""
+
+#: assets/build/main.js
+msgid "OR"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AND"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No Meta Fields Yet"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add First Field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%1$d field • %2$d expanded"
+msgid_plural "%1$d fields • %2$d expanded"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "Untitled Field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Layout role: %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "no_name"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Conditional Logic: %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d rule"
+msgid_plural "%d rules"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
 msgid "Duplicate field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Delete \"%s\" field?"
 msgstr ""
 
 #: assets/build/main.js
@@ -7047,7 +7501,127 @@ msgid "Delete field"
 msgstr ""
 
 #: assets/build/main.js
+msgid "— Input field for collecting data"
+msgstr ""
+
+#: assets/build/main.js
+msgid "— Group fields under a tab"
+msgstr ""
+
+#: assets/build/main.js
+msgid "— Collapsible section for fields"
+msgstr ""
+
+#: assets/build/main.js
+msgid "— End current tab or accordion"
+msgstr ""
+
+#: assets/build/main.js
+msgid "(optional, only shown if \"Show field label\" is on)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. Help Text, Notice"
+msgstr ""
+
+#: assets/build/main.js
+msgid "e.g. Your Name, Email Address"
+msgstr ""
+
+#: assets/build/main.js
+msgid "your_name"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Name/ID is required"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tab Layout"
+msgstr ""
+
+#: assets/build/main.js
+msgid "HTML Content"
+msgstr ""
+
+#: assets/build/main.js
+msgid "This block displays static HTML inside the metabox / options page. It does not store any value. Content is filtered through"
+msgstr ""
+
+#: assets/build/main.js
+msgid "on the server."
+msgstr ""
+
+#: assets/build/main.js
+msgid "<p>Enter your HTML here. You can use headings, lists, links, images, etc.</p>"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Show field label above HTML"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select source to get field options from"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Bulk Options"
+msgstr ""
+
+#: assets/build/main.js
+msgid "One option per line. Format:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query Builder - Coming Soon"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Multiple"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Multiple Images"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Allow selecting multiple images at once. Stored as comma-separated attachment IDs."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Return Format"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s Array with ID and URL"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s URL"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s ID"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Sub Fields"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Min Rows"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Max Rows"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Unlimited"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Button Label"
 msgstr ""
 
 #: assets/build/main.js
@@ -7063,6 +7637,10 @@ msgid "Inline"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Table"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Sub field label"
 msgstr ""
 
@@ -7075,7 +7653,65 @@ msgid "Remove sub-field"
 msgstr ""
 
 #: assets/build/main.js
+msgid "One per line:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Layout:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Allow multiple"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d option configured"
+msgid_plural "%d options configured"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "No sub-fields added yet"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Sub Field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Gallery Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Min Images"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Max Images"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Image Array"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Image URLs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Image IDs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Relationship Settings"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Post Type(s)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select one or more post types to search from"
 msgstr ""
 
 #: assets/build/main.js
@@ -7083,7 +7719,51 @@ msgid "Select post types..."
 msgstr ""
 
 #: assets/build/main.js
+msgid "Single selection"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Min Selections"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Max Selections"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post IDs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post Objects"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Taxonomy Picker Settings"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select a taxonomy to pick terms from"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Select taxonomy..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Allow Add New"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term IDs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Term Objects"
+msgstr ""
+
+#: assets/build/main.js
+msgid "User Picker Settings"
 msgstr ""
 
 #: assets/build/main.js
@@ -7091,11 +7771,31 @@ msgid "Filter by Roles"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Select roles to filter users (leave empty for all)"
+msgstr ""
+
+#: assets/build/main.js
 msgid "All Roles (no filter)"
 msgstr ""
 
 #: assets/build/main.js
+msgid "User IDs"
+msgstr ""
+
+#: assets/build/main.js
+msgid "User Objects"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Placeholder"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Placeholder text..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Default Value"
 msgstr ""
 
 #: assets/build/main.js
@@ -7107,7 +7807,35 @@ msgid "Help text for this field..."
 msgstr ""
 
 #: assets/build/main.js
+msgid "Max Characters"
+msgstr ""
+
+#: assets/build/main.js
 msgid "No limit"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Quick Edit"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit Rules"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Rules"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Regex Validation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pattern Validation"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Regex Pattern"
 msgstr ""
 
 #: assets/build/main.js
@@ -7115,7 +7843,67 @@ msgid "e.g. ^[A-Z]{2}\\\\d{4}$"
 msgstr ""
 
 #: assets/build/main.js
+msgid "PCRE syntax. Bare patterns are auto-wrapped in"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Error Message"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Shown when the pattern fails"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Another Field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Conditional Logic for"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Untitled"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable Conditional Logic"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Toggle this option to set display rules."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Preview:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "You need at least one other field with a name set before you can write a rule. Add a field, give it a label, then come back here."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Rule %d"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select field..."
+msgstr ""
+
+#: assets/build/main.js
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Operator"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Value"
+msgstr ""
+
+#: assets/build/main.js
+msgid "The selected field has no options yet. Add options to it first."
 msgstr ""
 
 #: assets/build/main.js
@@ -7131,31 +7919,35 @@ msgid "Enter value..."
 msgstr ""
 
 #: assets/build/main.js
-msgid "Post Parent"
+msgid "New Rule"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Post Author"
+msgid "The logical relationship between rules."
 msgstr ""
 
 #: assets/build/main.js
-msgid "Post Taxonomy Term"
+msgid "And"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Current User Role"
+msgid "Or"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Current User Capability"
+msgid "Rules save when you click"
 msgstr ""
 
 #: assets/build/main.js
-msgid "is equal to"
+msgid "Update"
 msgstr ""
 
 #: assets/build/main.js
-msgid "is not equal to"
+msgid "on the post type form."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Done"
 msgstr ""
 
 #: assets/build/main.js
@@ -7191,7 +7983,31 @@ msgid "Profile (Own)"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Show this field group if"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No rules configured"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Rule Group %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Duplicate group"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pro feature"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Remove group"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enter post ID or slug"
 msgstr ""
 
 #: assets/build/main.js
@@ -7199,15 +8015,11 @@ msgid "Remove rule"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Term IDs"
+msgid "Add OR Rule Group"
 msgstr ""
 
 #: assets/build/main.js
-msgid "User IDs"
-msgstr ""
-
-#: assets/build/main.js
-msgid "Post IDs"
+msgid "OR groups allow you to show field groups when any group of rules matches"
 msgstr ""
 
 #: assets/build/main.js
@@ -7264,6 +8076,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Inclusive lower bound. ISO date (YYYY-MM-DD) or strtotime-friendly string (e.g. '-7 days')."
+msgstr ""
+
+#: assets/build/main.js
+msgid "YYYY-MM-DD"
 msgstr ""
 
 #: assets/build/main.js
@@ -7375,6 +8191,10 @@ msgid "Number of pairs the current anchor has under the relation. Default direct
 msgstr ""
 
 #: assets/build/main.js
+msgid "Loading relations..."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Copy to clipboard"
 msgstr ""
 
@@ -7383,7 +8203,39 @@ msgid "URL Parameter Builder"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Build a"
+msgstr ""
+
+#: assets/build/main.js
+msgid "token for a specific query-string key — handy for filter pages like"
+msgstr ""
+
+#: assets/build/main.js
+msgid "driving a tax_query."
+msgstr ""
+
+#: assets/build/main.js
+msgid "URL Parameter Key"
+msgstr ""
+
+#: assets/build/main.js
 msgid "e.g. city, min_price, tag"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Generated Macro"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Copy macro"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enter a key first"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use letters, numbers, and underscores only (e.g."
 msgstr ""
 
 #: assets/build/main.js
@@ -7392,6 +8244,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Relation Macro Builder"
+msgstr ""
+
+#: assets/build/main.js
+msgid "What to fetch"
 msgstr ""
 
 #: assets/build/main.js
@@ -7415,7 +8271,23 @@ msgid "Pair count (parents)"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Index"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta key"
+msgstr ""
+
+#: assets/build/main.js
 msgid "e.g. phone, listing_price"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use letters, numbers, and underscores only."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pick a relation first"
 msgstr ""
 
 #: assets/build/main.js
@@ -7487,6 +8359,14 @@ msgid "CHAR (string)"
 msgstr ""
 
 #: assets/build/main.js
+msgid "NUMERIC"
+msgstr ""
+
+#: assets/build/main.js
+msgid "DATE"
+msgstr ""
+
+#: assets/build/main.js
 msgid "DATETIME"
 msgstr ""
 
@@ -7527,7 +8407,55 @@ msgid "Field-aware:"
 msgstr ""
 
 #: assets/build/main.js
+msgid "the Meta Key dropdown auto-completes from your registered field groups so you don't need to remember keys by hand."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Combine rows with"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No meta filters yet. Add one to query custom field values like price, featured, or event_date."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Rule #%s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use known key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use custom key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Meta Key"
+msgstr ""
+
+#: assets/build/main.js
 msgid "e.g. _custom_meta_key"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Compare"
+msgstr ""
+
+#: assets/build/main.js
+msgid "min, max"
+msgstr ""
+
+#: assets/build/main.js
+msgid "a, b, c"
+msgstr ""
+
+#: assets/build/main.js
+msgid "value or {{macro}}"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Meta Rule"
 msgstr ""
 
 #: assets/build/main.js
@@ -7623,6 +8551,10 @@ msgid "Skip the first N results before returning anything."
 msgstr ""
 
 #: assets/build/main.js
+msgid "No results — your filters might be too narrow, or the source set is empty."
+msgstr ""
+
+#: assets/build/main.js
 msgid "View post"
 msgstr ""
 
@@ -7675,7 +8607,33 @@ msgid "city=dhaka&min_price=50000"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Running..."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Run Preview"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Preview failed."
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s total"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Showing %s row"
+msgid_plural "Showing %s rows"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "Click"
+msgstr ""
+
+#: assets/build/main.js
+msgid "to test your query against the live database."
 msgstr ""
 
 #: assets/build/main.js
@@ -7727,7 +8685,47 @@ msgid "Relation-aware:"
 msgstr ""
 
 #: assets/build/main.js
+msgid "filter posts/terms/users by their relations. Use"
+msgstr ""
+
+#: assets/build/main.js
+msgid "as the anchor on single templates so each card shows its own related items."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No relation filters yet. Add one to query posts that are connected to a specific anchor — or that simply have any pair."
+msgstr ""
+
+#: assets/build/main.js
 msgid "123 or {{current_post_id}}"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pair meta filters"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pair-meta filters are ignored for INHERITED compare ops."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add pair-meta filter"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pair-meta filters are ignored when compare is set to"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Switch back to"
+msgstr ""
+
+#: assets/build/main.js
+msgid "to use them."
+msgstr ""
+
+#: assets/build/main.js
+msgid "No pair-meta filters. Add one to narrow by per-pair values like"
 msgstr ""
 
 #: assets/build/main.js
@@ -7740,6 +8738,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Remove pair-meta filter"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Relation Rule"
 msgstr ""
 
 #: assets/build/main.js
@@ -7839,7 +8841,35 @@ msgid "Term Taxonomy ID"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Taxonomy queries are only meaningful for"
+msgstr ""
+
+#: assets/build/main.js
+msgid "queries (and term-meta relationships on"
+msgstr ""
+
+#: assets/build/main.js
+msgid "). Switch the query type on the Source tab."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Taxonomy Query"
+msgstr ""
+
+#: assets/build/main.js
+msgid "No taxonomy filters yet. Add one to narrow results by terms."
+msgstr ""
+
+#: assets/build/main.js
+msgid "news, featured"
+msgstr ""
+
+#: assets/build/main.js
+msgid "12, 34"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Taxonomy Rule"
 msgstr ""
 
 #: assets/build/main.js
@@ -8277,10 +9307,6 @@ msgid "Sort"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Update"
-msgstr ""
-
-#: assets/build/main.js
 msgid "Update Alt"
 msgstr ""
 
@@ -8621,6 +9647,108 @@ msgid "Maybe Later"
 msgstr ""
 
 #: assets/build/main.js
+msgid "No components from this preset are available right now. Make sure the Pro plugin is active."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Quick-start presets"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s layout"
+msgid_plural "%s layouts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "%s block"
+msgid_plural "%s blocks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "Replace current layout?"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Applying the"
+msgstr ""
+
+#: assets/build/main.js
+msgid "preset removes every component on the canvas and drops in %s new one. You can undo this with"
+msgid_plural "preset removes every component on the canvas and drops in %s new ones. You can undo this with"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "Replace layout"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Blog Card"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Image, category eyebrow, title, byline, excerpt, read-more."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Read more"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Product Card"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Image, title, prominent price, pill \"View product\" CTA."
+msgstr ""
+
+#: assets/build/main.js
+msgid "View product"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Hero image, big price, address, location meta, outline CTA."
+msgstr ""
+
+#: assets/build/main.js
+msgid "View listing"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Author Card"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Avatar, name, role eyebrow, profile link — for team grids."
+msgstr ""
+
+#: assets/build/main.js
+msgid "View profile"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Event Card"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Date eyebrow, title, location meta, solid RSVP button."
+msgstr ""
+
+#: assets/build/main.js
+msgid "RSVP"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Minimal List"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Title + tiny date meta, no image — perfect for sidebars."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Elevated"
 msgstr ""
 
@@ -8661,6 +9789,30 @@ msgid "No card chrome at all — raw content only"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Disable %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Card Appearance"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Control the card wrapper styles"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Presets"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Fine-tune"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Padding"
 msgstr ""
 
@@ -8681,6 +9833,10 @@ msgid "Img Zoom"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Click a component on the canvas to edit its settings."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Plain Text"
 msgstr ""
 
@@ -8697,6 +9853,18 @@ msgid "Currency ($1,234.56)"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Pick a field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s · icon"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s · image"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Separator"
 msgstr ""
 
@@ -8706,6 +9874,20 @@ msgstr ""
 
 #: assets/build/main.js
 msgid " · "
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s field"
+msgid_plural "%s fields"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/build/main.js
+msgid "Add field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field %s"
 msgstr ""
 
 #: assets/build/main.js
@@ -8853,6 +10035,10 @@ msgid "Extra rel value — noopener noreferrer is auto-added for new-tab links."
 msgstr ""
 
 #: assets/build/main.js
+msgid "Time Ago (e.g. \"2 days ago\")"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Reading Time"
 msgstr ""
 
@@ -8957,6 +10143,10 @@ msgid "Additional class applied to the wrapper tag."
 msgstr ""
 
 #: assets/build/main.js
+msgid "WordPress media library is not available on this screen."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Select icon image"
 msgstr ""
 
@@ -8969,7 +10159,27 @@ msgid "Optional icon or small image shown before the field value."
 msgstr ""
 
 #: assets/build/main.js
+msgid "Icon"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Change image"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Select image"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Remove image"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Attachment #%s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "PNG, JPG, GIF, or SVG — shown at inline icon size on the card."
 msgstr ""
 
 #: assets/build/main.js
@@ -8990,6 +10200,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Meta key of the Repeater field (without the `field:` prefix)."
+msgstr ""
+
+#: assets/build/main.js
+msgid "gallery_rows"
 msgstr ""
 
 #: assets/build/main.js
@@ -9273,6 +10487,138 @@ msgid "Joiner used between terms."
 msgstr ""
 
 #: assets/build/main.js
+msgid "Plain"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Inline link — no chrome."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pill"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Filled rounded button — primary CTA."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Solid"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Filled square button — high-emphasis CTA."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Outline"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Bordered button — secondary CTA."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Muted"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Default byline tone — small, low contrast."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Compact"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Tiny meta — good for dense card grids."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Eyebrow"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Uppercase tracked label — sits above a title."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Badge"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pill-shaped meta — pairs well with inline rows."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Title H1"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Large hero title — bold, tight tracking."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Title H2"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Section title — pairs well with a meta line below."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Title H3"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Card title — readable, compact."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Body"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Paragraph copy — comfortable line height."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Caption"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Muted small text for footnotes / hints."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Small uppercase label that sits above a title."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Soft"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Default chip — neutral fill, subtle."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Pill chip — accent fill, more prominence."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Uppercase"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Loud label — uppercase, tracked."
+msgstr ""
+
+#: assets/build/main.js
+msgid "%s (custom)"
+msgstr ""
+
+#: assets/build/main.js
 msgid "User logged in"
 msgstr ""
 
@@ -9309,7 +10655,31 @@ msgid "="
 msgstr ""
 
 #: assets/build/main.js
+msgid "!="
+msgstr ""
+
+#: assets/build/main.js
+msgid ">"
+msgstr ""
+
+#: assets/build/main.js
+msgid "<"
+msgstr ""
+
+#: assets/build/main.js
+msgid ">="
+msgstr ""
+
+#: assets/build/main.js
+msgid "<="
+msgstr ""
+
+#: assets/build/main.js
 msgid "Empty"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Exists"
 msgstr ""
 
 #: assets/build/main.js
@@ -9341,10 +10711,6 @@ msgid "Expected"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Operator"
-msgstr ""
-
-#: assets/build/main.js
 msgid "Role slug"
 msgstr ""
 
@@ -9357,7 +10723,7 @@ msgid "Custom key…"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Value"
+msgid "meta_key"
 msgstr ""
 
 #: assets/build/main.js
@@ -9370,6 +10736,14 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Custom slug…"
+msgstr ""
+
+#: assets/build/main.js
+msgid "relation_slug"
+msgstr ""
+
+#: assets/build/main.js
+msgid "category"
 msgstr ""
 
 #: assets/build/main.js
@@ -9386,5 +10760,21 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Any rule matches (OR)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Dynamic visibility"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Enable visibility rules"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Match logic"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add rule"
 msgstr ""
 

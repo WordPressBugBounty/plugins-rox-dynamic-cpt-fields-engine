@@ -3,7 +3,7 @@ Contributors: ataurr
 Tags: custom post types, custom fields, meta fields, taxonomies, dynamic content,
 Requires at least: 6.5
 Tested up to: 7.0
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -414,12 +414,16 @@ Yes. **Settings → Tools → PHP Generation** converts selected configurations 
 
 == Changelog ==
 
+= 1.0.8 =
+* Fixed: Completed translation support across the entire admin interface, including admin menu, Pro presets, and query/listing builders
+* Fixed: A location rule dropdown could disappear on non-English sites due to a mistranslated internal setting
+* Security: Removed a publicly-shipped source map that exposed unminified JavaScript source
+
 = 1.0.7 =
 * Fixed Build issue
 
 = 1.0.6 =
 * Fixed localisation and pot file issue
-
 
 = 1.0.5 =
 * Improved localisation and pot file

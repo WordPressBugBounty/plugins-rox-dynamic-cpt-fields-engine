@@ -3,6 +3,7 @@ import { metaboxesApi, MetaboxConfig } from '../services/api';
 import type { MetaField, MetaFieldOption, ConditionalLogic, ConditionalRule } from './usePostTypes';
 import { normalizeMetaFields } from './usePostTypes';
 import { transformMetaFieldForApi } from '../lib/meta-field-api';
+import { __ } from '../lib/i18n';
 
 export const METABOXES_QUERY_KEY = ['metaboxes'];
 
@@ -47,25 +48,25 @@ export const DEFAULT_MATCH_PRIORITY = 10;
 // also tags entries with isPro flags, but anything consuming the param
 // catalogue elsewhere uses this export.
 export const FREE_LOCATION_PARAMS = [
-  { value: 'post_type', label: 'Post Type', group: 'Post' },
-  { value: 'post', label: 'Post', group: 'Post' },
-  { value: 'post_status', label: 'Post Status', group: 'Post' },
-  { value: 'taxonomy', label: 'Taxonomy', group: 'Term' },
-  { value: 'term', label: 'Term', group: 'Term' },
-  { value: 'user_form', label: 'User Form', group: 'User' },
-  { value: 'user_role', label: 'User Role', group: 'User' },
-  { value: 'options_page', label: 'Options Page', group: 'Options' },
+  { value: 'post_type', label: __('Post Type', 'rox-dynamic-cpt-fields-engine'), group: __('Post', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'post', label: __('Post', 'rox-dynamic-cpt-fields-engine'), group: __('Post', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'post_status', label: __('Post Status', 'rox-dynamic-cpt-fields-engine'), group: __('Post', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'taxonomy', label: __('Taxonomy', 'rox-dynamic-cpt-fields-engine'), group: __('Term', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'term', label: __('Term', 'rox-dynamic-cpt-fields-engine'), group: __('Term', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'user_form', label: __('User Form', 'rox-dynamic-cpt-fields-engine'), group: __('User', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'user_role', label: __('User Role', 'rox-dynamic-cpt-fields-engine'), group: __('User', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'options_page', label: __('Options Page', 'rox-dynamic-cpt-fields-engine'), group: __('Options', 'rox-dynamic-cpt-fields-engine') },
 ] as const;
 
 // Pro location params (shown with PRO badge)
 export const PRO_LOCATION_PARAMS = [
-  { value: 'page_template', label: 'Page Template', group: 'Post' },
-  { value: 'post_parent', label: 'Post Parent', group: 'Post' },
-  { value: 'post_author', label: 'Post Author', group: 'Post' },
-  { value: 'post_format', label: 'Post Format', group: 'Post' },
-  { value: 'post_taxonomy', label: 'Post Taxonomy Term', group: 'Post' },
-  { value: 'current_user_role', label: 'Current User Role', group: 'User' },
-  { value: 'current_user_capability', label: 'Current User Capability', group: 'User' },
+  { value: 'page_template', label: __('Page Template', 'rox-dynamic-cpt-fields-engine'), group: __('Post', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'post_parent', label: __('Post Parent', 'rox-dynamic-cpt-fields-engine'), group: __('Post', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'post_author', label: __('Post Author', 'rox-dynamic-cpt-fields-engine'), group: __('Post', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'post_format', label: __('Post Format', 'rox-dynamic-cpt-fields-engine'), group: __('Post', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'post_taxonomy', label: __('Post Taxonomy Term', 'rox-dynamic-cpt-fields-engine'), group: __('Post', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'current_user_role', label: __('Current User Role', 'rox-dynamic-cpt-fields-engine'), group: __('User', 'rox-dynamic-cpt-fields-engine') },
+  { value: 'current_user_capability', label: __('Current User Capability', 'rox-dynamic-cpt-fields-engine'), group: __('User', 'rox-dynamic-cpt-fields-engine') },
 ] as const;
 
 // All location params combined
@@ -73,8 +74,8 @@ export const ALL_LOCATION_PARAMS = [...FREE_LOCATION_PARAMS, ...PRO_LOCATION_PAR
 
 // Location operators
 export const LOCATION_OPERATORS = [
-  { value: '==', label: 'is equal to' },
-  { value: '!=', label: 'is not equal to' },
+  { value: '==', label: __('is equal to', 'rox-dynamic-cpt-fields-engine') },
+  { value: '!=', label: __('is not equal to', 'rox-dynamic-cpt-fields-engine') },
 ] as const;
 
 // Convert form data to API format (what backend expects)

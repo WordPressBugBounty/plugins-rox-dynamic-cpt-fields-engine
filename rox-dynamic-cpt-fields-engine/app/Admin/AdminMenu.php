@@ -34,44 +34,45 @@ class AdminMenu {
 	private string $page_hook = '';
 
 	/**
-	 * Submenu items.
+	 * Get submenu items.
 	 *
-	 * @var array
+	 * @return array<int, array{title: string, slug: string, hash: string}>
 	 */
-	private array $submenus = array(
+	private function get_submenus(): array {
+		return array(
 		array(
-			'title' => 'Dashboard',
+			'title' => __( 'Dashboard', 'rox-dynamic-cpt-fields-engine' ),
 			'slug'  => '',
 			'hash'  => '#/',
 		),
 		array(
-			'title' => 'Post Types',
+			'title' => __( 'Post Types', 'rox-dynamic-cpt-fields-engine' ),
 			'slug'  => 'post-types',
 			'hash'  => '#/post-types',
 		),
 		array(
-			'title' => 'Taxonomies',
+			'title' => __( 'Taxonomies', 'rox-dynamic-cpt-fields-engine' ),
 			'slug'  => 'taxonomies',
 			'hash'  => '#/taxonomies',
 		),
 		array(
-			'title' => 'Metabox',
+			'title' => __( 'Metabox', 'rox-dynamic-cpt-fields-engine' ),
 			'slug'  => 'metaboxes',
 			'hash'  => '#/metaboxes',
 		),
 		array(
-			'title' => 'Options Pages',
+			'title' => __( 'Options Pages', 'rox-dynamic-cpt-fields-engine' ),
 			'slug'  => 'options-pages',
 			'hash'  => '#/options-pages',
 		),
 
 		array(
-			'title' => 'Query Builder',
+			'title' => __( 'Query Builder', 'rox-dynamic-cpt-fields-engine' ),
 			'slug'  => 'queries',
 			'hash'  => '#/queries',
 		),
 		array(
-			'title' => 'Listings',
+			'title' => __( 'Listings', 'rox-dynamic-cpt-fields-engine' ),
 			'slug'  => 'listings',
 			'hash'  => '#/listings',
 		),
@@ -80,7 +81,7 @@ class AdminMenu {
 		// where the `<ProModuleGate>` shows the upgrade overlay
 		// (consistent with Listings + Query Builder above).
 		array(
-			'title' => 'Relations',
+			'title' => __( 'Relations', 'rox-dynamic-cpt-fields-engine' ),
 			'slug'  => 'relations',
 			'hash'  => '#/relations',
 		),
@@ -90,21 +91,17 @@ class AdminMenu {
 		// back to an upgrade overlay for non-Pro sites, so the
 		// submenu link is universal.
 		array(
-			'title' => 'AI Assistant',
+			'title' => __( 'AI Assistant', 'rox-dynamic-cpt-fields-engine' ),
 			'slug'  => 'ai-assistant',
 			'hash'  => '#/ai-assistant',
 		),
-		// array(
-		// 	'title' => 'Tools',
-		// 	'slug'  => 'tools',
-		// 	'hash'  => '#/tools',
-		// ),
 		array(
-			'title' => 'Settings',
+			'title' => __( 'Settings', 'rox-dynamic-cpt-fields-engine' ),
 			'slug'  => 'settings',
 			'hash'  => '#/settings',
 		),
-	);
+		);
+	}
 
 	/**
 	 * Initialize admin menu.
@@ -134,12 +131,16 @@ class AdminMenu {
 		);
 
 		// Add submenus for WordPress sidebar navigation.
-		foreach ( $this->submenus as $submenu ) {
+		foreach ( $this->get_submenus() as $submenu ) {
 			$menu_slug = empty( $submenu['slug'] ) ? self::MENU_SLUG : self::MENU_SLUG . '-' . $submenu['slug'];
 
 			add_submenu_page(
 				self::MENU_SLUG,
-				$submenu['title'] . ' - RDCFE',
+				sprintf(
+					/* translators: %s: Admin submenu title. */
+					__( '%s - RDCFE', 'rox-dynamic-cpt-fields-engine' ),
+					$submenu['title']
+				),
 				$submenu['title'],
 				'manage_options',
 				$menu_slug,
@@ -165,7 +166,7 @@ class AdminMenu {
 		}
 
 		$hash_map = array();
-		foreach ( $this->submenus as $submenu ) {
+		foreach ( $this->get_submenus() as $submenu ) {
 			$menu_slug              = empty( $submenu['slug'] ) ? self::MENU_SLUG : self::MENU_SLUG . '-' . $submenu['slug'];
 			$hash_map[ $menu_slug ] = $submenu['hash'];
 		}
@@ -177,7 +178,7 @@ class AdminMenu {
 					function ( $submenu ) {
 						return $submenu['hash'];
 					},
-					$this->submenus
+					$this->get_submenus()
 				)
 			)
 		);
@@ -243,7 +244,8 @@ class AdminMenu {
 	 * @return void
 	 */
 	private function add_admin_page_styles(): void {
-		$inline_css = '
+		$inline_css = sprintf(
+			'
 			/* Position below WordPress admin bar */
 			#rdcfe-root {
 				margin: 0 0 0 -20px;
@@ -268,7 +270,7 @@ class AdminMenu {
 			}
 			/* Loading state */
 			#rdcfe-root:empty::before {
-				content: "Loading...";
+				content: %s;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -276,7 +278,9 @@ class AdminMenu {
 				color: #6b7280;
 				font-size: 14px;
 			}
-		';
+		',
+			wp_json_encode( __( 'Loading...', 'rox-dynamic-cpt-fields-engine' ) )
+		);
 
 		// Attach to common admin style.
 		wp_add_inline_style( 'common', $inline_css );
