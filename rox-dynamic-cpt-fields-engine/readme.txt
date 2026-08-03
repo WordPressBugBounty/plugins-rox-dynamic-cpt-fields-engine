@@ -3,7 +3,7 @@ Contributors: ataurr
 Tags: custom post types, custom fields, meta fields, taxonomies, dynamic content,
 Requires at least: 6.5
 Tested up to: 7.0
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -413,6 +413,12 @@ Yes. **Settings → Tools → PHP Generation** converts selected configurations 
 10. Settings and Tools — import, export, snapshots, and PHP generation
 
 == Changelog ==
+
+= 1.0.9 =
+* Improved translation support across the admin interface.
+* Fixed translatable admin strings so they can be correctly detected by WordPress.org translation tools.
+* Localized additional labels, descriptions, and status messages in the admin UI.
+* Updated the plugin translation template file.
 
 = 1.0.8 =
 * Fixed: Completed translation support across the entire admin interface, including admin menu, Pro presets, and query/listing builders

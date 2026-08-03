@@ -3,7 +3,7 @@
  * Plugin Name: Dynamic Fields Engine
  * Plugin URI: https://dynamicfieldsengine.com/
  * Description: Build Custom Post Types, Taxonomies, Custom Fields, Queries, and Listings from one unified interface.
- * Version: 1.0.8
+ * Version: 1.0.9
  * Author: Roxnor,  Wpmet
  * Author URI: https://wpmet.com
  * License: GPL v2 or later
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Plugin constants.
-define( 'RDCFE_VERSION', '1.0.8' );
+define( 'RDCFE_VERSION', '1.0.9' );
 define( 'RDCFE_PLUGIN_FILE', __FILE__ );
 define( 'RDCFE_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'RDCFE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

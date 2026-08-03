@@ -2,14 +2,14 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dynamic Fields Engine 1.0.8\n"
+"Project-Id-Version: Dynamic Fields Engine 1.0.9\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rox-dynamic-cpt-fields-engine\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-02T09:09:54+00:00\n"
+"POT-Creation-Date: 2026-08-03T06:55:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: rox-dynamic-cpt-fields-engine\n"
@@ -2277,6 +2277,10 @@ msgid "External Editor"
 msgstr ""
 
 #: assets/build/main.js
+msgid "%s Settings"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Single Page"
 msgstr ""
 
@@ -2289,7 +2293,15 @@ msgid "Unsaved changes"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Layout is edited in %s. Use this form for override rules and placement."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Page Design"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Open the linked template page in %s to edit the layout."
 msgstr ""
 
 #: assets/build/main.js
@@ -2306,6 +2318,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "e.g. Property Archive Layout"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Override Post Types"
 msgstr ""
 
 #: assets/build/main.js
@@ -2333,6 +2349,10 @@ msgid "Control when this page template is active. Rules are evaluated against th
 msgstr ""
 
 #: assets/build/main.js
+msgid "Update Settings"
+msgstr ""
+
+#: assets/build/main.js
 msgid "• unsaved"
 msgstr ""
 
@@ -2341,11 +2361,23 @@ msgid "Delete Listing"
 msgstr ""
 
 #: assets/build/main.js
+msgid "To change the page layout, use"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edit in %s"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Elementor"
 msgstr ""
 
 #: assets/build/main.js
 msgid "Gutenberg"
+msgstr ""
+
+#: assets/build/main.js
+msgid "above. Save here to update override rules."
 msgstr ""
 
 #: assets/build/main.js
@@ -2501,7 +2533,27 @@ msgid "Click any component on the canvas to edit it. Drag to reorder."
 msgstr ""
 
 #: assets/build/main.js
+msgid "Shortcuts:"
+msgstr ""
+
+#: assets/build/main.js
+msgid "duplicate"
+msgstr ""
+
+#: assets/build/main.js
+msgid "remove"
+msgstr ""
+
+#: assets/build/main.js
+msgid "undo"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Pick a sample post in the canvas toolbar to preview real data."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Edits autosave to the form. Hit"
 msgstr ""
 
 #: assets/build/main.js
@@ -3377,15 +3429,19 @@ msgid "Examples:"
 msgstr ""
 
 #: assets/build/main.js
-msgid "user_2"
+msgid "Load from Post ID 123"
 msgstr ""
 
 #: assets/build/main.js
-msgid "term_5"
+msgid "Load from User ID 2"
 msgstr ""
 
 #: assets/build/main.js
-msgid "category_3"
+msgid "Load from Term ID 5"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Load from Category ID 3"
 msgstr ""
 
 #: assets/build/main.js
@@ -3421,15 +3477,15 @@ msgid "Common capabilities:"
 msgstr ""
 
 #: assets/build/main.js
-msgid "manage_options"
+msgid "Administrators only"
 msgstr ""
 
 #: assets/build/main.js
-msgid "edit_posts"
+msgid "Editors and above"
 msgstr ""
 
 #: assets/build/main.js
-msgid "publish_posts"
+msgid "Authors and above"
 msgstr ""
 
 #: assets/build/main.js
@@ -4269,6 +4325,14 @@ msgid "Add Filter"
 msgstr ""
 
 #: assets/build/main.js
+msgid "1 Meta Field Available"
+msgstr ""
+
+#: assets/build/main.js
+msgid "%d Meta Fields Available"
+msgstr ""
+
+#: assets/build/main.js
 msgid "With Pro, you can use your defined meta fields in Admin Columns and Filters for powerful data display and filtering."
 msgstr ""
 
@@ -4438,6 +4502,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Create reusable, dynamic queries for posts, terms, and users."
+msgstr ""
+
+#: assets/build/main.js
+msgid "property • 1 meta"
 msgstr ""
 
 #: assets/build/main.js
@@ -5738,6 +5806,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Paste the license key from your"
+msgstr ""
+
+#: assets/build/main.js
+msgid "wpmet account"
 msgstr ""
 
 #: assets/build/main.js
@@ -8012,6 +8084,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Remove rule"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Add Rule"
 msgstr ""
 
 #: assets/build/main.js
