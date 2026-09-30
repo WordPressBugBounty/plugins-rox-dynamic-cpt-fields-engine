@@ -2,14 +2,14 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dynamic Fields Engine 1.0.9\n"
+"Project-Id-Version: Dynamic Fields Engine 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rox-dynamic-cpt-fields-engine\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-03T06:55:57+00:00\n"
+"POT-Creation-Date: 2026-09-30T09:17:08+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: rox-dynamic-cpt-fields-engine\n"
@@ -1277,7 +1277,7 @@ msgid "Unknown field type: %s"
 msgstr ""
 
 #: app/Schema/Validator.php:377
-msgid "Width should be 25, 50, 75, or 100."
+msgid "Width should be 25, 33, 50, 66, 75, or 100."
 msgstr ""
 
 #: app/Schema/Validator.php:393
@@ -1427,7 +1427,31 @@ msgid "is not equal to"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Post type \"%1$s\" (%2$s) currently has these fields: %3$s."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Post type \"%1$s\" (%2$s) currently has no custom fields."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field group \"%1$s\" currently has these fields: %2$s."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Field group \"%1$s\" currently has no fields."
+msgstr ""
+
+#: assets/build/main.js
+msgid "<describe your change here>"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Invalid JSON"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Cleared the auto-filled prompt for the new mode — type your own instructions."
 msgstr ""
 
 #: assets/build/main.js
@@ -1440,6 +1464,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Paste the broken or partial JSON into the Schema editor (right), then Generate."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Use this preset as-is, no changes."
 msgstr ""
 
 #: assets/build/main.js
@@ -1483,7 +1511,7 @@ msgid "Start from the \"%s\" preset and adapt it."
 msgstr ""
 
 #: assets/build/main.js
-msgid "<your changes here — e.g. add a \"rating\" field to Property, drop the Agents CPT>"
+msgid "<Describe your changes here, or leave this line as-is to use the preset unchanged>"
 msgstr ""
 
 #: assets/build/main.js
@@ -1779,7 +1807,7 @@ msgid "Load More"
 msgstr ""
 
 #: assets/build/main.js
-msgid "AJAX-paginated button (V1.1 — falls back to numeric on the front-end for now)."
+msgid "AJAX-paginated button — click to load the next page without a full page reload."
 msgstr ""
 
 #: assets/build/main.js
@@ -2421,6 +2449,18 @@ msgid "Build dynamic card layouts with drag-and-drop components, field bindings,
 msgstr ""
 
 #: assets/build/main.js
+msgid "unknown post type(s): %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "unknown field key(s): %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI suggested %s — not applied, left blank. Pick real ones in the inspector."
+msgstr ""
+
+#: assets/build/main.js
 msgid "AI title applied — no components were returned."
 msgstr ""
 
@@ -2819,6 +2859,10 @@ msgid "Below fields"
 msgstr ""
 
 #: assets/build/main.js
+msgid "Warning: removed field(s) are still bound in these listing card(s), which will now render blank for that data: %s"
+msgstr ""
+
+#: assets/build/main.js
 msgid "Add at least one field"
 msgstr ""
 
@@ -2908,6 +2952,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid " (%s groups)"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI suggestions applied — removed field(s): %s"
 msgstr ""
 
 #: assets/build/main.js
@@ -3262,6 +3310,18 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "#/options-pages/%s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "unknown capability \"%s\" — not applied, set a custom one by hand if needed"
+msgstr ""
+
+#: assets/build/main.js
+msgid "removed field(s): %s"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI suggestions applied — %s"
 msgstr ""
 
 #: assets/build/main.js
@@ -4549,6 +4609,10 @@ msgid "Failed to save query."
 msgstr ""
 
 #: assets/build/main.js
+msgid "AI suggested unknown post type(s): %s — not applied. Pick a real one on the Source tab."
+msgstr ""
+
+#: assets/build/main.js
 msgid "Query Builder Editor"
 msgstr ""
 
@@ -4904,6 +4968,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Target role"
+msgstr ""
+
+#: assets/build/main.js
+msgid "AI suggested unknown post type/taxonomy/role: %s — not applied. Pick a real one on the Connection tab."
 msgstr ""
 
 #: assets/build/main.js
@@ -6432,6 +6500,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Repair a broken or partial JSON schema."
+msgstr ""
+
+#: assets/build/main.js
+msgid "Sample Data"
 msgstr ""
 
 #: assets/build/main.js

@@ -368,13 +368,13 @@ class Validator {
 			}
 		}
 
-		// Validate width if provided.
+		// Mirrors the Field Width dropdown's 6 options (25/33/50/66/75/100) — thirds are first-class, not an edge case.
 		if ( isset( $field['width'] ) ) {
-			$valid_widths = array( 25, 50, 75, 100 );
+			$valid_widths = array( 25, 33, 50, 66, 75, 100 );
 			if ( ! in_array( (int) $field['width'], $valid_widths, true ) ) {
 				$result->add_warning(
 					"{$path}.width",
-					__( 'Width should be 25, 50, 75, or 100.', 'rox-dynamic-cpt-fields-engine' ),
+					__( 'Width should be 25, 33, 50, 66, 75, or 100.', 'rox-dynamic-cpt-fields-engine' ),
 					'invalid_width'
 				);
 			}

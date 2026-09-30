@@ -887,6 +887,10 @@ export interface DynamicSourceFieldKey {
 export interface DynamicSourceFieldGroup {
   group: string;
   scope?: string;
+  /** Post type slug this group's keys belong to (meta groups only — `MetaKeysCatalog`). */
+  slug?: string;
+  /** 'post_type' | 'field_group' for meta groups — orphan metaboxes with no post type rule use 'field_group'. */
+  source?: string;
   keys: DynamicSourceFieldKey[];
 }
 
@@ -1506,11 +1510,14 @@ export interface AIGenerateRequest {
     selected_cpt?: string;
     selected_field_group?: string | number;
     existing_schema?: Record<string, unknown> | string;
+    /** Quick Start preset id loaded into the prompt (create_new only) — grounds the AI call against the preset's real schema instead of asking it to freely invent one. */
+    template_id?: string;
   };
   options?: {
     include_queries?: boolean;
     include_listings?: boolean;
     include_relations?: boolean;
+    include_sample_posts?: boolean;
   };
 }
 
@@ -1570,6 +1577,10 @@ export interface AITemplate {
   description: string;
   icon: string;
   summary: string[];
+  has_queries?: boolean;
+  has_listings?: boolean;
+  has_relations?: boolean;
+  has_sample_posts?: boolean;
 }
 
 /**
