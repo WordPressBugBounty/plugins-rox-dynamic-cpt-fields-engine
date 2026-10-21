@@ -526,6 +526,6 @@ class AdminAssets {
 	 */
 	private function get_upgrade_url(): string {
 		// This will be configurable via settings or filter.
-		return apply_filters( 'rdcfe_upgrade_url', 'https://wpmet.com/plugin/dynamic-engine/pricing/' );
+		return apply_filters( 'rdcfe_upgrade_url', 'https://wpmet.com/plugin/dynamic-field-engine/pricing/' );
 	}
 }

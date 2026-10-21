@@ -58,7 +58,7 @@ interface ProContextValue {
 const defaultContextValue: ProContextValue = {
   isPro: false,
   proFeatures: DEFAULT_PRO_FEATURES,
-  upgradeUrl: 'https://wpmet.com/plugin/dynamic-engine/pricing/',
+  upgradeUrl: 'https://wpmet.com/plugin/dynamic-field-engine/pricing/',
   isProFeature: checkIsProFeature,
   canUseFeature: (feature, category) => !checkIsProFeature(feature, category),
 };
