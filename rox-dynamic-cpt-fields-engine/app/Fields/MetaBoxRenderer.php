@@ -542,7 +542,9 @@ class MetaBoxRenderer {
 		if ( '' === $value || null === $value || ( is_array( $value ) && empty( $value ) ) ) {
 			delete_post_meta( $post_id, $meta_key );
 		} else {
-			update_post_meta( $post_id, $meta_key, $value );
+			// wp_slash(): update_post_meta() unslashes, which would strip the
+			// backslashes out of JSON values (repeater/group rows).
+			update_post_meta( $post_id, $meta_key, wp_slash( $value ) );
 		}
 
 		/**

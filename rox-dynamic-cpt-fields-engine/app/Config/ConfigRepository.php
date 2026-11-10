@@ -66,7 +66,7 @@ class ConfigRepository {
 
 		// Save meta.
 		update_post_meta( $post_id, ConfigPostType::META_CONFIG_TYPE, $config_type );
-		update_post_meta( $post_id, ConfigPostType::META_CONFIG_DATA, wp_json_encode( $data, JSON_UNESCAPED_UNICODE ) );
+		update_post_meta( $post_id, ConfigPostType::META_CONFIG_DATA, wp_slash( wp_json_encode( $data, JSON_UNESCAPED_UNICODE ) ) );
 		update_post_meta( $post_id, ConfigPostType::META_SCHEMA_VERSION, '1.0.0' );
 
 		/**
@@ -208,7 +208,7 @@ class ConfigRepository {
 		// Save current state as last valid snapshot.
 		$current_data = get_post_meta( $id, ConfigPostType::META_CONFIG_DATA, true );
 		if ( $current_data ) {
-			update_post_meta( $id, ConfigPostType::META_LAST_VALID, $current_data );
+			update_post_meta( $id, ConfigPostType::META_LAST_VALID, wp_slash( $current_data ) );
 		}
 
 		$existing_data = $this->get_config_data( $id );
@@ -251,7 +251,7 @@ class ConfigRepository {
 		}
 
 		// Update config data (preserve Unicode characters like Bengali, Arabic, etc.).
-		update_post_meta( $id, ConfigPostType::META_CONFIG_DATA, wp_json_encode( $data, JSON_UNESCAPED_UNICODE ) );
+		update_post_meta( $id, ConfigPostType::META_CONFIG_DATA, wp_slash( wp_json_encode( $data, JSON_UNESCAPED_UNICODE ) ) );
 
 		/**
 		 * Fires after a config is updated.
@@ -433,8 +433,8 @@ class ConfigRepository {
 			return array();
 		}
 
-		$raw  = is_string( $json ) ? wp_unslash( $json ) : $json;
-		$data = is_string( $raw ) ? json_decode( $raw, true ) : $raw;
+		// No unslash here — core only unslashes on the way in.
+		$data = is_string( $json ) ? json_decode( $json, true ) : $json;
 
 		return is_array( $data ) ? $data : array();
 	}

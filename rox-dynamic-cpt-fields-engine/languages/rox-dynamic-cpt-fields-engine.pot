@@ -2,14 +2,14 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dynamic Fields Engine 1.1.0\n"
+"Project-Id-Version: Dynamic Fields Engine 1.2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rox-dynamic-cpt-fields-engine\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-19T10:00:58+00:00\n"
+"POT-Creation-Date: 2026-11-10T06:35:17+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: rox-dynamic-cpt-fields-engine\n"
@@ -224,7 +224,7 @@ msgstr ""
 #: app/Fields/CPTMetaFieldsManager.php:539
 #: app/Fields/FieldGroupManager.php:1124
 #: app/Fields/MetaBoxRenderer.php:339
-#: app/Fields/TaxonomyMetaFieldsManager.php:601
+#: app/Fields/TaxonomyMetaFieldsManager.php:603
 msgid "Tab"
 msgstr ""
 
@@ -232,7 +232,7 @@ msgstr ""
 #: app/Fields/CPTMetaFieldsManager.php:601
 #: app/Fields/FieldGroupManager.php:1186
 #: app/Fields/MetaBoxRenderer.php:401
-#: app/Fields/TaxonomyMetaFieldsManager.php:664
+#: app/Fields/TaxonomyMetaFieldsManager.php:666
 msgid "Section"
 msgstr ""
 
@@ -338,19 +338,19 @@ msgid "Validation Error: Please fix the following issues:"
 msgstr ""
 
 #: app/Fields/CPTMetaFieldsManager.php:398
-#: app/Fields/TaxonomyMetaFieldsManager.php:424
+#: app/Fields/TaxonomyMetaFieldsManager.php:426
 msgid "No fields configured."
 msgstr ""
 
 #: app/Fields/CPTMetaFieldsManager.php:1032
 #: app/Fields/FieldTypes/ToggleField.php:53
-#: app/Fields/TaxonomyMetaFieldsManager.php:1066
+#: app/Fields/TaxonomyMetaFieldsManager.php:1068
 msgid "On"
 msgstr ""
 
 #: app/Fields/CPTMetaFieldsManager.php:1033
 #: app/Fields/FieldTypes/ToggleField.php:54
-#: app/Fields/TaxonomyMetaFieldsManager.php:1067
+#: app/Fields/TaxonomyMetaFieldsManager.php:1069
 msgid "Off"
 msgstr ""
 
@@ -360,27 +360,27 @@ msgstr ""
 #: app/Fields/FieldTypes/FileField.php:87
 #: app/Fields/FieldTypes/ImageField.php:137
 #: app/Fields/FieldTypes/ImageField.php:161
-#: app/Fields/TaxonomyMetaFieldsManager.php:1098
-#: app/Fields/TaxonomyMetaFieldsManager.php:1139
+#: app/Fields/TaxonomyMetaFieldsManager.php:1100
+#: app/Fields/TaxonomyMetaFieldsManager.php:1141
 msgid "Remove"
 msgstr ""
 
 #: app/Fields/CPTMetaFieldsManager.php:1076
 #: app/Fields/FieldAssetsManager.php:136
 #: app/Fields/FieldTypes/ImageField.php:156
-#: app/Fields/TaxonomyMetaFieldsManager.php:1110
+#: app/Fields/TaxonomyMetaFieldsManager.php:1112
 msgid "Select Image"
 msgstr ""
 
 #: app/Fields/CPTMetaFieldsManager.php:1102
 #: app/Fields/FieldAssetsManager.php:140
 #: app/Fields/FieldTypes/FileField.php:84
-#: app/Fields/TaxonomyMetaFieldsManager.php:1136
+#: app/Fields/TaxonomyMetaFieldsManager.php:1138
 msgid "Select File"
 msgstr ""
 
 #. translators: %s: field label
-#: app/Fields/CPTMetaFieldsManager.php:1356
+#: app/Fields/CPTMetaFieldsManager.php:1358
 #: app/Fields/FieldGroupManager.php:399
 #: app/Fields/FieldTypes/AbstractFieldType.php:117
 #, php-format
@@ -388,7 +388,7 @@ msgid "%s is required."
 msgstr ""
 
 #. translators: %s: field label
-#: app/Fields/CPTMetaFieldsManager.php:1371
+#: app/Fields/CPTMetaFieldsManager.php:1373
 #: app/Fields/FieldGroupManager.php:414
 #: app/Fields/FieldTypes/UrlField.php:134
 #, php-format
@@ -396,7 +396,7 @@ msgid "%s must be a valid URL."
 msgstr ""
 
 #. translators: %s: field label
-#: app/Fields/CPTMetaFieldsManager.php:1380
+#: app/Fields/CPTMetaFieldsManager.php:1382
 #: app/Fields/FieldGroupManager.php:423
 #: app/Fields/FieldTypes/EmailField.php:116
 #, php-format
@@ -1138,25 +1138,25 @@ msgstr ""
 msgid "Slugs starting with \"wp_\" are reserved for WordPress core. Consider using a different prefix."
 msgstr ""
 
-#: app/Schema/Rules/SlugRule.php:46
+#: app/Schema/Rules/SlugRule.php:64
 msgid "Slug must be a string."
 msgstr ""
 
-#: app/Schema/Rules/SlugRule.php:57
+#: app/Schema/Rules/SlugRule.php:75
 msgid "Slug cannot be empty."
 msgstr ""
 
 #. translators: %d: maximum length
-#: app/Schema/Rules/SlugRule.php:67
+#: app/Schema/Rules/SlugRule.php:85
 #, php-format
 msgid "Slug must not exceed %d characters."
 msgstr ""
 
-#: app/Schema/Rules/SlugRule.php:78
+#: app/Schema/Rules/SlugRule.php:96
 msgid "Slug must start with a letter and contain only lowercase letters, numbers, underscores, and hyphens."
 msgstr ""
 
-#: app/Schema/Rules/SlugRule.php:87
+#: app/Schema/Rules/SlugRule.php:105
 msgid "Avoid consecutive underscores or hyphens in slugs."
 msgstr ""
 
@@ -1181,7 +1181,7 @@ msgstr ""
 #. translators: %s: field name
 #: app/Schema/Validator.php:101
 #: app/Schema/Validator.php:201
-#: app/Schema/Validator.php:467
+#: app/Schema/Validator.php:468
 #, php-format
 msgid "%s must be a boolean value."
 msgstr ""
@@ -1292,39 +1292,39 @@ msgstr ""
 msgid "Menu slug is required."
 msgstr ""
 
-#: app/Schema/Validator.php:453
+#: app/Schema/Validator.php:454
 msgid "Capability must be a string."
 msgstr ""
 
-#: app/Schema/Validator.php:455
+#: app/Schema/Validator.php:456
 msgid "Capability must start with a letter and contain only lowercase letters, numbers, and underscores."
 msgstr ""
 
-#: app/Schema/Validator.php:477
+#: app/Schema/Validator.php:478
 msgid "Position must be an integer."
 msgstr ""
 
-#: app/Schema/Validator.php:483
+#: app/Schema/Validator.php:484
 msgid "Storage mode must be a string."
 msgstr ""
 
-#: app/Schema/Validator.php:485
+#: app/Schema/Validator.php:486
 msgid "Storage mode must be either \"options\" or \"custom\"."
 msgstr ""
 
-#: app/Schema/Validator.php:496
+#: app/Schema/Validator.php:497
 msgid "Custom storage identifier must be a string."
 msgstr ""
 
-#: app/Schema/Validator.php:500
+#: app/Schema/Validator.php:501
 msgid "Custom storage must be a numeric ID or look like \"user_2\", \"term_5\", or \"category_3\"."
 msgstr ""
 
-#: app/Schema/Validator.php:508
+#: app/Schema/Validator.php:509
 msgid "Parent slug must be a string."
 msgstr ""
 
-#: app/Schema/Validator.php:525
+#: app/Schema/Validator.php:526
 msgid "Configuration must have a slug or name."
 msgstr ""
 
@@ -3270,6 +3270,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Slug must start with a letter and contain only lowercase letters, numbers, and hyphens"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Slug must be 32 characters or less"
 msgstr ""
 
 #: assets/build/main.js
@@ -5997,10 +6001,6 @@ msgid "Taxonomy name is required"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Slug must be 32 characters or less"
-msgstr ""
-
-#: assets/build/main.js
 msgid "Select at least one post type"
 msgstr ""
 
@@ -7470,6 +7470,10 @@ msgstr ""
 
 #: assets/build/main.js
 msgid "Vertical"
+msgstr ""
+
+#: assets/build/main.js
+msgid "Query Builder (Coming Soon)"
 msgstr ""
 
 #: assets/build/main.js
@@ -10343,11 +10347,15 @@ msgid "List item (li)"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Field Name"
+msgid "— Select repeater field —"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Meta key of the Repeater field (without the `field:` prefix)."
+msgid "Repeater Field"
+msgstr ""
+
+#: assets/build/main.js
+msgid "The Repeater field whose rows are shown."
 msgstr ""
 
 #: assets/build/main.js
@@ -10367,11 +10375,11 @@ msgid "Row Template"
 msgstr ""
 
 #: assets/build/main.js
-msgid "Use {sub_field} tokens that match your repeater's columns. e.g. {title} — {price}"
+msgid "Optional. Use {sub_field} tokens, e.g. {name} — {price}. Leave empty to show every sub-field."
 msgstr ""
 
 #: assets/build/main.js
-msgid "{title} — {price}"
+msgid "{name} — {price}"
 msgstr ""
 
 #: assets/build/main.js

@@ -16,10 +16,12 @@ import {
   type QueryPreviewContext,
   type QueryPreviewResult,
   type RelationQueryRow,
+  type RepeaterFieldSchema,
 } from '../services/api';
 
 export const QUERIES_QUERY_KEY = ['queries'] as const;
 export const QUERY_META_KEYS_KEY = ['queries', 'meta-keys'] as const;
+export const QUERY_REPEATER_FIELDS_KEY = ['queries', 'repeater-fields'] as const;
 
 /**
  * Form-level shape used by `QueryForm.tsx` — splits the title (top-level
@@ -153,6 +155,20 @@ export function useQueryMetaKeys() {
     // Meta-key list rarely changes mid-session — cache aggressively so
     // the dropdown opens instantly on every meta-query row.
     staleTime: 60_000,
+  });
+}
+
+/** Repeater fields + sub-fields for the Repeater Output inspector. */
+export function useRepeaterFields() {
+  return useQuery({
+    queryKey: QUERY_REPEATER_FIELDS_KEY,
+    queryFn: async (): Promise<RepeaterFieldSchema[]> => {
+      const response = await queriesApi.getRepeaterFields();
+      return Array.isArray(response.data?.repeaters) ? response.data.repeaters : [];
+    },
+    staleTime: 60_000,
+    // Endpoint is Pro-only — don't retry a 404 on Free-only installs.
+    retry: false,
   });
 }
 

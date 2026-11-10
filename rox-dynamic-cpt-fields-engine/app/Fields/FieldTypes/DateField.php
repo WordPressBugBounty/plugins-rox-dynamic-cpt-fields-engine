@@ -272,7 +272,8 @@ class DateField extends AbstractFieldType {
 
 		$timestamp = strtotime( (string) $value );
 		if ( false !== $timestamp ) {
-			return wp_date( $display_format, $timestamp );
+			// Pin to UTC — date-only value has no timezone of its own.
+			return wp_date( $display_format, $timestamp, new \DateTimeZone( 'UTC' ) );
 		}
 
 		return $value;

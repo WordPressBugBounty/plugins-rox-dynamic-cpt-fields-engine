@@ -19,14 +19,32 @@ use RDCFE\Schema\ValidationResult;
 class SlugRule implements RuleInterface {
 
 	/**
-	 * Maximum slug length.
+	 * Default maximum slug length (matches `register_post_type()`'s own cap).
 	 */
-	private const MAX_LENGTH = 20;
+	private const DEFAULT_MAX_LENGTH = 20;
 
 	/**
 	 * Minimum slug length.
 	 */
 	private const MIN_LENGTH = 1;
+
+	/**
+	 * Maximum slug length for this instance.
+	 *
+	 * @var int
+	 */
+	private int $max_length;
+
+	/**
+	 * Constructor.
+	 *
+	 * @param int $max_length Max length — pass 32 for taxonomy/options_page
+	 *                        slugs (`register_taxonomy()`'s own cap; options
+	 *                        pages have no WP-imposed limit so we match it).
+	 */
+	public function __construct( int $max_length = self::DEFAULT_MAX_LENGTH ) {
+		$this->max_length = $max_length;
+	}
 
 	/**
 	 * Validate a slug value.
@@ -59,13 +77,13 @@ class SlugRule implements RuleInterface {
 			);
 		}
 
-		if ( $length > self::MAX_LENGTH ) {
+		if ( $length > $this->max_length ) {
 			$result->add_error(
 				$path,
 				sprintf(
 					/* translators: %d: maximum length */
 					__( 'Slug must not exceed %d characters.', 'rox-dynamic-cpt-fields-engine' ),
-					self::MAX_LENGTH
+					$this->max_length
 				),
 				'slug_too_long'
 			);

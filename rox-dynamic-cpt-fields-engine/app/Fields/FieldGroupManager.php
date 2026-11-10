@@ -1442,7 +1442,9 @@ class FieldGroupManager {
 		if ( '' === $value || null === $value || ( is_array( $value ) && empty( $value ) ) ) {
 			delete_user_meta( $user_id, $meta_key );
 		} else {
-			update_user_meta( $user_id, $meta_key, $value );
+			// wp_slash(): update_user_meta() unslashes, which would strip the
+			// backslashes out of JSON values (repeater/group rows).
+			update_user_meta( $user_id, $meta_key, wp_slash( $value ) );
 		}
 
 		/**

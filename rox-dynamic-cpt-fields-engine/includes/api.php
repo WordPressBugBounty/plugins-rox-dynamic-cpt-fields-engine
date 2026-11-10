@@ -682,7 +682,9 @@ function rdcfe_get_field( string $field_name, int|string|null $post_id = null, m
  * @return bool True on success, false on failure.
  */
 function rdcfe_update_field( string $field_name, mixed $value, int $post_id ): bool {
-	return (bool) update_post_meta( $post_id, $field_name, $value );
+	// wp_slash(): update_post_meta() unslashes, which would strip the
+	// backslashes out of JSON / escaped values passed in by callers.
+	return (bool) update_post_meta( $post_id, $field_name, wp_slash( $value ) );
 }
 
 /**

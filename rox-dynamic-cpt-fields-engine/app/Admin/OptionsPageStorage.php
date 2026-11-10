@@ -190,24 +190,26 @@ class OptionsPageStorage {
 		$location = self::resolve( $page_config );
 		$key      = self::build_key( $menu_slug );
 
+		// post/user/term meta unslash on write (the option table does not), so
+		// slash first or backslashes in JSON values (repeater rows) get stripped.
 		switch ( $location['type'] ) {
 			case 'post':
 				if ( $location['id'] <= 0 ) {
 					return false;
 				}
-				return false !== update_post_meta( $location['id'], $key, $values );
+				return false !== update_post_meta( $location['id'], $key, wp_slash( $values ) );
 
 			case 'user':
 				if ( $location['id'] <= 0 ) {
 					return false;
 				}
-				return false !== update_user_meta( $location['id'], $key, $values );
+				return false !== update_user_meta( $location['id'], $key, wp_slash( $values ) );
 
 			case 'term':
 				if ( $location['id'] <= 0 ) {
 					return false;
 				}
-				return false !== update_term_meta( $location['id'], $key, $values );
+				return false !== update_term_meta( $location['id'], $key, wp_slash( $values ) );
 
 			case 'option':
 			default:

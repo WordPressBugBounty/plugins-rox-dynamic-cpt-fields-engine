@@ -1294,7 +1294,9 @@ class CPTMetaFieldsManager {
 			if ( '' === $value || null === $value || ( is_array( $value ) && empty( $value ) ) ) {
 				delete_post_meta( $post_id, $field_name );
 			} else {
-				update_post_meta( $post_id, $field_name, $value );
+				// wp_slash(): update_post_meta() unslashes, which would strip the
+				// backslashes out of JSON values (repeater/group rows).
+				update_post_meta( $post_id, $field_name, wp_slash( $value ) );
 			}
 		}
 
@@ -1420,45 +1422,14 @@ class CPTMetaFieldsManager {
 			return '';
 		}
 
-		return match ( $type ) {
-			'textarea'      => sanitize_textarea_field( $value ),
-			'number'        => is_numeric( $value ) ? floatval( $value ) : '',
-			'email'         => sanitize_email( $value ),
-			'url'           => esc_url_raw( $value ),
-			'date'          => preg_match( '/^\d{4}-\d{2}-\d{2}$/', sanitize_text_field( $value ) ) ? sanitize_text_field( $value ) : '',
-			'checkbox'      => is_array( $value ) ? array_map( 'sanitize_text_field', $value ) : array(),
-			'select'        => ! empty( $field['multiple'] ) && is_array( $value )
-				? array_map( 'sanitize_text_field', $value )
-				: sanitize_text_field( is_array( $value ) ? ( $value[0] ?? '' ) : $value ),
-			'toggle'        => $value ? '1' : '',
-			'image'         => $this->sanitize_image_value( $value, $field ),
-			'file'          => absint( $value ),
-			default         => sanitize_text_field( $value ),
-		};
-	}
+		$type_obj = FieldTypeRegistry::get_instance()->get( $type );
 
-	/**
-	 * Sanitize an image field value, honouring the `multiple` flag so the
-	 * value may be either a single attachment ID or a comma-separated
-	 * list of attachment IDs.
-	 *
-	 * @param mixed               $value The raw value (int, CSV string, or array).
-	 * @param array<string,mixed> $field The full field configuration.
-	 * @return int|string Single ID, or CSV of IDs when `multiple` is on.
-	 */
-	private function sanitize_image_value( mixed $value, array $field ): int|string {
-		// Delegate to the field type so single/multi logic lives in one
-		// place (`ImageField::sanitize`). Falls back to absint() if the
-		// registry hasn't been initialised yet (e.g. very early hooks).
-		$registry = FieldTypeRegistry::get_instance();
-		$type_obj = $registry->get( 'image' );
-
-		if ( null !== $type_obj && method_exists( $type_obj, 'sanitize' ) ) {
-			$sanitized = $type_obj->sanitize( $value, $field );
-			return is_int( $sanitized ) || is_string( $sanitized ) ? $sanitized : 0;
+		if ( null !== $type_obj ) {
+			return $type_obj->sanitize( $value, $field );
 		}
 
-		return absint( $value );
+		// Unknown/unregistered type — safe fallback.
+		return sanitize_text_field( is_array( $value ) ? '' : (string) $value );
 	}
 
 	/**

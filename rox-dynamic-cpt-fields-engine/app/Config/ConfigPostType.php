@@ -210,17 +210,17 @@ class ConfigPostType {
 	 */
 	public function sanitize_config_data( mixed $value ): string {
 		// If it's already a string, validate it's valid JSON.
+		// Core already unslashed $value once before this callback runs.
 		if ( is_string( $value ) ) {
-			$raw     = wp_unslash( $value );
-			$decoded = json_decode( $raw, true );
+			$decoded = json_decode( $value, true );
 
 			if ( json_last_error() !== JSON_ERROR_NONE ) {
-				return $raw;
+				return $value;
 			}
 
 			$encoded = wp_json_encode( $decoded, JSON_UNESCAPED_UNICODE );
 
-			return false !== $encoded ? $encoded : $raw;
+			return false !== $encoded ? $encoded : $value;
 		}
 
 		if ( is_array( $value ) ) {

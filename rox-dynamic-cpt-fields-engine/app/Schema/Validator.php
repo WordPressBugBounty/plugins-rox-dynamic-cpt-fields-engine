@@ -167,8 +167,8 @@ class Validator {
 		if ( empty( $config['slug'] ) ) {
 			$result->add_error( 'slug', __( 'Taxonomy slug is required.', 'rox-dynamic-cpt-fields-engine' ), 'required' );
 		} else {
-			// Validate slug format.
-			$slug_rule = new SlugRule();
+			// Validate slug format (32 — matches register_taxonomy()'s own cap).
+			$slug_rule = new SlugRule( 32 );
 			$result->merge( $slug_rule->validate( $config['slug'], 'slug' ) );
 
 			// Check reserved words.
@@ -442,7 +442,8 @@ class Validator {
 		if ( empty( $config['menu_slug'] ) ) {
 			$result->add_error( 'menu_slug', __( 'Menu slug is required.', 'rox-dynamic-cpt-fields-engine' ), 'required' );
 		} else {
-			$slug_rule = new SlugRule();
+			// No WP-imposed limit on a menu slug — match taxonomy's 32.
+			$slug_rule = new SlugRule( 32 );
 			$result->merge( $slug_rule->validate( $config['menu_slug'], 'menu_slug' ) );
 		}
 

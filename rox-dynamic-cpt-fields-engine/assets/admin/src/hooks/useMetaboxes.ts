@@ -194,8 +194,8 @@ function apiDataToFormData(config: MetaboxConfig): MetaboxFormData {
         // Group/Repeater sub-fields (recursively normalized)
         sub_fields: field.sub_fields ? normalizeMetaFields(field.sub_fields as unknown[]) : undefined,
         // Repeater/Gallery min/max
-        min: (field.min as number) || undefined,
-        max: (field.max as number) || undefined,
+        min: typeof field.min === 'number' ? field.min : undefined,
+        max: typeof field.max === 'number' ? field.max : undefined,
         button_label: (field.button_label as string) || undefined,
         collapsed: (field.collapsed as boolean) || undefined,
         // Relationship field (Pro)
@@ -273,7 +273,6 @@ export function useUpdateMetabox() {
       const response = await metaboxesApi.update(id, {
         title: data.title,
         data: formDataToApiData(data),
-        status: 'publish', // Always publish when saving from form
       });
       return response.data;
     },

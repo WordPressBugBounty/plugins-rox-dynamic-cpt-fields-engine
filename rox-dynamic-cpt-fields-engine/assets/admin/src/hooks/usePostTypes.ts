@@ -374,7 +374,6 @@ export function useUpdatePostType() {
       const response = await postTypesApi.update(id, {
         title: data.plural_label || data.title,
         data: formDataToApiData(data),
-        status: 'publish', // Always publish when saving from form
       });
       return apiDataToFormData(response.data);
     },

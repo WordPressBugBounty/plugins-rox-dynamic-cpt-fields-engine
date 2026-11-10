@@ -158,7 +158,6 @@ export function useUpdateTaxonomy() {
       const response = await taxonomiesApi.update(id, {
         title: data.plural_label || data.title,
         data: formDataToApiData(data),
-        status: 'publish', // Always publish when saving from form
       });
       return response.data;
     },

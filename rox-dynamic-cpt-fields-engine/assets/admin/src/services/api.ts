@@ -877,6 +877,24 @@ export interface MetaKeysResponse {
   count: number;
 }
 
+/** One sub-field of a Repeater field. */
+export interface RepeaterSubField {
+  name: string;
+  label: string;
+  type: string;
+}
+
+/** A Repeater field and its sub-fields (Pro `queries/repeater-fields`). */
+export interface RepeaterFieldSchema {
+  name: string;
+  label: string;
+  sub_fields: RepeaterSubField[];
+}
+
+export interface RepeaterFieldsResponse {
+  repeaters: RepeaterFieldSchema[];
+}
+
 /** One field key inside a dynamic source group. */
 export interface DynamicSourceFieldKey {
   value: string;
@@ -955,6 +973,9 @@ export const queriesApi = {
 
   /** Unique meta keys harvested across every published field group + CPT meta. */
   getMetaKeys: () => get<MetaKeysResponse>('queries/meta-keys'),
+
+  /** Repeater fields with their sub-fields — feeds the Repeater Output inspector. */
+  getRepeaterFields: () => get<RepeaterFieldsResponse>('queries/repeater-fields'),
 };
 
 // =====================================================================

@@ -33,8 +33,17 @@
 
 		// Validation patterns
 		patterns: {
-			email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-			url: /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/i
+			email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+		},
+
+		// Delegates to the browser's own URL parser instead of a regex.
+		isValidUrl: function(value) {
+			try {
+				new URL(/^https?:\/\//i.test(value) ? value : 'https://' + value);
+				return true;
+			} catch (e) {
+				return false;
+			}
 		},
 
 		// Validation lock name for Gutenberg
@@ -896,7 +905,7 @@
 			}
 
 			// URL validation
-			if (validateUrl && value && !this.patterns.url.test(value)) {
+			if (validateUrl && value && !this.isValidUrl(value)) {
 				this.showFieldError($field, this.l10n.invalidUrl);
 				return false;
 			}
